@@ -172,7 +172,7 @@ namespace RM_EDU
             else
             {
                 // LOL SDK Initialized and the key is set, so get the translated text.
-                if (LanguageManager.IsLanguageLoaderInitialized() && genNotesKey != "")
+                if (SystemManager.IsLanguageLoaderInitialized() && genNotesKey != "")
                 {
                     // Create a new list.
                     result = new List<string>();
@@ -183,7 +183,7 @@ namespace RM_EDU
                     // Translate each page with the applicable key.
                     for (int i = 0; i < notesKeys.Count; i++)
                     {
-                        result.Add(LanguageManager.GetLanguageTextStatic(notesKeys[i]));
+                        result.Add(SystemManager.GetLanguageTextStatic(notesKeys[i]));
                     }
 
                     // If the notes translation should be saved...

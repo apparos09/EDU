@@ -163,14 +163,14 @@ namespace RM_EDU
             }
 
             // If translation should be done.
-            if(LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if(SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
             {
                 // Translates the strings.
-                sectionString = LanguageManager.GetLanguageTextStatic(sectionStringKey);
-                statementsString = LanguageManager.GetLanguageTextStatic(statementsStringKey);
-                resourcesString = LanguageManager.GetLanguageTextStatic(resourcesStringKey);
-                selectedString = LanguageManager.GetLanguageTextStatic(selectedStringKey);
-                noneString = LanguageManager.GetLanguageTextStatic(noneStringKey);
+                sectionString = SystemManager.GetLanguageTextStatic(sectionStringKey);
+                statementsString = SystemManager.GetLanguageTextStatic(statementsStringKey);
+                resourcesString = SystemManager.GetLanguageTextStatic(resourcesStringKey);
+                selectedString = SystemManager.GetLanguageTextStatic(selectedStringKey);
+                noneString = SystemManager.GetLanguageTextStatic(noneStringKey);
 
                 // Marks that the strings have been translated.
                 translatedStrings = true;
@@ -486,9 +486,9 @@ namespace RM_EDU
             else
             {
                 // If the LOL SDK is available, translate the text.
-                if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
                 {
-                    result = LanguageManager.GetLanguageTextStatic(sectionStringKey);
+                    result = SystemManager.GetLanguageTextStatic(sectionStringKey);
                 }
                 // Use default text.
                 else
@@ -513,9 +513,9 @@ namespace RM_EDU
             else
             {
                 // If the LOL SDK is available, translate the text.
-                if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
                 {
-                    result = LanguageManager.GetLanguageTextStatic(statementsStringKey);
+                    result = SystemManager.GetLanguageTextStatic(statementsStringKey);
                 }
                 // Use default text.
                 else
@@ -541,9 +541,9 @@ namespace RM_EDU
             {
 
                 // If the LOL SDK is available, translate the text.
-                if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
                 {
-                    result = LanguageManager.GetLanguageTextStatic(resourcesStringKey);
+                    result = SystemManager.GetLanguageTextStatic(resourcesStringKey);
                 }
                 // Use default text.
                 else
@@ -568,9 +568,9 @@ namespace RM_EDU
             else
             {
                 // If the LOL SDK is available, translate the text.
-                if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
                 {
-                    result = LanguageManager.GetLanguageTextStatic(selectedStringKey);
+                    result = SystemManager.GetLanguageTextStatic(selectedStringKey);
                 }
                 // Use default text.
                 else
@@ -595,9 +595,9 @@ namespace RM_EDU
             else
             {
                 // If the LOL SDK is available, translate the text.
-                if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
                 {
-                    result = LanguageManager.GetLanguageTextStatic(noneStringKey);
+                    result = SystemManager.GetLanguageTextStatic(noneStringKey);
                 }
                 // Use default text.
                 else

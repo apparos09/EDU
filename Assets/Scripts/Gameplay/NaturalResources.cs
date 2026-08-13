@@ -132,9 +132,9 @@ namespace RM_EDU
             string key = GetNaturalResourceNameKey(res);
 
             // If the LOL SDK has been initialized and the key exists.
-            if(LanguageManager.IsLanguageLoaderInitialized() && key != "")
+            if(SystemManager.IsLanguageLoaderInitialized() && key != "")
             {
-                result = LanguageManager.GetLanguageTextStatic(key);
+                result = SystemManager.GetLanguageTextStatic(key);
             }
             // Either the LOL SDK isn't initialized or the key is empty, so manually fill the values.
             else
@@ -267,9 +267,9 @@ namespace RM_EDU
             string key = GetNaturalResourceNameAbbreviationKey(res);
 
             // If the LOL SDK has been initialized and the key exists.
-            if (LanguageManager.IsLanguageLoaderInitialized() && key != "")
+            if (SystemManager.IsLanguageLoaderInitialized() && key != "")
             {
-                result = LanguageManager.GetLanguageTextStatic(key);
+                result = SystemManager.GetLanguageTextStatic(key);
             }
             // Either the LOL SDK isn't initialized or the key is empty, so manually fill the values.
             else
@@ -402,7 +402,7 @@ namespace RM_EDU
             string key = GetNaturalResourceDescriptionKey(res);
 
             // If true, the text should be translated.
-            bool translate = LanguageManager.IsLanguageLoaderInitialized() && key != "";
+            bool translate = SystemManager.IsLanguageLoaderInitialized() && key != "";
 
             // Checks the resource type to know what description to return.
             switch (res)
@@ -411,7 +411,7 @@ namespace RM_EDU
                     if (translate)
                     {
                         // Uses the language key for unknown, which is just a single word.
-                        result.Add(LanguageManager.GetLanguageTextStatic(key));
+                        result.Add(SystemManager.GetLanguageTextStatic(key));
                     }
                     else
                     {
@@ -423,9 +423,9 @@ namespace RM_EDU
                 case naturalResource.biomass:
                     if (translate)
                     {
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_00"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_01"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_02"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_00"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_01"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_02"));
                     }
                     else
                     {
@@ -438,10 +438,10 @@ namespace RM_EDU
                 case naturalResource.geothermal:
                     if (translate)
                     {
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_00"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_01"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_02"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_03"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_00"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_01"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_02"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_03"));
                     }
                     else
                     {
@@ -455,9 +455,9 @@ namespace RM_EDU
                 case naturalResource.hydro:
                     if (translate)
                     {
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_00"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_01"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_02"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_00"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_01"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_02"));
                     }
                     else
                     {
@@ -471,8 +471,8 @@ namespace RM_EDU
                 case naturalResource.solar:
                     if (translate)
                     {
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_00"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_01"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_00"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_01"));
                     }
                     else
                     {
@@ -485,9 +485,9 @@ namespace RM_EDU
                 case naturalResource.wave:
                     if (translate)
                     {
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_00"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_01"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_02"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_00"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_01"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_02"));
                     }
                     else
                     {
@@ -501,8 +501,8 @@ namespace RM_EDU
                 case naturalResource.wind:
                     if (translate)
                     {
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_00"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_01"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_00"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_01"));
                     }
                     else
                     {
@@ -515,9 +515,9 @@ namespace RM_EDU
                 case naturalResource.coal:
                     if (translate)
                     {
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_00"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_01"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_02"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_00"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_01"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_02"));
                     }
                     else
                     {
@@ -531,9 +531,9 @@ namespace RM_EDU
                 case naturalResource.naturalGas:
                     if (translate)
                     {
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_00"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_01"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_02"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_00"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_01"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_02"));
                     }
                     else
                     {
@@ -547,10 +547,10 @@ namespace RM_EDU
                 case naturalResource.nuclear:
                     if (translate)
                     {
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_00"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_01"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_02"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_03"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_00"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_01"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_02"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_03"));
                     }
                     else
                     {
@@ -565,10 +565,10 @@ namespace RM_EDU
                 case naturalResource.oil:
                     if (translate)
                     {
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_00"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_01"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_02"));
-                        result.Add(LanguageManager.GetLanguageTextStatic(key + "_03"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_00"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_01"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_02"));
+                        result.Add(SystemManager.GetLanguageTextStatic(key + "_03"));
                     }
                     else
                     {

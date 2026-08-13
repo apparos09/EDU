@@ -164,7 +164,7 @@ namespace RM_EDU
         {
             get
             {
-                return LanguageManager.Instantiated;
+                return SystemManager.Instantiated;
             }
         }
 

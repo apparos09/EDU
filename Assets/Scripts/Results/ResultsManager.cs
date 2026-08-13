@@ -193,7 +193,7 @@ namespace RM_EDU
         public void CompleteGame()
         {
             // The SDK has been initialized.
-            if (LanguageManager.Instantiated)
+            if (SystemManager.Instantiated)
             {
                 // Complete the game.
                 // LOLSDK.Instance.CompleteGame();

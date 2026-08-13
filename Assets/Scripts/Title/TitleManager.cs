@@ -58,7 +58,7 @@ namespace RM_EDU
                 GameSettings settings = GameSettings.Instance;
 
                 // Gets an instance of the LOL manager.
-                LanguageManager lolManager = LanguageManager.Instance;
+                SystemManager lolManager = SystemManager.Instance;
 
                 // Language
                 // JSONNode defs = SharedState.LanguageDefs;
@@ -78,7 +78,7 @@ namespace RM_EDU
 
                 // Checks for initialization
                 // if (LanguageManager.Instantiated)
-                if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
                 {
                     // NOTE: the buttons disappear for a frame if there is no save state.
                     // It doesn't effect anything, but it's jarring visually.

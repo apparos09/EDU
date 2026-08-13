@@ -29,9 +29,9 @@ namespace RM_EDU
             bool markText;
 
             // If the SDK is initialized, the text is set, and the key is set.
-            if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized() && text != null && key != "")
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized() && text != null && key != "")
             {
-                text.text = LanguageManager.Instance.GetLanguageText(key);
+                text.text = SystemManager.Instance.GetLanguageText(key);
 
                 // Text is blank, so mark the text to show that the translation failed.
                 if(text.text == "")
@@ -60,10 +60,10 @@ namespace RM_EDU
         public void SpeakText()
         {
             // Checks if the TTS is set up, if the TTS is active, and if the key string exists.
-            if (LanguageManager.Instantiated && GameSettings.Instance.UseTextToSpeech && key != string.Empty)
+            if (SystemManager.Instantiated && GameSettings.Instance.UseTextToSpeech && key != string.Empty)
             {
                 // Read out the text.
-                LanguageManager.Instance.textToSpeech.SpeakText(key);
+                SystemManager.Instance.textToSpeech.SpeakText(key);
             }
         }
     }

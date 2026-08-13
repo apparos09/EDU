@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 6832325066900028198}
   m_Layer: 0
   m_Name: BGM Audio Source
-  m_TagString: BGM
+  m_TagString: Undefined
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

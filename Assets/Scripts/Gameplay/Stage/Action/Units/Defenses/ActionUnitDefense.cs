@@ -130,13 +130,13 @@ namespace RM_EDU
             string value;
 
             // The LOL SDK has been initialized, so use the key.
-            if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
             {
                 // Gets the defense type abbreviation key.
                 string key = GetDefenseTypeNameKey(type);
 
                 // Gets the text.
-                value = LanguageManager.GetLanguageTextStatic(key);
+                value = SystemManager.GetLanguageTextStatic(key);
             }
             else
             {
@@ -200,13 +200,13 @@ namespace RM_EDU
             string value;
 
             // If the LOLSDK exists, get the abbreviation from that.
-            if(LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if(SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
             {
                 // Gets the defense type abbreviation key.
                 string key = GetDefenseTypeAbbreviationKey(type);
 
                 // Gets the text.
-                value = LanguageManager.GetLanguageTextStatic(key);
+                value = SystemManager.GetLanguageTextStatic(key);
             }
             else
             {

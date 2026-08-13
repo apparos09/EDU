@@ -55,9 +55,9 @@ namespace RM_EDU
                 else
                 {
                     // Checks if the LOL Manager exists for translation.
-                    if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized() && nameKey != "")
+                    if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized() && nameKey != "")
                     {
-                        result = LanguageManager.GetLanguageTextStatic(nameKey);
+                        result = SystemManager.GetLanguageTextStatic(nameKey);
 
                         // If the translated name should be saved.
                         if(saveNameTranslated)
@@ -91,9 +91,9 @@ namespace RM_EDU
                 else
                 {
                     // Checks if the LOL Manager exists for translation.
-                    if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized() && descriptionKey != "")
+                    if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized() && descriptionKey != "")
                     {
-                        result = LanguageManager.GetLanguageTextStatic(descriptionKey);
+                        result = SystemManager.GetLanguageTextStatic(descriptionKey);
 
                         // If the translated description should be saved.
                         if (saveDescTranslated)
@@ -269,11 +269,11 @@ namespace RM_EDU
         public void SpeakText(string key)
         {
             // Checks if the instances exist: LOL SDK, Text-to-Speech, and GameSettings.
-            if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized() && TextToSpeech.Instantiated && GameSettings.Instantiated)
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized() && TextToSpeech.Instantiated && GameSettings.Instantiated)
             {
                 // Gets the instances.
                 GameSettings gameSettings = GameSettings.Instance;
-                LanguageManager lolManager = LanguageManager.Instance;
+                SystemManager lolManager = SystemManager.Instance;
 
                 // Checks if TTS should be used.
                 if (gameSettings.UseTextToSpeech)

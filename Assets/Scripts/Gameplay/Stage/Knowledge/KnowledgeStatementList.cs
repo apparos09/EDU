@@ -115,9 +115,9 @@ namespace RM_EDU
 
                     // If the LOLManager is instantiated, the LOL SDK eis initialized...
                     // And the key is set, use the key to translate the statement.
-                    if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized() && key != "")
+                    if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized() && key != "")
                     {
-                        result = LanguageManager.GetLanguageTextStatic(key);
+                        result = SystemManager.GetLanguageTextStatic(key);
 
                         // If translated text should be saved in the text variable, save it.
                         if(saveTranslatedText)

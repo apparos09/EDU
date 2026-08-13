@@ -11,11 +11,11 @@ namespace RM_EDU
         public void SpeakText(string key)
         {
             // Checks if the instances exist and if the key is set.
-            if (GameSettings.Instantiated && LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized() && key != "")
+            if (GameSettings.Instantiated && SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized() && key != "")
             {
                 // Gets the instances.
                 GameSettings gameSettings = GameSettings.Instance;
-                LanguageManager lolManager = LanguageManager.Instance;
+                SystemManager lolManager = SystemManager.Instance;
 
                 // Checks if TTS should be used.
                 if (gameSettings.UseTextToSpeech)

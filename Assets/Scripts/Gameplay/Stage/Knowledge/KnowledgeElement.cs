@@ -108,7 +108,7 @@ namespace RM_EDU
 
             // If the LOL Manager is initialized and text-to-speech is instantiated...
             // The TTS is available.
-            if(LanguageManager.IsLanguageLoaderInitialized() && TextToSpeech.Instantiated)
+            if(SystemManager.IsLanguageLoaderInitialized() && TextToSpeech.Instantiated)
             {
                 ttsAvail = true;
             }

@@ -88,10 +88,10 @@ namespace RM_EDU
             string cardName;
 
             // Checks if the language file is available.
-            if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
             {
                 string key = GetRemoveCardNameKey();
-                cardName = LanguageManager.Instance.GetLanguageText(key);
+                cardName = SystemManager.Instance.GetLanguageText(key);
             }
             else
             {
@@ -114,10 +114,10 @@ namespace RM_EDU
             string displayName;
 
             // Checks if the language file is available.
-            if(LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if(SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
             {
                 string key = GetRemoveCardDisplayNameKey();
-                displayName = LanguageManager.Instance.GetLanguageText(key);
+                displayName = SystemManager.Instance.GetLanguageText(key);
             }
             else
             {

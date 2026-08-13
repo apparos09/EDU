@@ -258,7 +258,7 @@ namespace RM_EDU
             SetLastSaveAsLoadedData();
 
             // If the instance has been initialized.
-            if (LanguageManager.Instantiated)
+            if (SystemManager.Instantiated)
             {
                 // Makes sure that the feedback string is set.
                 if (FEEDBACK_STRING_KEY != string.Empty)

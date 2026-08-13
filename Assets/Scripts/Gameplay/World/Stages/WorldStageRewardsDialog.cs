@@ -463,12 +463,12 @@ namespace RM_EDU
             if(key != "")
             {
                 // The LOL Manager has been initialized, TTS is instantiated, and GameSettings is instantiated.
-                if (LanguageManager.IsLanguageLoaderInitialized() && TextToSpeech.Instantiated && GameSettings.Instantiated)
+                if (SystemManager.IsLanguageLoaderInitialized() && TextToSpeech.Instantiated && GameSettings.Instantiated)
                 {
                     // If text-to-speech is enabled.
                     if(GameSettings.Instance.UseTextToSpeech)
                     {
-                        LanguageManager.Instance.SpeakText(key);
+                        SystemManager.Instance.SpeakText(key);
                     }
                 }
             }

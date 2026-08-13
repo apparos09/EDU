@@ -509,7 +509,7 @@ namespace RM_EDU
             }                
 
             // If text-to-speech is usable and enabled, read the page text.
-            if (page.textSpeakKey != "" && LanguageManager.IsTextToSpeechUsableAndEnabled())
+            if (page.textSpeakKey != "" && SystemManager.IsTextToSpeechUsableAndEnabled())
             {
                 // Read the text.
                 SpeakText(page.textSpeakKey, false);
@@ -561,15 +561,15 @@ namespace RM_EDU
             if(checkTTSUsable)
             {
                 // If text-to-speech is usable and enabled, speak the text.
-                if (key != "" && LanguageManager.IsTextToSpeechUsableAndEnabled())
+                if (key != "" && SystemManager.IsTextToSpeechUsableAndEnabled())
                 {
-                    LanguageManager.Instance.SpeakText(key);
+                    SystemManager.Instance.SpeakText(key);
                 }
             }
             // Don't check usable.
             else
             {
-                LanguageManager.Instance.SpeakText(key);
+                SystemManager.Instance.SpeakText(key);
             }
 
         }

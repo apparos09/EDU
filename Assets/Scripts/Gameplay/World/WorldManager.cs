@@ -527,9 +527,9 @@ namespace RM_EDU
             if(!gameModeGenTranslated)
             {
                 // If available, translate text.
-                if(LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                if(SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
                 {
-                    gameModeGenName = LanguageManager.GetLanguageTextStatic(gameModeGenNameKey);
+                    gameModeGenName = SystemManager.GetLanguageTextStatic(gameModeGenNameKey);
                 }
 
                 // Text now translated.
@@ -547,9 +547,9 @@ namespace RM_EDU
             if (!gameModeDefTranslated)
             {
                 // If available, translate text.
-                if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
                 {
-                    gameModeDefName = LanguageManager.GetLanguageTextStatic(gameModeDefNameKey);
+                    gameModeDefName = SystemManager.GetLanguageTextStatic(gameModeDefNameKey);
                 }
 
                 // Text now translated.
@@ -1478,16 +1478,16 @@ namespace RM_EDU
         public void SubmitProgress()
         {
             // If the LOLManager and the SDK have both been initialized, submit the score and game progress.
-            if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
-                LanguageManager.Instance.SubmitProgress(CalculateGameScoreAsInt(), GetGameProgress());
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                SystemManager.Instance.SubmitProgress(CalculateGameScoreAsInt(), GetGameProgress());
         }
 
         // Submits the game progress complete.
         public void SubmitProgressComplete()
         {
             // Submits the game score and progress complete.
-            if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
-                LanguageManager.Instance.SubmitProgressComplete(CalculateGameScoreAsInt());
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                SystemManager.Instance.SubmitProgressComplete(CalculateGameScoreAsInt());
         }
 
         // Checks if the game is complete.

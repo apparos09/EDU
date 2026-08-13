@@ -108,9 +108,9 @@ namespace RM_EDU
         public bool TranslateText(Text text, string key, bool markIfFailed)
         {
             // Checks if the SDK has been initialized. 
-            if (LanguageManager.Instantiated)
+            if (SystemManager.Instantiated)
             {
-                text.text = LanguageManager.Instance.GetLanguageText(key);
+                text.text = SystemManager.Instance.GetLanguageText(key);
                 return true;
             }
             else
@@ -130,9 +130,9 @@ namespace RM_EDU
         public bool TranslateText(TMP_Text text, string key, bool markIfFailed)
         {
             // Checks if the SDK has been initialized. 
-            if(LanguageManager.Instantiated)
+            if(SystemManager.Instantiated)
             {
-                text.text = LanguageManager.Instance.GetLanguageText(key);
+                text.text = SystemManager.Instance.GetLanguageText(key);
                 return true;
             }
             else

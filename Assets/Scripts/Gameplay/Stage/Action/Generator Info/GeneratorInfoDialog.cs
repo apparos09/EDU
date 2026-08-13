@@ -648,9 +648,9 @@ namespace RM_EDU
         public void SpeakText(string key)
         {
             // If the LOL manager is instantiated and the SDK is initialized.
-            if(LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if(SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
             {
-                LanguageManager.Instance.SpeakText(key);
+                SystemManager.Instance.SpeakText(key);
             }
         }
 

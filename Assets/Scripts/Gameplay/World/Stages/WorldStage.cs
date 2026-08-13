@@ -372,13 +372,13 @@ namespace RM_EDU
             string result;
 
             // If the LOL SDK is intialized, translate the name.
-            if (LanguageManager.IsLanguageLoaderInitialized())
+            if (SystemManager.IsLanguageLoaderInitialized())
             {
                 // Gets the key.
                 string key = GetStageTypeNameKey(type);
 
                 // Gets the result.
-                result = LanguageManager.GetLanguageTextStatic(key);
+                result = SystemManager.GetLanguageTextStatic(key);
 
                 // Set the result to empty string if it's null.
                 if (result == null)

@@ -86,9 +86,9 @@ namespace RM_EDU
         private string GetStageNameTranslated(string key)
         {
             // Checks if the LOL SDK is initialized.
-            if (LanguageManager.IsLanguageLoaderInitialized() && key != "")
+            if (SystemManager.IsLanguageLoaderInitialized() && key != "")
             {
-                return LanguageManager.GetLanguageTextStatic(key);
+                return SystemManager.GetLanguageTextStatic(key);
             }
             else
             {
@@ -99,7 +99,7 @@ namespace RM_EDU
         // Gets the world stage string.
         public string GetWorldStageString()
         {
-            if (LanguageManager.IsLanguageLoaderInitialized())
+            if (SystemManager.IsLanguageLoaderInitialized())
                 return GetStageNameTranslated(WORLD_STAGE_KEY);
             else
                 return "World Stage";
@@ -108,7 +108,7 @@ namespace RM_EDU
         // Gets the action stage string.
         public string GetActionStageString()
         {
-            if (LanguageManager.IsLanguageLoaderInitialized())
+            if (SystemManager.IsLanguageLoaderInitialized())
                 return GetStageNameTranslated(ACTION_STAGE_KEY);
             else
                 return "Action Stage";
@@ -117,7 +117,7 @@ namespace RM_EDU
         // Gets the knowledge stage string.
         public string GetKnowledgeStageString()
         {
-            if (LanguageManager.IsLanguageLoaderInitialized())
+            if (SystemManager.IsLanguageLoaderInitialized())
                 return GetStageNameTranslated(KNOWLEDGE_STAGE_KEY);
             else
                 return "Knowledge Stage";
@@ -126,7 +126,7 @@ namespace RM_EDU
         // Gets the unknown stage string.
         public string GetUnknownStageString()
         {
-            if (LanguageManager.IsLanguageLoaderInitialized())
+            if (SystemManager.IsLanguageLoaderInitialized())
                 return GetStageNameTranslated(UNKNOWN_STAGE_KEY);
             else
                 return "Unknown Stage";
@@ -270,7 +270,7 @@ namespace RM_EDU
         public void SpeakStageType()
         {
             // If the LOL Manager has been initialized, TTS is instantiated, and GameSettings is instantiated.
-            if (LanguageManager.IsLanguageLoaderInitialized() && TextToSpeech.Instantiated && GameSettings.Instantiated)
+            if (SystemManager.IsLanguageLoaderInitialized() && TextToSpeech.Instantiated && GameSettings.Instantiated)
             {
                 // If text-to-speech is enabled, try to speak the text.
                 if (GameSettings.Instance.UseTextToSpeech)
@@ -306,7 +306,7 @@ namespace RM_EDU
                     // If the key is set, speak the text.
                     if(key != "")
                     {
-                        LanguageManager.Instance.SpeakText(key);
+                        SystemManager.Instance.SpeakText(key);
                     }
                 }
             }

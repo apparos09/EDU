@@ -220,7 +220,7 @@ namespace RM_EDU
                 // Key exists, so speak the text for it.
                 if (key != "")
                 {
-                    LanguageManager.Instance.SpeakText(key);
+                    SystemManager.Instance.SpeakText(key);
                 }
             }
         }

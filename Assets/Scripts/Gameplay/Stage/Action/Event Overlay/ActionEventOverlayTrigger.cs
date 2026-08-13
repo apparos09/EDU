@@ -31,9 +31,9 @@ namespace RM_EDU
             // And event text key have been changed.
 
             // If the LOL Manager and SDK are instantiated, translate the text.
-            if(LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if(SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
             {
-                return LanguageManager.GetLanguageTextStatic(eventTextKey);
+                return SystemManager.GetLanguageTextStatic(eventTextKey);
             }
             // Can't translate, so return the event text.
             else

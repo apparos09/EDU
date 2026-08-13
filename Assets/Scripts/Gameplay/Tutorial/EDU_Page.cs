@@ -177,11 +177,11 @@ namespace RM_EDU
         public void TranslateTitleAndText()
         {
             // If the LOL Manager is instantiated...
-            if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
             {
                 // Gets the new title and text.
-                string newTitle = LanguageManager.GetLanguageTextStatic(titleLanguageKey);
-                string newText = LanguageManager.GetLanguageTextStatic(textLanguageKey);
+                string newTitle = SystemManager.GetLanguageTextStatic(titleLanguageKey);
+                string newText = SystemManager.GetLanguageTextStatic(textLanguageKey);
 
                 // If the new text is not null, use it. If the new text is null, use an empty string.
                 title = (newTitle != null) ? newTitle : string.Empty;
@@ -193,10 +193,10 @@ namespace RM_EDU
         public void TranslateTitle()
         {
             // If the LOL Manager is instantiated...
-            if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
             {
                 // Gets the new title text.
-                string newTitle = LanguageManager.GetLanguageTextStatic(titleLanguageKey);
+                string newTitle = SystemManager.GetLanguageTextStatic(titleLanguageKey);
 
                 // If the new text is not null, use it. If the new text is null, use an empty string.
                 text = (newTitle != null) ? newTitle : string.Empty;
@@ -217,10 +217,10 @@ namespace RM_EDU
         public void TranslateText()
         {
             // If the LOL Manager is instantiated...
-            if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
             {
                 // Gets the new text.
-                string newText = LanguageManager.GetLanguageTextStatic(textLanguageKey);
+                string newText = SystemManager.GetLanguageTextStatic(textLanguageKey);
 
                 // If the new text is not null, use it. If the new text is null, use an empty string.
                 text = (newText != null) ? newText : string.Empty;
@@ -268,9 +268,9 @@ namespace RM_EDU
         public void SpeakTitle()
         {
             // If the LOL SDK is initialized, TTS is available, TTS is on, and the title key is set.
-            if (LanguageManager.IsTextToSpeechUsableAndEnabled() && titleLanguageKey != string.Empty)
+            if (SystemManager.IsTextToSpeechUsableAndEnabled() && titleLanguageKey != string.Empty)
             {
-                LanguageManager.Instance.SpeakText(titleLanguageKey);
+                SystemManager.Instance.SpeakText(titleLanguageKey);
                 // TextToSpeech.Instance.SpeakText(speakKey);
             }
         }
@@ -279,9 +279,9 @@ namespace RM_EDU
         public void SpeakText()
         {
             // If the LOL SDK is initialized, TTS is available, TTS is on, and the text speak key is set.
-            if (LanguageManager.IsTextToSpeechUsableAndEnabled() && textSpeakKey != string.Empty)
+            if (SystemManager.IsTextToSpeechUsableAndEnabled() && textSpeakKey != string.Empty)
             {
-                LanguageManager.Instance.SpeakText(textSpeakKey);
+                SystemManager.Instance.SpeakText(textSpeakKey);
                 // TextToSpeech.Instance.SpeakText(speakKey);
             }
         }

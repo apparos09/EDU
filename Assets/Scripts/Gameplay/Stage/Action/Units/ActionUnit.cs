@@ -214,13 +214,13 @@ namespace RM_EDU
 
             // Other
             // If the LOL SDK is initialized.
-            if(LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if(SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
             {
                 // The name key exists, so try to get the name.
                 if(unitNameKey != string.Empty)
                 {
                     // Translate the name.
-                    unitName = LanguageManager.GetLanguageTextStatic(unitNameKey);
+                    unitName = SystemManager.GetLanguageTextStatic(unitNameKey);
                 }
             }
 
@@ -276,9 +276,9 @@ namespace RM_EDU
             else
             {
                 // LOLMananger instantiated, OL SDK initialized, and the key is set, so get the translated text
-                if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized() && unitNameKey != "")
+                if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized() && unitNameKey != "")
                 {
-                    result = LanguageManager.GetLanguageTextStatic(unitNameKey);
+                    result = SystemManager.GetLanguageTextStatic(unitNameKey);
 
                     // If the unit name translation should be saved...
                     // Override unitName and mark that the translation has been saved.
@@ -323,7 +323,7 @@ namespace RM_EDU
             else
             {
                 // LOL SDK Initialized and the key is set, so get the translated text.
-                if (LanguageManager.IsLanguageLoaderInitialized() && unitDescKey != "")
+                if (SystemManager.IsLanguageLoaderInitialized() && unitDescKey != "")
                 {
                     // Create a new list.
                     result = new List<string>();
@@ -334,7 +334,7 @@ namespace RM_EDU
                     // Translate each page with the applicable key.
                     for (int i = 0; i < unitDescKeys.Count; i++)
                     {
-                        result.Add(LanguageManager.GetLanguageTextStatic(unitDescKeys[i]));
+                        result.Add(SystemManager.GetLanguageTextStatic(unitDescKeys[i]));
                     }
 
                     // If the unit description translation should be saved...
@@ -389,9 +389,9 @@ namespace RM_EDU
 
             // If the SDK is initialized, get the text from it.
             // If it isn't, manually set it.
-            if(LanguageManager.IsLanguageLoaderInitialized())
+            if(SystemManager.IsLanguageLoaderInitialized())
             {
-                name = LanguageManager.Instance.GetLanguageText(key);
+                name = SystemManager.Instance.GetLanguageText(key);
             }
             else
             {

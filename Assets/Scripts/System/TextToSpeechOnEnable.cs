@@ -25,7 +25,7 @@ namespace RM_EDU
 
 
             // The manager and/or SDK is not initialized.
-            if (!LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if (!SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
                 return;
 
             // TTS is not enabled.
@@ -33,7 +33,7 @@ namespace RM_EDU
                 return;
 
             // Gets the instance.
-            LanguageManager lolManager = LanguageManager.Instance;
+            SystemManager lolManager = SystemManager.Instance;
 
             // Speak the text.
             lolManager.SpeakText(speakKey);

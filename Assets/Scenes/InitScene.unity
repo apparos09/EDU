@@ -134,10 +134,12 @@ GameObject:
   - component: {fileID: 244718876}
   - component: {fileID: 244718875}
   - component: {fileID: 244718874}
+  - component: {fileID: 244718878}
+  - component: {fileID: 244718877}
   - component: {fileID: 244718873}
   m_Layer: 0
-  m_Name: LOL Manager
-  m_TagString: Untagged
+  m_Name: System Manager
+  m_TagString: Manager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177,9 +179,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 244718872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 004b04f0b4ea04e4ca863845f7ffd8c9, type: 3}
+  m_Script: {fileID: 11500000, guid: 9aaf873d5e48e22408c67067e85755d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languageLoader: {fileID: 0}
   saveSystem: {fileID: 0}
   textToSpeech: {fileID: 0}
 --- !u!4 &244718876
@@ -198,6 +201,36 @@ Transform:
   - {fileID: 468292095}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &244718877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244718872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 324f1b727d0c52e44a6151b71318e82f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileName: 
+  filePath: 
+  lines: []
+--- !u!114 &244718878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244718872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae2065d4a2e141a4f9a1d8080eb3b750, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileReader: {fileID: 0}
+  defaultLanguage: 1
+  loadLangaugeOnStart: 0
 --- !u!1 &308382248
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +260,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ac40af676c2d1f42bab990bf367acb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initializedGame: 0
 --- !u!4 &308382250
 Transform:
   m_ObjectHideFlags: 0
@@ -434,10 +466,8 @@ MonoBehaviour:
       clearedFirstActionGeneratorsTutorial: 0
       clearedFirstActionDefensesTutorial: 0
       clearedFirstActionFirstKillTutorial: 0
-      clearedFirstActionCompleteTutorial: 0
       clearedFirstKnowledgeIntroTutorial: 0
       clearedFirstKnowledgeVerifyTutorial: 0
-      clearedFirstKnowledgeCompleteTutorial: 0
       clearedFirstAreaCompleteTutorial: 0
       clearedBiomassTutorial: 0
       clearedGeothermalTutorial: 0
@@ -468,10 +498,8 @@ MonoBehaviour:
       clearedFirstActionGeneratorsTutorial: 0
       clearedFirstActionDefensesTutorial: 0
       clearedFirstActionFirstKillTutorial: 0
-      clearedFirstActionCompleteTutorial: 0
       clearedFirstKnowledgeIntroTutorial: 0
       clearedFirstKnowledgeVerifyTutorial: 0
-      clearedFirstKnowledgeCompleteTutorial: 0
       clearedFirstAreaCompleteTutorial: 0
       clearedBiomassTutorial: 0
       clearedGeothermalTutorial: 0

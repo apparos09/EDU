@@ -459,7 +459,7 @@ namespace RM_EDU
             // If TTS should be used to read the category...
             // Text-to-speech is usable, and text-to-speech is enabled...
             // Read the category.
-            if (speakCategory && LanguageManager.IsTextToSpeechUsableAndEnabled())
+            if (speakCategory && SystemManager.IsTextToSpeechUsableAndEnabled())
             {
                 // Gets the speak key.
                 string speakKey = GetCurrentCategoryNameKey();
@@ -533,7 +533,7 @@ namespace RM_EDU
             string result;
 
             // Checks if the LOL SDK has been initialized.
-            if(LanguageManager.IsLanguageLoaderInitialized())
+            if(SystemManager.IsLanguageLoaderInitialized())
             {
                 // Gets the key.
                 string key = GetCategoryNameKey(category);
@@ -541,7 +541,7 @@ namespace RM_EDU
                 // Gets the translated text.
                 if (key != "")
                 {
-                    result = LanguageManager.GetLanguageTextStatic(key);
+                    result = SystemManager.GetLanguageTextStatic(key);
                 }
                 // Blank since the key couldn't be found.
                 else
@@ -909,7 +909,7 @@ namespace RM_EDU
             string descKey = infoDescPageKeys[infoDescPageIndex];
 
             // If text-to-speech is usable and enabled, read the description.
-            if (descKey != "" && LanguageManager.IsTextToSpeechUsableAndEnabled())
+            if (descKey != "" && SystemManager.IsTextToSpeechUsableAndEnabled())
             {
                 // Read the description.
                 // Don't need to do a second check.
@@ -1056,14 +1056,14 @@ namespace RM_EDU
             if(checkUsable)
             {
                 // If text-to-speech is usable and enabled, speak the text.
-                if (key != "" && LanguageManager.IsTextToSpeechUsableAndEnabled())
+                if (key != "" && SystemManager.IsTextToSpeechUsableAndEnabled())
                 {
-                    LanguageManager.Instance.SpeakText(key);
+                    SystemManager.Instance.SpeakText(key);
                 }
             }
             else
             {
-                LanguageManager.Instance.SpeakText(key);
+                SystemManager.Instance.SpeakText(key);
             }
         }
 

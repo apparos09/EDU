@@ -107,7 +107,7 @@ namespace RM_EDU
             // The toggle can only be interacted with on the title screen. It's non-interactable otherwise.
 
             // These functions are disabled here.
-            if (LanguageManager.Instantiated)
+            if (SystemManager.Instantiated)
             {
                 // Hides the tutorial toggle since it shoudn't be usable.
                 tutorialToggle.gameObject.SetActive(false);
@@ -149,8 +149,8 @@ namespace RM_EDU
             gameSettings.UseTextToSpeech = toggle.isOn;
 
             // Stops the text-to-speech if it was just turned off.
-            if (LanguageManager.Instantiated && !gameSettings.UseTextToSpeech)
-                LanguageManager.Instance.textToSpeech.StopSpeakText();
+            if (SystemManager.Instantiated && !gameSettings.UseTextToSpeech)
+                SystemManager.Instance.textToSpeech.StopSpeakText();
         }
 
         // On the tutorial changes.

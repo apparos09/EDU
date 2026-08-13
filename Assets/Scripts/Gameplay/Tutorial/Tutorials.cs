@@ -254,9 +254,9 @@ namespace RM_EDU
             public void TranslateTitle()
             {
                 // If possible, translate the title.
-                if(titleKey != "" && LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                if(titleKey != "" && SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
                 {
-                    title = LanguageManager.GetLanguageTextStatic(titleKey);
+                    title = SystemManager.GetLanguageTextStatic(titleKey);
                 }
             }
 
@@ -571,9 +571,9 @@ namespace RM_EDU
             if(translateTitle)
             {
                 // If tranlsation is available, translate.
-                if(LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                if(SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
                 {
-                    tutorialInfo.title = LanguageManager.GetLanguageTextStatic(titleKey);
+                    tutorialInfo.title = SystemManager.GetLanguageTextStatic(titleKey);
                 }
             }
 

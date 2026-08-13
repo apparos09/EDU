@@ -5,17 +5,20 @@ using UnityEngine;
 namespace RM_EDU
 {
     // Formally the 'LOL' manager.
-    public class LanguageManager : MonoBehaviour
+    public class SystemManager : MonoBehaviour
     {
-        // the instance of the LOL manager.
-        private static LanguageManager instance;
+        // The instance of the class.
+        private static SystemManager instance;
 
         // Gets set to 'true' when the singleton has been instanced.
         // This isn't needed, but it helps with the clarity.
         private static bool instanced = false;
 
-        // Language definition for translation.
+        // Language definition for translation (LOL only).
         //private JSONNode defs;
+
+        // Loads in a language to be used in the game.
+        public LanguageManager languageLoader;
         
         // The save system for the game.
         public SaveSystem saveSystem;
@@ -27,7 +30,7 @@ namespace RM_EDU
         const int PROGRESS_MAX = WorldManager.STAGE_COUNT; // Same as the stage count.
 
         // private constructor so that only one accessibility object exists.
-        private LanguageManager()
+        private SystemManager()
         {
             // ...
         }
@@ -78,6 +81,16 @@ namespace RM_EDU
             //if(defs == null)
             //    defs = SharedState.LanguageDefs;
 
+            // If the language loader isn't set, try to set it. If failed, generate a new component.
+            if(languageLoader == null)
+            {
+                // If the language loader couldn't be found, add the component.
+                if(!TryGetComponent<LanguageManager>(out languageLoader))
+                {
+                    languageLoader = gameObject.AddComponent<LanguageManager>();
+                }
+            }
+
             // If the save system is null but it has been instantiated, get the instance.
             if (saveSystem == null && SaveSystem.Instantiated)
                 saveSystem = SaveSystem.Instance;
@@ -88,7 +101,7 @@ namespace RM_EDU
         }
 
         // Returns the instance of the accessibility.
-        public static LanguageManager Instance
+        public static SystemManager Instance
         {
             get
             {
@@ -99,7 +112,7 @@ namespace RM_EDU
                     GameObject go = new GameObject("LOL Manager (singleton)");
 
                     // Adds the instance component to the new object.
-                    instance = go.AddComponent<LanguageManager>();
+                    instance = go.AddComponent<SystemManager>();
                 }
 
                 // returns the instance.
@@ -144,7 +157,20 @@ namespace RM_EDU
             //else
             //    return "";
 
-            return "";
+            // The result to be returned.
+            string result;
+
+            // If the language loader is set, 
+            if(languageLoader != null)
+            {
+                result = languageLoader.HasLanguageText() ? languageLoader.GetLanguageText(key) : string.Empty;
+            }
+            else
+            {
+                result = "";
+            }
+
+            return result;  
         }
 
         // Gets the language text. Static function version.
@@ -159,7 +185,15 @@ namespace RM_EDU
             //else
             //    return "";
 
-            return "";
+            // Checks for instantiation
+            if(Instantiated)
+            {
+                return Instance.GetLanguageText(key);
+            }
+            else
+            {
+                return "";
+            }
         }
 
         // Returns true if text-to-speech is usable.
@@ -209,6 +243,8 @@ namespace RM_EDU
 
             //// Submit the progress.
             //LOLSDK.Instance.SubmitProgress(score, currentProgress, PROGRESS_MAX);
+
+            // NOTE: this function is a holdover from the original. It no longer does anything.
         }
 
         // Submits progress to show that the game is complete.

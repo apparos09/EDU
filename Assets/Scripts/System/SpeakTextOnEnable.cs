@@ -49,12 +49,12 @@ namespace RM_EDU
         {
             // Checks if the instances exist: LOL SDK, Text-to-Speech, and GameSettings.
             // Also checks that the key is set.
-            if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized() && TextToSpeech.Instantiated && 
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized() && TextToSpeech.Instantiated && 
                 GameSettings.Instantiated && key != "")
             {
                 // Gets the instances.
                 GameSettings gameSettings = GameSettings.Instance;
-                LanguageManager lolManager = LanguageManager.Instance;
+                SystemManager lolManager = SystemManager.Instance;
 
                 // Checks if TTS should be used.
                 if (gameSettings.UseTextToSpeech)

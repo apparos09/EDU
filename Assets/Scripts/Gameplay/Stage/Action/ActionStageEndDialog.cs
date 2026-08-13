@@ -229,9 +229,9 @@ namespace RM_EDU
         public string GetStageEndDefaultMessage()
         {
             // If the LOLSDK is set, use the translated message.
-            if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
             {
-                return LanguageManager.GetLanguageTextStatic(STAGE_OVER_MESSAGE_KEY);
+                return SystemManager.GetLanguageTextStatic(STAGE_OVER_MESSAGE_KEY);
             }
             // Use default message.
             else
@@ -247,9 +247,9 @@ namespace RM_EDU
             bool genMode = GameSettings.Instance.gameplayMode == GameSettings.gameMode.generation;
 
             // If the LOLSDK is set, use the translated message.
-            if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
             {
-                return LanguageManager.GetLanguageTextStatic(PLAYER_USER_WON_GEN_MESSAGE_KEY);
+                return SystemManager.GetLanguageTextStatic(PLAYER_USER_WON_GEN_MESSAGE_KEY);
 
                 // // Returns the generation mode message.
                 // if(genMode)
@@ -285,9 +285,9 @@ namespace RM_EDU
         public string GetStageEndUserLostMessage()
         {
             // If the LOLSDK is set, use the translated message.
-            if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
             {
-                return LanguageManager.GetLanguageTextStatic(PLAYER_USER_LOST_MESSAGE_KEY);
+                return SystemManager.GetLanguageTextStatic(PLAYER_USER_LOST_MESSAGE_KEY);
             }
             // Use default message.
             else
@@ -315,12 +315,12 @@ namespace RM_EDU
         {
             // Checks if the instances exist: LOL SDK, Text-to-Speech, and GameSettings.
             // Also checks that the key is set.
-            if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized() && TextToSpeech.Instantiated &&
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized() && TextToSpeech.Instantiated &&
                 GameSettings.Instantiated && key != "")
             {
                 // Gets the instances.
                 GameSettings gameSettings = GameSettings.Instance;
-                LanguageManager lolManager = LanguageManager.Instance;
+                SystemManager lolManager = SystemManager.Instance;
 
                 // Checks if TTS should be used, speak the key.
                 if (gameSettings.UseTextToSpeech)

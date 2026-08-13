@@ -98,13 +98,13 @@ namespace RM_EDU
             saveText.text = string.Empty;
 
             // Save the save text as the save feedback text.
-            if (LanguageManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
             {
                 // Set the save text for the save system if it exists.
-                if (LanguageManager.Instance.saveSystem != null)
+                if (SystemManager.Instance.saveSystem != null)
                 {
                     // Gets the save system.
-                    SaveSystem saveSystem = LanguageManager.Instance.saveSystem;
+                    SaveSystem saveSystem = SystemManager.Instance.saveSystem;
 
                     // If using the LOL System
                     // NOTE: the data isn't loaded until the continue button is pressed.

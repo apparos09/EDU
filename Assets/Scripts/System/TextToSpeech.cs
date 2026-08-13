@@ -107,7 +107,7 @@ namespace RM_EDU
         {
             // Checks if the SDK has been initialized.
             // This get triggrered regardless of if the LOLSDK is initialized.
-            if (!LanguageManager.Instantiated)
+            if (!SystemManager.Instantiated)
                 Debug.LogError("The SDK has not been initialized.");
 
         }
@@ -157,7 +157,7 @@ namespace RM_EDU
 
             // Checks if the following instances exist: LOL_SDK, Text-to-Speech, and GameSettings.
             // Also checks that the key is set.
-            if (LanguageManager.IsLanguageLoaderInitialized() && Instantiated && GameSettings.Instantiated && key != "")
+            if (SystemManager.IsLanguageLoaderInitialized() && Instantiated && GameSettings.Instantiated && key != "")
             {
                 // Gets the instances for text to speech and game settings.
                 TextToSpeech textToSpeech = Instance;
