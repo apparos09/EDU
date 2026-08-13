@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4873566010389852625
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 194169653813968249, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_Name
+      value: Action Unit Defense - Lane Blaster Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820790240764193224, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_Size.x
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820790240764193224, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_Size.y
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820790240764193224, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1418564143, guid: 9039e335e79ecc647801527bf5978c86, type: 3}
+    - target: {fileID: 2820790240764193224, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5040554070110883740, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: actionUnit
+      value: 
+      objectReference: {fileID: 8963299378571816709}
+    - target: {fileID: 7676990157429311105, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: idNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676990157429311105, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: oneHitKill
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676990157429311105, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: vulnerable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676990157429311105, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: removableByUser
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676990157429311105, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 6423055876177994831, guid: 989f33c9573112749b85881a7f42db92, type: 3}
+    - target: {fileID: 8194997913235594361, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: cd1ebfde6b593dc4e9eaa8385da15579, type: 2}
+    m_RemovedComponents:
+    - {fileID: 877795126609007684, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 194169653813968249, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8963299378571816709}
+  m_SourcePrefab: {fileID: 100100000, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+--- !u!114 &455364181918465613 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5040554070110883740, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+  m_PrefabInstance: {fileID: 4873566010389852625}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4689291964750335144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fef442291c023264fa677411add550aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &3226871958145216452 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8028304619842985493, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+  m_PrefabInstance: {fileID: 4873566010389852625}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3609662975537704360 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8194997913235594361, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+  m_PrefabInstance: {fileID: 4873566010389852625}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4689291964750335144 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 194169653813968249, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+  m_PrefabInstance: {fileID: 4873566010389852625}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8963299378571816709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4689291964750335144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211852110903be346b908d43d8291e1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionManager: {fileID: 0}
+  idNumber: 1
+  unitName: Lane Blaster
+  unitNameKey: aud_blasterLane_nme
+  unitDesc:
+  - A blaster that destroys all enemies in its lane upon enemy interaction. Once
+    a shot is fired, this blaster is destroyed.
+  unitDescKey: aud_blasterLane_dsc
+  owner: {fileID: 0}
+  spriteRenderer: {fileID: 7243784571539888153}
+  iconSprite: {fileID: 21300000, guid: 6add6133790be8446937db0adf059fba, type: 3}
+  cardBackgroundSprite: {fileID: 21300000, guid: e7ad40952e1c17445a061f83b275193b, type: 3}
+  animator: {fileID: 3609662975537704360}
+  unitAnimations: {fileID: 455364181918465613}
+  collider: {fileID: 8107145353661749859}
+  rigidbody: {fileID: 6808199451921317980}
+  health: 0
+  maxHealth: 1
+  tangible: 1
+  vulnerable: 0
+  statFactor: 1
+  energyCreationCost: 0
+  energyDeathCost: 0
+  energyGenerationAmount: 0
+  energyGenerationSpeed: 0
+  attackEnergyCost: 0
+  attackPower: 0
+  attackSpeed: 0
+  attackingEnabled: 0
+  attackCooldownTimer: 0
+  oneHitKill: 1
+  durability: 0
+  movementSpeed: 0
+  airPollution: 0
+  projectilePoolDestroyTimer: 0
+  validTiles: 
+  tile: {fileID: 0}
+  tilePosOffset: {x: 0, y: 0, z: 0}
+  removableByUser: 0
+  defType: 1
+  platformSpriteRenderer: {fileID: 6801037432176312619}
+  showAttackEnergyBlocked: 0
+  projectilePrefab: {fileID: 834843449278615229, guid: 989f33c9573112749b85881a7f42db92, type: 3}
+  projectileStartPos: {fileID: 3226871958145216452}
+  projectileStartPosOffset: {x: 0, y: 0, z: 0}
+  flipOffsetX: 0
+  firedProjectiles: []
+  shootAnim: Action Unit Defense - Lane Blaster - Shoot Animation
+  useShootAnim: 1
+  shotSfx: {fileID: 8300000, guid: 6ec4596f160ae13478b03b860c60a84d, type: 3}
+  modifyEnemyEnergyDeathCost: 1
+  killOnAttackPerformed: 1
+--- !u!212 &6801037432176312619 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2143785946635923706, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+  m_PrefabInstance: {fileID: 4873566010389852625}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &6808199451921317980 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 2151022029249442189, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+  m_PrefabInstance: {fileID: 4873566010389852625}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &7243784571539888153 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2820790240764193224, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+  m_PrefabInstance: {fileID: 4873566010389852625}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &8107145353661749859 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 3684014631833299890, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+  m_PrefabInstance: {fileID: 4873566010389852625}
+  m_PrefabAsset: {fileID: 0}

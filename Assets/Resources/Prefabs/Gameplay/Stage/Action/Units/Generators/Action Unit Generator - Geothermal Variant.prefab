@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8815751833671591384
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2131954471664586210, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f359e94eef896b459d4e6ff65005b7c, type: 3}
+    - target: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4035956208484555091, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_Name
+      value: Action Unit Generator - Geothermal Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5406913998153414739, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ad53ca412843dbc429db246cfbabe657, type: 2}
+    - target: {fileID: 9169585801609554870, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: actionUnit
+      value: 
+      objectReference: {fileID: 405284360726760347}
+    m_RemovedComponents:
+    - {fileID: 6074401612692501123, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4035956208484555091, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 405284360726760347}
+  m_SourcePrefab: {fileID: 100100000, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+--- !u!114 &366830208316690030 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9169585801609554870, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+  m_PrefabInstance: {fileID: 8815751833671591384}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4779813838197324939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fef442291c023264fa677411add550aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &3557527286372310411 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5406913998153414739, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+  m_PrefabInstance: {fileID: 8815751833671591384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4779813838197324939 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4035956208484555091, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+  m_PrefabInstance: {fileID: 8815751833671591384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &405284360726760347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4779813838197324939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d01cebbe4b5dc94d9322d702f2d8f05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionManager: {fileID: 0}
+  idNumber: 2
+  unitName: Geothermal Generator
+  unitNameKey: aug_geothermal_nme
+  unitDesc:
+  - A renewable generator that uses the Earth's internal heat for generating energy.
+    This generator can only be placed on geothermal source tiles.
+  - This generator generates a high amount of energy at a moderate rate.
+  unitDescKey: aug_geothermal_dsc
+  owner: {fileID: 0}
+  spriteRenderer: {fileID: 7476519495157278778}
+  iconSprite: {fileID: 21300000, guid: be8e26ed8f4a26b44966c55e9e168e0c, type: 3}
+  cardBackgroundSprite: {fileID: 21300000, guid: 3fc29e0d574a831479c1543b8c8f68cb, type: 3}
+  animator: {fileID: 3557527286372310411}
+  unitAnimations: {fileID: 366830208316690030}
+  collider: {fileID: 8341973627121527360}
+  rigidbody: {fileID: 6718645217935847551}
+  health: 0
+  maxHealth: 100
+  tangible: 1
+  vulnerable: 1
+  statFactor: 1
+  energyCreationCost: 80
+  energyDeathCost: 0
+  energyGenerationAmount: 90
+  energyGenerationSpeed: 60
+  attackEnergyCost: 0
+  attackPower: 0
+  attackSpeed: 0
+  attackingEnabled: 0
+  attackCooldownTimer: 0
+  oneHitKill: 0
+  durability: 80
+  movementSpeed: 0
+  airPollution: 0
+  projectilePoolDestroyTimer: 0
+  validTiles: 01000000
+  tile: {fileID: 0}
+  tilePosOffset: {x: 0, y: 0, z: 0}
+  removableByUser: 1
+  resource: 2
+  genNotes:
+  - Geothermal generators use the Earth's internal heat for generating energy. They
+    can only be placed on spots with geothermal symbols.
+  genNotesKey: gio_geothermal_nte
+  energyGenerationTimer: 0
+  timeUsage: 0
+  useWindToGenEnergy: 0
+  useEnergyCycles: 0
+  energyGenerationTotal: 0
+  energyGenerationLimit: -1
+  useEnergyGenLimit: 0
+  energyGenAnim: Action Unit - Flash - Blue Animation
+  energyGenClip: {fileID: 7400000, guid: b3c8621e61951db40940e323ad9f5d5c, type: 2}
+--- !u!50 &6718645217935847551 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 2840288876026598823, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+  m_PrefabInstance: {fileID: 8815751833671591384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &7476519495157278778 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2131954471664586210, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+  m_PrefabInstance: {fileID: 8815751833671591384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &8341973627121527360 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 690021909378568088, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+  m_PrefabInstance: {fileID: 8815751833671591384}
+  m_PrefabAsset: {fileID: 0}

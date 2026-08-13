@@ -1,0 +1,276 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6065336956827476581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6270816549446198227}
+  - component: {fileID: 5063243159898984820}
+  m_Layer: 6
+  m_Name: Platform Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6270816549446198227
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6065336956827476581}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5023773903858584304}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &5063243159898984820
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6065336956827476581}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1704146833
+  m_SortingLayer: 2
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 7353f2caa89810149a5a058a877c71a9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1001 &7395680489239519833
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2131954471664586210, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1e8eefeeb2cb4d94fa1652e62448cbf4, type: 3}
+    - target: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4035956208484555091, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_Name
+      value: Action Unit Generator - Oil Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5406913998153414739, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f7a5a85118ed67f4f9731a732c51d0b4, type: 2}
+    - target: {fileID: 9169585801609554870, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      propertyPath: actionUnit
+      value: 
+      objectReference: {fileID: 2847674788801534402}
+    m_RemovedComponents:
+    - {fileID: 6074401612692501123, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6270816549446198227}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4035956208484555091, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2847674788801534402}
+  m_SourcePrefab: {fileID: 100100000, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+--- !u!114 &1865147258338511343 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9169585801609554870, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+  m_PrefabInstance: {fileID: 7395680489239519833}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6818490454798613258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fef442291c023264fa677411add550aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &3290877449728809482 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5406913998153414739, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+  m_PrefabInstance: {fileID: 7395680489239519833}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &4740046956056262654 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 2840288876026598823, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+  m_PrefabInstance: {fileID: 7395680489239519833}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5023773903858584304 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2529540329388304553, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+  m_PrefabInstance: {fileID: 7395680489239519833}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6818490454798613258 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4035956208484555091, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+  m_PrefabInstance: {fileID: 7395680489239519833}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2847674788801534402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6818490454798613258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde549306da21214383e277906595411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionManager: {fileID: 0}
+  idNumber: 10
+  unitName: Oil Generator
+  unitNameKey: aug_oil_nme
+  unitDesc:
+  - A non-renewable generator that uses oil to generate energy, which can only be
+    used on oil source spots. It also produces high amounts of air pollution.
+  - If an oil generator is destroyed by an enemy before it's finished generating
+    energy, it will leave an oil spill. No units can be placed on a tile that has
+    an oil spill.
+  - This generator produces a very high amount of energy at a moderate rate.
+  unitDescKey: aug_oil_dsc
+  owner: {fileID: 0}
+  spriteRenderer: {fileID: 8877867496329654203}
+  iconSprite: {fileID: 21300000, guid: 8ff3a7c2ac35278419f8d3666d3c21e0, type: 3}
+  cardBackgroundSprite: {fileID: 21300000, guid: 3fc29e0d574a831479c1543b8c8f68cb, type: 3}
+  animator: {fileID: 3290877449728809482}
+  unitAnimations: {fileID: 1865147258338511343}
+  collider: {fileID: 8012413351518252481}
+  rigidbody: {fileID: 4740046956056262654}
+  health: 0
+  maxHealth: 100
+  tangible: 1
+  vulnerable: 1
+  statFactor: 1
+  energyCreationCost: 60
+  energyDeathCost: 0
+  energyGenerationAmount: 90
+  energyGenerationSpeed: 60
+  attackEnergyCost: 0
+  attackPower: 0
+  attackSpeed: 0
+  attackingEnabled: 0
+  attackCooldownTimer: 0
+  oneHitKill: 0
+  durability: 50
+  movementSpeed: 0
+  airPollution: 80
+  projectilePoolDestroyTimer: 0
+  validTiles: 010000000200000003000000
+  tile: {fileID: 0}
+  tilePosOffset: {x: 0, y: 0, z: 0}
+  removableByUser: 1
+  resource: 10
+  genNotes:
+  - Oil generators burn the fossil fuel resource oil for generating energy. Oil generators
+    can only be placed on spots with oil symbols.
+  - If an oil generator is destroyed by an enemy before it uses up its resources,
+    it leaves an oil spill behind. No units can be placed on spots that have oil
+    spills.
+  genNotesKey: gio_oil_nte
+  energyGenerationTimer: 0
+  timeUsage: 0
+  useWindToGenEnergy: 0
+  useEnergyCycles: 0
+  energyGenerationTotal: 0
+  energyGenerationLimit: -1
+  useEnergyGenLimit: 0
+  energyGenAnim: Action Unit - Flash - Blue Animation
+  energyGenClip: {fileID: 7400000, guid: b3c8621e61951db40940e323ad9f5d5c, type: 2}
+  platformSpriteRenderer: {fileID: 5063243159898984820}
+--- !u!61 &8012413351518252481 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 690021909378568088, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+  m_PrefabInstance: {fileID: 7395680489239519833}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &8877867496329654203 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2131954471664586210, guid: 2d98fa32ccb9f1f45a918c132fcc6ba6, type: 3}
+  m_PrefabInstance: {fileID: 7395680489239519833}
+  m_PrefabAsset: {fileID: 0}

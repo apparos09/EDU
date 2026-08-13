@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3721398079002657622
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1020483345052379991, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: defType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1020483345052379991, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: idNumber
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1020483345052379991, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: unitDesc
+      value: A shield that can be used to block enemies and defend units that're
+        behind it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1020483345052379991, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: unitName
+      value: Basic Shield
+      objectReference: {fileID: 0}
+    - target: {fileID: 1020483345052379991, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: durability
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 1020483345052379991, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: iconSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d378094f88f127648abbbf0c700577fc, type: 3}
+    - target: {fileID: 1020483345052379991, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: unitDescKey
+      value: aud_shieldStandard_dsc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1020483345052379991, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: unitNameKey
+      value: aud_shieldStandard_nme
+      objectReference: {fileID: 0}
+    - target: {fileID: 1020483345052379991, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: attackingEnabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1020483345052379991, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: energyCreationCost
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 2511431481117591295, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: actionUnit
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615263141650489515, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_Size.x
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615263141650489515, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_Size.y
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615263141650489515, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2101105607, guid: eca9138b327923648945b54eb175115a, type: 3}
+    - target: {fileID: 4615263141650489515, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320624136933962778, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_Name
+      value: Action Unit Defense - Shield Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115346750531339744, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115346750531339744, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115346750531339744, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115346750531339744, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115346750531339744, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115346750531339744, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115346750531339744, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115346750531339744, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115346750531339744, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115346750531339744, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1020483345052379991, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7320624136933962778, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6406251498641835542}
+  m_SourcePrefab: {fileID: 100100000, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+--- !u!114 &1260843476723500457 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2511431481117591295, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+  m_PrefabInstance: {fileID: 3721398079002657622}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6214152798236260172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fef442291c023264fa677411add550aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &2681528954134419020 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1626850282260206874, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+  m_PrefabInstance: {fileID: 3721398079002657622}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &5281753398701963983 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8856752449333098905, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+  m_PrefabInstance: {fileID: 3721398079002657622}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &5284191779297508280 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 8858641744088496366, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+  m_PrefabInstance: {fileID: 3721398079002657622}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6214152798236260172 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7320624136933962778, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+  m_PrefabInstance: {fileID: 3721398079002657622}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6406251498641835542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6214152798236260172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7bdb0e40c0eab64d93ded0a442c24de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionManager: {fileID: 0}
+  idNumber: 5
+  unitName: Basic Shield
+  unitNameKey: aud_shieldStandard_nme
+  unitDesc:
+  - A standard shield that can be used to block enemies and defend units that're
+    behind it.
+  unitDescKey: aud_shieldStandard_dsc
+  owner: {fileID: 0}
+  spriteRenderer: {fileID: 8334397686786663421}
+  iconSprite: {fileID: 21300000, guid: d378094f88f127648abbbf0c700577fc, type: 3}
+  cardBackgroundSprite: {fileID: 21300000, guid: e7ad40952e1c17445a061f83b275193b, type: 3}
+  animator: {fileID: 2681528954134419020}
+  unitAnimations: {fileID: 1260843476723500457}
+  collider: {fileID: 7470610345764135303}
+  rigidbody: {fileID: 5284191779297508280}
+  health: 0
+  maxHealth: 100
+  tangible: 1
+  vulnerable: 1
+  statFactor: 1
+  energyCreationCost: 80
+  energyDeathCost: 0
+  energyGenerationAmount: 0
+  energyGenerationSpeed: 0
+  attackEnergyCost: 0
+  attackPower: 0
+  attackSpeed: 0
+  attackingEnabled: 0
+  attackCooldownTimer: 0
+  oneHitKill: 0
+  durability: 85
+  movementSpeed: 0
+  airPollution: 0
+  validTiles: 
+  tile: {fileID: 0}
+  tilePosOffset: {x: 0, y: 0, z: 0}
+  removableByUser: 1
+  defType: 2
+  platformSpriteRenderer: {fileID: 5281753398701963983}
+  showAttackEnergyBlocked: 0
+  showShieldDamage: 1
+  noDamageSprite: {fileID: -2101105607, guid: eca9138b327923648945b54eb175115a, type: 3}
+  lightDamageSprite: {fileID: -1711081684, guid: eca9138b327923648945b54eb175115a, type: 3}
+  heavyDamageSprite: {fileID: -482513695, guid: eca9138b327923648945b54eb175115a, type: 3}
+--- !u!61 &7470610345764135303 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 6055651898615620305, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+  m_PrefabInstance: {fileID: 3721398079002657622}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &8334397686786663421 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4615263141650489515, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+  m_PrefabInstance: {fileID: 3721398079002657622}
+  m_PrefabAsset: {fileID: 0}

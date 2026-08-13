@@ -1,0 +1,195 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7227831744619473670
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 194169653813968249, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_Name
+      value: Action Unit Defense - Triple Blaster Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820790240764193224, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_Size.x
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820790240764193224, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_Size.y
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820790240764193224, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1341745130, guid: 0c723d1de68b4884ab0669343f44cf63, type: 3}
+    - target: {fileID: 2820790240764193224, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5040554070110883740, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: actionUnit
+      value: 
+      objectReference: {fileID: 1485422332268029956}
+    - target: {fileID: 8194997913235594361, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9f29ad7c306c1c045869c362dd62b1ce, type: 2}
+    m_RemovedComponents:
+    - {fileID: 877795126609007684, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 194169653813968249, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1485422332268029956}
+  m_SourcePrefab: {fileID: 100100000, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+--- !u!1 &802817388348945683 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8028304619842985493, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+  m_PrefabInstance: {fileID: 7227831744619473670}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1581908626458310527 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8194997913235594361, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+  m_PrefabInstance: {fileID: 7227831744619473670}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2431327616302458010 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5040554070110883740, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+  m_PrefabInstance: {fileID: 7227831744619473670}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7421860615308187263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fef442291c023264fa677411add550aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &4858011163393688270 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2820790240764193224, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+  m_PrefabInstance: {fileID: 7227831744619473670}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &6300066819534618804 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 3684014631833299890, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+  m_PrefabInstance: {fileID: 7227831744619473670}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7421860615308187263 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 194169653813968249, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+  m_PrefabInstance: {fileID: 7227831744619473670}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1485422332268029956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7421860615308187263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eb08bf3f162e4c439605a917c447624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionManager: {fileID: 0}
+  idNumber: 8
+  unitName: Triple Blaster
+  unitNameKey: aud_blasterTriple_nme
+  unitDesc:
+  - A blaster that shoots three shots at once, with each shot going at a different
+    angle.
+  unitDescKey: aud_blasterTriple_dsc
+  owner: {fileID: 0}
+  spriteRenderer: {fileID: 4858011163393688270}
+  iconSprite: {fileID: 21300000, guid: adec203535001ef4baf83b9ecca7aa7d, type: 3}
+  cardBackgroundSprite: {fileID: 21300000, guid: e7ad40952e1c17445a061f83b275193b, type: 3}
+  animator: {fileID: 1581908626458310527}
+  unitAnimations: {fileID: 2431327616302458010}
+  collider: {fileID: 6300066819534618804}
+  rigidbody: {fileID: 8761644836624669323}
+  health: 0
+  maxHealth: 100
+  tangible: 1
+  vulnerable: 1
+  statFactor: 1
+  energyCreationCost: 80
+  energyDeathCost: 0
+  energyGenerationAmount: 0
+  energyGenerationSpeed: 0
+  attackEnergyCost: 90
+  attackPower: 50
+  attackSpeed: 60
+  attackingEnabled: 1
+  attackCooldownTimer: 0
+  oneHitKill: 0
+  durability: 60
+  movementSpeed: 0
+  airPollution: 0
+  projectilePoolDestroyTimer: 0
+  validTiles: 
+  tile: {fileID: 0}
+  tilePosOffset: {x: 0, y: 0, z: 0}
+  removableByUser: 1
+  defType: 1
+  platformSpriteRenderer: {fileID: 8758985984888052732}
+  showAttackEnergyBlocked: 1
+  projectilePrefab: {fileID: 536616501510198565, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+  projectileStartPos: {fileID: 802817388348945683}
+  projectileStartPosOffset: {x: 0, y: 0, z: 0}
+  flipOffsetX: 0
+  firedProjectiles: []
+  shootAnim: Action Unit Defense - Triple Blaster - Shoot Animation
+  useShootAnim: 1
+  shotSfx: {fileID: 8300000, guid: f69afc9c519d1f145a770456555350da, type: 3}
+--- !u!212 &8758985984888052732 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2143785946635923706, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+  m_PrefabInstance: {fileID: 7227831744619473670}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &8761644836624669323 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 2151022029249442189, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+  m_PrefabInstance: {fileID: 7227831744619473670}
+  m_PrefabAsset: {fileID: 0}

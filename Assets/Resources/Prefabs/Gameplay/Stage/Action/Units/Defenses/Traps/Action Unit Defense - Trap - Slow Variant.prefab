@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8534802206118660277
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1345667675349863645, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: idNumber
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345667675349863645, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: unitDesc
+      value: An energy trap that deals damage slower than Basic Energy Trap but causes
+        more damage per hit. When it reaches its energy limit, it destroys itself
+        and damages all enemies in range.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345667675349863645, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: unitName
+      value: Steady Energy Trap
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345667675349863645, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: iconSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4d52f9a338d59b141bffa50a18960124, type: 3}
+    - target: {fileID: 1345667675349863645, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: attackPower
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345667675349863645, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: attackSpeed
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345667675349863645, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: unitDescKey
+      value: aud_energyTrapSlow_dsc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345667675349863645, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: unitNameKey
+      value: aud_energyTrapSlow_nme
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345667675349863645, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: energyCreationCost
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345667675349863645, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: damageEnergyPercent
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345667675349863645, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: unitDesc.Array.data[0]
+      value: An energy trap that takes energy from enemies that pass over it and
+        gives some of it to the player. It deals damage slowly, but its damage per
+        hit is high. When it reaches its energy limit, it destroys itself and damages
+        all enemies in range.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149994175010406257, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d652ef37cd6493445abb7d50e5d2b922, type: 3}
+    - target: {fileID: 7128307505646398400, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: m_Name
+      value: Action Unit Defense - Trap - Slow Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8787919967849421370, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8787919967849421370, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8787919967849421370, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8787919967849421370, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8787919967849421370, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8787919967849421370, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8787919967849421370, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8787919967849421370, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8787919967849421370, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8787919967849421370, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0484bbf71e1798542b62acd7513bfad6, type: 3}

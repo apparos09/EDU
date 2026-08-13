@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7304194710037500440
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 620184031015233443, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: idNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 620184031015233443, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: unitDesc
+      value: A slower, more durable version of Basic Enemy.
+      objectReference: {fileID: 0}
+    - target: {fileID: 620184031015233443, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: unitName
+      value: Slow Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 620184031015233443, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: moveSpeed
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 620184031015233443, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: durability
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 620184031015233443, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: iconSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8bc822e7fe8d695428440b07547db8fd, type: 3}
+    - target: {fileID: 620184031015233443, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: attackPower
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 620184031015233443, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: attackSpeed
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 620184031015233443, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: unitDescKey
+      value: aue_enemySlow_dsc
+      objectReference: {fileID: 0}
+    - target: {fileID: 620184031015233443, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: unitNameKey
+      value: aue_enemySlow_nme
+      objectReference: {fileID: 0}
+    - target: {fileID: 620184031015233443, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: attackSprite
+      value: 
+      objectReference: {fileID: 776309784, guid: b8f6490c610876048b4a365f8c1cca09, type: 3}
+    - target: {fileID: 620184031015233443, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: movementSpeed
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 620184031015233443, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: neutralSprite
+      value: 
+      objectReference: {fileID: 1056086594, guid: b8f6490c610876048b4a365f8c1cca09, type: 3}
+    - target: {fileID: 620184031015233443, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: unitDesc.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 620184031015233443, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: unitDesc.Array.data[0]
+      value: A slow, durable enemy that travels from the right side of the field
+        to the left.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736827563331587179, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736827563331587179, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736827563331587179, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736827563331587179, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736827563331587179, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736827563331587179, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736827563331587179, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736827563331587179, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736827563331587179, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736827563331587179, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090393955839212945, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: m_Name
+      value: Action Unit Enemy - Slow Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8147518098009090336, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: m_Size.x
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 8147518098009090336, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: m_Size.y
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 8147518098009090336, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1056086594, guid: b8f6490c610876048b4a365f8c1cca09, type: 3}
+    - target: {fileID: 8147518098009090336, guid: a47d53a6a12d17346af9c415570d11da, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a47d53a6a12d17346af9c415570d11da, type: 3}

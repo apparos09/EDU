@@ -1,0 +1,96 @@
+{
+  "questions": [
+    {
+      "questionId": "q1",
+      "stem": "What is a renewable resource?",
+      "alternatives": [
+        {
+          "alternativeId": "a1",
+          "text": "A resource that can be replaced as fast as it is used."
+        },
+        {
+          "alternativeId": "a2",
+          "text": "A resource that has a finite amount on Earth."
+        },
+        {
+          "alternativeId": "a3",
+          "text": "A resource that cannot be replenished as fast as it is used."
+        },
+        {
+          "alternativeId": "a4",
+          "text": "A resource that can easily be replaced with something else for the same need."
+        }
+      ],
+      "correctAlternativeId": "a1"
+    },
+    {
+      "questionId": "q2",
+      "stem": "What is a non-renewable resource?",
+      "alternatives": [
+        {
+          "alternativeId": "a5",
+          "text": "A resource that can be replenished as fast as it is used."
+        },
+        {
+          "alternativeId": "a6",
+          "text": "A resource that cannot be replaced at the rate that it is used."
+        },
+        {
+          "alternativeId": "a7",
+          "text": "A resource that can never be replaced."
+        },
+        {
+          "alternativeId": "a8",
+          "text": "A resource that no one today knows how to recreate."
+        }
+      ],
+      "correctAlternativeId": "a6"
+    },
+    {
+      "questionId": "q3",
+      "stem": "Which of the following is a renewable resource?",
+      "alternatives": [
+        {
+          "alternativeId": "a9",
+          "text": "Coal"
+        },
+        {
+          "alternativeId": "a10",
+          "text": "Oil"
+        },
+        {
+          "alternativeId": "a11",
+          "text": "Geothermal"
+        },
+        {
+          "alternativeId": "a12",
+          "text": "Natural Gas"
+        }
+      ],
+      "correctAlternativeId": "a11"
+    },
+    {
+      "questionId": "q4",
+      "stem": "Which of the following is a non-renewable resource?",
+      "alternatives": [
+        {
+          "alternativeId": "a13",
+          "text": "Biomass"
+        },
+        {
+          "alternativeId": "a14",
+          "text": "Solar"
+        },
+        {
+          "alternativeId": "a15",
+          "text": "Natural Gas"
+        },
+        {
+          "alternativeId": "a16",
+          "text": "Wave"
+        }
+      ],
+      "correctAlternativeId": "a15"
+    }
+  ]
+}

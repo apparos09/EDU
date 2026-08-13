@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &875095330449593967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2971560249818910344}
+  m_Layer: 6
+  m_Name: Lane Blasters Parent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2971560249818910344
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875095330449593967}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1068278630663145313}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1799041941431346464
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1679549278367778716, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570217268989316285, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570217268989316285, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570217268989316285, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570217268989316285, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570217268989316285, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570217268989316285, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570217268989316285, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570217268989316285, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570217268989316285, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570217268989316285, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5754763098957996370, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+      propertyPath: m_Name
+      value: Action Player User Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5754763098957996370, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5754763098957996370, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+      propertyPath: m_TagString
+      value: User
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151503663709160989, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1595456088518042177, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2971560249818910344}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5754763098957996370, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1060931769468509636}
+  m_SourcePrefab: {fileID: 100100000, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+--- !u!4 &1068278630663145313 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1595456088518042177, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+  m_PrefabInstance: {fileID: 1799041941431346464}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1133093146673767100 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1679549278367778716, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+  m_PrefabInstance: {fileID: 1799041941431346464}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6280970693268046962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5754763098957996370, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+  m_PrefabInstance: {fileID: 1799041941431346464}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1060931769468509636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6280970693268046962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51220143cce457b4b9f16cdfa10f8946, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionManager: {fileID: 0}
+  actionUnitPrefabs: {fileID: 0}
+  energy: 0
+  airPollution: 0
+  unitParent: {fileID: 7631506222874977085}
+  unitProjectileParent: {fileID: 1133093146673767100}
+  kills: 0
+  blockingAttackEnergy: 0
+  energyStart: 200
+  energyStartBonus: 0
+  energyAutoGenTimer: 0
+  energyAutoGenTimerMax: 12
+  energyAutoGenAmount: 120
+  energyGenTotal: 0
+  generatorPrefabs: []
+  defensePrefabs: []
+  laneBlastersParent: {fileID: 875095330449593967}
+  laneBlasterPrefab: {fileID: 8963299378571816709, guid: 8fcf8899b6c32024fa36f5ff92e07940, type: 3}
+  selectedUnitPrefab: {fileID: 0}
+  createdUserUnits: []
+  unitCreatedSfx: {fileID: 8300000, guid: 7a790ab7980b76647ad32ac2382d999e, type: 3}
+  unitRemovedSfx: {fileID: 8300000, guid: 1ec6beb3c1595b74baf64e23048a6253, type: 3}
+--- !u!1 &7631506222874977085 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8151503663709160989, guid: 56dd20678d6f2c5489f03f93024d0be9, type: 3}
+  m_PrefabInstance: {fileID: 1799041941431346464}
+  m_PrefabAsset: {fileID: 0}

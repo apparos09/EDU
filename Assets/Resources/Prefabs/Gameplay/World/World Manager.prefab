@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3275646026829290058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4105473895380790829}
+  - component: {fileID: 4291855123468607345}
+  - component: {fileID: 2118307901418152946}
+  m_Layer: 0
+  m_Name: World Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4105473895380790829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3275646026829290058}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4291855123468607345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3275646026829290058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dfd738959670c54bb4e6070727115ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameUI: {fileID: 0}
+  gameAudio: {fileID: 0}
+  gameTimer: 0
+  runGameTimer: 1
+  gameScore: 0
+  tutorials: {fileID: 0}
+  titleScene: TitleScene
+  worldScene: WorldScene
+  actionScene: ActionScene
+  knowledgeScene: KnowledgeScene
+  resultsScene: ResultsScene
+  loadingScreenEnabled: 1
+  dataLogger: {fileID: 0}
+  worldUI: {fileID: 0}
+  worldAudio: {fileID: 0}
+  worldCamera: {fileID: 0}
+  areas: []
+  refreshAreaButtonsWaitFrames: 0
+  stages: []
+  defaultDefenseIds: 0200000005000000
+  checkedTutorials: 0
+  callCompleteGameInLateUpdate: 0
+  gameCompleteEvent: {fileID: 2118307901418152946}
+--- !u!114 &2118307901418152946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3275646026829290058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff3d13489755d3e44aacd6bc3df9c59a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventName: Game Complete
+  eventNumber: 0
+  eventId: 
+  eventTag: World
+  cleared: 0
+  calledInit: 0
+  calledComplete: 0
+  worldManager: {fileID: 0}
+  openDialogOnComplete: 1

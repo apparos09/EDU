@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7039838176554734345
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 194169653813968249, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_Name
+      value: Action Unit Defense - Slow Blaster Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 877795126609007684, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: idNumber
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 877795126609007684, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: unitDesc
+      value: A slower version of Basic Blaster. It fires less frequently and its
+        shots move slower, but its shots do more damage.
+      objectReference: {fileID: 0}
+    - target: {fileID: 877795126609007684, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: unitName
+      value: Slower Blaster
+      objectReference: {fileID: 0}
+    - target: {fileID: 877795126609007684, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: shootAnim
+      value: Action Unit Defense - Slow Blaster - Shoot Animation
+      objectReference: {fileID: 0}
+    - target: {fileID: 877795126609007684, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: durability
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 877795126609007684, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: iconSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 27b23c1d20d61634c96b2250bf8edace, type: 3}
+    - target: {fileID: 877795126609007684, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: attackPower
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 877795126609007684, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: attackSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 877795126609007684, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: unitDescKey
+      value: aud_blasterSlow_dsc
+      objectReference: {fileID: 0}
+    - target: {fileID: 877795126609007684, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: unitNameKey
+      value: aud_blasterSlow_nme
+      objectReference: {fileID: 0}
+    - target: {fileID: 877795126609007684, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: attackEnergyCost
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 877795126609007684, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 1136388483422999125, guid: 88601d4c7c3699740a0334c7a95057fd, type: 3}
+    - target: {fileID: 877795126609007684, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: energyCreationCost
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 877795126609007684, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: unitDesc.Array.data[0]
+      value: A slow blaster that fires at enemies in front of it in its own lane.
+        It doesn't fire often and its shots travel slowly, but its shots are strong.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849280751653751939, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820790240764193224, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_Size.x
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820790240764193224, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_Size.y
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820790240764193224, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1042985101, guid: 4b1f2f1dcd06f974f9c48a81c5ceb17b, type: 3}
+    - target: {fileID: 2820790240764193224, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194997913235594361, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 38054bbac6cf05744b4771ed04b1ae05, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b71ed2bd416f43c4aa03ff0ac00370b2, type: 3}

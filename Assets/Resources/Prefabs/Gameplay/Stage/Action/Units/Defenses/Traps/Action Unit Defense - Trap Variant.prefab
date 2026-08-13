@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &537266690884673498
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1626850282260206874, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2730aa1a2e15aba4fb43e57fb7161e62, type: 2}
+    - target: {fileID: 2511431481117591295, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: deathAnim
+      value: Action Unit Defense - Trap - Death Animation
+      objectReference: {fileID: 0}
+    - target: {fileID: 2511431481117591295, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: actionUnit
+      value: 
+      objectReference: {fileID: 1345667675349863645}
+    - target: {fileID: 4615263141650489515, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 80fb3aae1819f6046991eed6033c62cc, type: 3}
+    - target: {fileID: 7320624136933962778, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_Name
+      value: Action Unit Defense - Trap Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115346750531339744, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115346750531339744, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115346750531339744, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115346750531339744, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115346750531339744, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115346750531339744, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115346750531339744, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115346750531339744, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115346750531339744, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115346750531339744, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1020483345052379991, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7320624136933962778, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1345667675349863645}
+  m_SourcePrefab: {fileID: 100100000, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+--- !u!95 &1290134522046286528 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1626850282260206874, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+  m_PrefabInstance: {fileID: 537266690884673498}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2715288586523760933 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2511431481117591295, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+  m_PrefabInstance: {fileID: 537266690884673498}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7128307505646398400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fef442291c023264fa677411add550aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &5149994175010406257 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4615263141650489515, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+  m_PrefabInstance: {fileID: 537266690884673498}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &6016033277523262731 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 6055651898615620305, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+  m_PrefabInstance: {fileID: 537266690884673498}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7128307505646398400 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7320624136933962778, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+  m_PrefabInstance: {fileID: 537266690884673498}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1345667675349863645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7128307505646398400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8993e14a5d254944e9ee5a4c11002d33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionManager: {fileID: 0}
+  idNumber: 6
+  unitName: Basic Energy Trap
+  unitNameKey: aud_energyTrapStandard_nme
+  unitDesc:
+  - An energy trap that drains energy from enemies that pass over it and gives a
+    portion of it to the player. When the trap reaches its energy limit, it destroys
+    itself and damages all enemies in range.
+  unitDescKey: aud_energyTrapStandard_dsc
+  owner: {fileID: 0}
+  spriteRenderer: {fileID: 5149994175010406257}
+  iconSprite: {fileID: 21300000, guid: 1989a82ff8725d545af3b13cb722c7de, type: 3}
+  cardBackgroundSprite: {fileID: 21300000, guid: e7ad40952e1c17445a061f83b275193b, type: 3}
+  animator: {fileID: 1290134522046286528}
+  unitAnimations: {fileID: 2715288586523760933}
+  collider: {fileID: 6016033277523262731}
+  rigidbody: {fileID: 9044625043006678836}
+  health: 0
+  maxHealth: 100
+  tangible: 0
+  vulnerable: 1
+  statFactor: 1
+  energyCreationCost: 80
+  energyDeathCost: 0
+  energyGenerationAmount: 0
+  energyGenerationSpeed: 0
+  attackEnergyCost: 0
+  attackPower: 55
+  attackSpeed: 95
+  attackingEnabled: 1
+  attackCooldownTimer: 0
+  oneHitKill: 0
+  durability: 0
+  movementSpeed: 0
+  airPollution: 0
+  projectilePoolDestroyTimer: 0
+  validTiles: 
+  tile: {fileID: 0}
+  tilePosOffset: {x: 0, y: 0, z: 0}
+  removableByUser: 1
+  defType: 3
+  platformSpriteRenderer: {fileID: 9051461572882687555}
+  showAttackEnergyBlocked: 0
+  hitCount: 0
+  hitLimit: 10
+  useHitLimit: 1
+  damageEnergyPercent: 0.35
+  killTargetsOnHitLimitReached: 1
+  energyGenAnim: Action Unit - Flash - Blue Animation
+  explosionSfx: {fileID: 8300000, guid: 3e0b40778ee5b704dbeecf6cd91d8000, type: 3}
+--- !u!50 &9044625043006678836 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 8858641744088496366, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+  m_PrefabInstance: {fileID: 537266690884673498}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &9051461572882687555 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8856752449333098905, guid: 665c5f82cc10b764c8de01b1012a0f53, type: 3}
+  m_PrefabInstance: {fileID: 537266690884673498}
+  m_PrefabAsset: {fileID: 0}

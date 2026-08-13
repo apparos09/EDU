@@ -1,0 +1,1040 @@
+{
+  "_meta": {
+    "maxChars": {
+      "_stop_": 0,
+
+      "gameTitle": 60,
+      "gameTitleShort": 60,
+
+      "kwd_title": 28,
+      "kwd_start": 28,
+      "kwd_newGame": 28,
+      "kwd_continue": 28,
+      "kwd_instructions": 28,
+      "kwd_settings": 28,
+      "kwd_licenses": 28,
+      "kwd_quit": 28,
+
+      "kwd_back": 28,
+
+      "dlg_instructions_dsc": 220,
+      "kwd_world": 18,
+      "dlg_instructions_emt_world": 220,
+      "kwd_action": 18,
+      "dlg_instructions_emt_action": 220,
+      "kwd_knowledge": 18,
+      "dlg_instructions_emt_knowledge": 220,
+
+      "kwd_volume": 28,
+      "kwd_bgmVolume": 70,
+      "kwd_sfxVolume": 70,
+      "kwd_ttsVolume": 70,
+      "kwd_mute": 28,
+      "kwd_textToSpeech": 28,
+      "kwd_tutorial": 28,
+      "kwd_tutorials": 28,
+
+      "dlg_licenses_dsc": 100,
+      "kwd_bgm": 3,
+      "kwd_bgms": 4,
+      "kwd_sfx": 3,
+      "kwd_sfxs": 4,
+
+      "sve_msg_savingGame": 18,
+
+      "kwd_unknown": 18,
+      "kwd_unknown_abv": 3,
+      "kwd_reset": 18,
+      "kwd_restart": 18,
+      "kwd_save": 18,
+      "kwd_saveAndContinue": 28,
+      "kwd_saveAndQuit": 28,
+      "kwd_quitWithoutSaving": 28,
+
+      "kwd_stage": 18,
+      "kwd_worldStage": 18,
+      "kwd_actionStage": 18,
+      "kwd_knowledgeStage": 18,
+      "kwd_unknownStage": 18,
+
+      "kwd_infoLog": 18,
+      "kwd_entries": 18,
+      "kwd_info": 18,
+
+      "kwd_tutorialLog": 28,
+
+      "kwd_energy": 18,
+      "kwd_energyStartBonus": 28,
+
+
+
+      "kwd_naturalResource": 28,
+      "kwd_naturalResources": 28,
+      "kwd_resource": 18,
+      "kwd_resources": 18,
+
+
+
+      "kwd_player": 18,
+      "kwd_user": 18,
+
+      "kwd_tiles": 18,
+      "kwd_tileTypes": 18,
+
+      "kwd_land": 18,
+      "kwd_river": 18,
+      "kwd_sea": 18,
+      "kwd_metal": 18,
+      "kwd_symbol": 18,
+
+      "kwd_generator": 18,
+      "kwd_generators": 18,
+      "kwd_defense": 18,
+      "kwd_defenses": 18,
+      "kwd_enemy": 18,
+      "kwd_enemies": 18,
+
+
+
+      "kwd_generatorInfo": 28,
+      "kwd_stageInfo": 28,
+      "kwd_renewable": 18,
+      "kwd_nonrenewable": 18,
+
+      "kwd_energyGenerationAmount": 36,
+      "kwd_energyGenerationSpeed": 36,
+      "kwd_energyCost": 28,
+
+      "kwd_notes": 18,
+      "kwd_open": 18,
+      "kwd_close": 18,
+
+
+
+      "nrs_bms_nme": 18,
+      "nrs_bms_nme_abv": 3,
+      "nrs_bms_dsc_00": 280,
+      "nrs_bms_dsc_01": 280,
+      "nrs_bms_dsc_02": 280,
+
+      "nrs_gtl_nme": 18,
+      "nrs_gtl_nme_abv": 3,
+      "nrs_gtl_dsc_00": 280,
+      "nrs_gtl_dsc_01": 280,
+      "nrs_gtl_dsc_02": 280,
+      "nrs_gtl_dsc_03": 280,
+
+      "nrs_hdo_nme": 18,
+      "nrs_hdo_nme_abv": 3,
+      "nrs_hdo_dsc_00": 280,
+      "nrs_hdo_dsc_01": 280,
+      "nrs_hdo_dsc_02": 280,
+
+      "nrs_slr_nme": 18,
+      "nrs_slr_nme_abv": 3,
+      "nrs_slr_dsc_00": 280,
+      "nrs_slr_dsc_01": 280,
+
+      "nrs_wve_nme": 18,
+      "nrs_wve_nme_abv": 3,
+      "nrs_wve_dsc_00": 280,
+      "nrs_wve_dsc_01": 280,
+      "nrs_wve_dsc_02": 280,
+
+      "nrs_wnd_nme": 18,
+      "nrs_wnd_nme_abv": 3,
+      "nrs_wnd_dsc_00": 280,
+      "nrs_wnd_dsc_01": 280,
+
+      "nrs_col_nme": 18,
+      "nrs_col_nme_abv": 3,
+      "nrs_col_dsc_00": 280,
+      "nrs_col_dsc_01": 280,
+      "nrs_col_dsc_02": 280,
+
+      "nrs_ngs_nme": 18,
+      "nrs_ngs_nme_abv": 3,
+      "nrs_ngs_dsc_00": 280,
+      "nrs_ngs_dsc_01": 280,
+      "nrs_ngs_dsc_02": 280,
+
+      "nrs_nlr_nme": 18,
+      "nrs_nlr_nme_abv": 3,
+      "nrs_nlr_dsc_00": 280,
+      "nrs_nlr_dsc_01": 280,
+      "nrs_nlr_dsc_02": 280,
+      "nrs_nlr_dsc_03": 280,
+
+      "nrs_oil_nme": 18,
+      "nrs_oil_nme_abv": 3,
+      "nrs_oil_dsc_00": 280,
+      "nrs_oil_dsc_01": 280,
+      "nrs_oil_dsc_02": 280,
+      "nrs_oil_dsc_03": 280,
+
+
+
+      "def_bsr_nme": 18,
+      "def_bsr_nme_abv": 3,
+
+      "def_shd_nme": 18,
+      "def_shd_nme_abv": 3,
+
+      "def_trp_nme": 18,
+      "def_trp_nme_abv": 3,
+
+
+      "emy_nme": 18,
+      "emy_nme_abv": 3,
+
+
+
+      "aug_biomass_nme": 36,
+      "aug_biomass_dsc_00": 280,
+      "aug_biomass_dsc_01": 280,
+
+      "aug_geothermal_nme": 36,
+      "aug_geothermal_dsc_00": 280,
+      "aug_geothermal_dsc_01": 280,
+
+      "aug_hydro_nme": 36,
+      "aug_hydro_dsc_00": 280,
+      "aug_hydro_dsc_01": 280,
+      "aug_hydro_dsc_02": 280,
+
+      "aug_solar_nme": 36,
+      "aug_solar_dsc_00": 280,
+      "aug_solar_dsc_01": 280,
+
+      "aug_wave_nme": 36,
+      "aug_wave_dsc_00": 280,
+      "aug_wave_dsc_01": 280,
+
+      "aug_wind_nme": 36,
+      "aug_wind_dsc_00": 280,
+      "aug_wind_dsc_01": 280,
+
+      "aug_coal_nme": 36,
+      "aug_coal_dsc_00": 280,
+      "aug_coal_dsc_01": 280,
+
+      "aug_naturalGas_nme": 36,
+      "aug_naturalGas_dsc_00": 280,
+      "aug_naturalGas_dsc_01": 280,
+
+      "aug_nuclear_nme": 36,
+      "aug_nuclear_dsc_00": 280,
+      "aug_nuclear_dsc_01": 280,
+      "aug_nuclear_dsc_02": 280,
+
+      "aug_oil_nme": 36,
+      "aug_oil_dsc_00": 280,
+      "aug_oil_dsc_01": 280,
+      "aug_oil_dsc_02": 280,
+
+
+
+      "aud_blasterLane_nme": 36,
+      "aud_blasterLane_dsc_00": 280,
+
+      "aud_blasterStandard_nme": 36,
+      "aud_blasterStandard_dsc_00": 280,
+
+      "aud_blasterLeftRight_nme": 36,
+      "aud_blasterLeftRight_dsc_00": 280,
+
+      "aud_blasterPhase_nme": 36,
+      "aud_blasterPhase_dsc_00": 280,
+
+      "aud_shieldStandard_nme": 36,
+      "aud_shieldStandard_dsc_00": 280,
+
+      "aud_energyTrapStandard_nme": 36,
+      "aud_energyTrapStandard_dsc_00": 280,
+
+      "aud_blasterFast_nme": 36,
+      "aud_blasterFast_dsc_00": 280,
+
+      "aud_blasterTriple_nme": 36,
+      "aud_blasterTriple_dsc_00": 280,
+
+      "aud_blasterDepreciation_nme": 36,
+      "aud_blasterDepreciation_dsc_00": 280,
+
+      "aud_shieldWeak_nme": 36,
+      "aud_shieldWeak_dsc_00": 280,
+
+      "aud_energyTrapFast_nme": 36,
+      "aud_energyTrapFast_dsc_00": 280,
+
+      "aud_blasterSlow_nme": 36,
+      "aud_blasterSlow_dsc_00": 280,
+
+      "aud_blasterRapid_nme": 36,
+      "aud_blasterRapid_dsc_00": 280,
+
+      "aud_blasterAppreciation_nme": 36,
+      "aud_blasterAppreciation_dsc_00": 280,
+
+      "aud_shieldStrong_nme": 36,
+      "aud_shieldStrong_dsc_00": 280,
+
+      "aud_energyTrapSlow_nme": 36,
+      "aud_energyTrapSlow_dsc_00": 280,
+
+
+
+      "aue_enemyStandard_nme": 36,
+      "aue_enemyStandard_dsc_00": 280,
+
+      "aue_enemyFast_nme": 36,
+      "aue_enemyFast_dsc_00": 280,
+
+      "aue_enemySlow_nme": 36,
+      "aue_enemySlow_dsc_00": 280,
+
+
+
+      "gio_biomass_nte_00": 280,
+
+      "gio_geothermal_nte_00": 280,
+
+      "gio_hydro_nte_00": 280,
+
+      "gio_solar_nte_00": 280,
+
+      "gio_wave_nte_00": 280,
+
+      "gio_wind_nte_00": 280,
+
+      "gio_coal_nte_00": 280,
+
+      "gio_naturalGas_nte_00": 280,
+
+      "gio_nuclear_nte_00": 280,
+      "gio_nuclear_nte_01": 280,
+
+      "gio_oil_nte_00": 280,
+      "gio_oil_nte_01": 280,
+
+
+
+      "kwd_timeOfDay": 18,
+      "kwd_energyPollution": 28,
+      "kwd_windSpeed": 18,
+
+
+      "kwd_speed": 18,
+      "kwd_select": 18,
+      "kwd_deselect": 18,
+      "kwd_remove": 18,
+      "kwd_remove_abv": 3,
+      "kwd_block": 18,
+      "kwd_disable": 18,
+
+      "kwd_selected": 18,
+
+      "kwd_enemiesApproaching": 28,
+
+      "kwd_stageOver": 18,
+      "asg_msg_stageOver": 100,
+      "asg_msg_userWon": 100,
+      "asg_msg_userLost": 100,
+
+      "kwd_time": 18,
+      "kwd_score": 18,
+      "kwd_energyTotal": 18,
+      "kwd_airPollution": 18,
+
+
+
+      "kwd_section": 18,
+      "kwd_statement": 18,
+      "kwd_statements": 18,
+      "kwd_statementsResources": 28,
+
+      "kwd_matches": 18,
+      "kwd_selection": 18,
+      "kwd_none": 18,
+
+
+
+      "kst_bms_00": 220,
+      "kst_bms_01": 220,
+      "kst_bms_02": 220,
+      "kst_bms_03": 220,
+      "kst_bms_04": 220,
+
+      "kst_gtl_00": 220,
+      "kst_gtl_01": 220,
+      "kst_gtl_02": 220,
+      "kst_gtl_03": 220,
+      "kst_gtl_04": 220,
+
+      "kst_hdo_00": 220,
+      "kst_hdo_01": 220,
+      "kst_hdo_02": 220,
+      "kst_hdo_03": 220,
+      "kst_hdo_04": 220,
+
+      "kst_slr_00": 220,
+      "kst_slr_01": 220,
+      "kst_slr_02": 220,
+      "kst_slr_03": 220,
+      "kst_slr_04": 220,
+
+      "kst_wve_00": 220,
+      "kst_wve_01": 220,
+      "kst_wve_02": 220,
+      "kst_wve_03": 220,
+      "kst_wve_04": 220,
+
+      "kst_wnd_00": 220,
+      "kst_wnd_01": 220,
+      "kst_wnd_02": 220,
+      "kst_wnd_03": 220,
+      "kst_wnd_04": 220,
+
+      "kst_col_00": 220,
+      "kst_col_01": 220,
+      "kst_col_02": 220,
+      "kst_col_03": 220,
+      "kst_col_04": 220,
+
+      "kst_ngs_00": 220,
+      "kst_ngs_01": 220,
+      "kst_ngs_02": 220,
+      "kst_ngs_03": 220,
+      "kst_ngs_04": 220,
+
+      "kst_nlr_00": 220,
+      "kst_nlr_01": 220,
+      "kst_nlr_02": 220,
+      "kst_nlr_03": 220,
+      "kst_nlr_04": 220,
+
+      "kst_oil_00": 220,
+      "kst_oil_01": 220,
+      "kst_oil_02": 220,
+      "kst_oil_03": 220,
+      "kst_oil_04": 220,
+
+
+      "kwd_verification": 18,
+      "kwd_verify": 18,
+      "kwd_energyBonus": 18,
+      "kwd_rewards": 18,
+
+      "ksg_msg_userWon": 100,
+
+
+
+      "trl_intro_ttl": 50,
+      "trl_intro_txt_00": 445,
+      "trl_intro_txt_01": 445,
+      "trl_intro_txt_02": 445,
+      "trl_intro_txt_03": 445,
+
+
+      "trl_firstActionIntro_ttl": 50,
+      "trl_firstActionIntro_txt_00": 445,
+      "trl_firstActionIntro_txt_01": 445,
+      "trl_firstActionIntro_txt_02": 445,
+      "trl_firstActionIntro_txt_03": 445,
+
+      "trl_firstActionGenerators_ttl": 50,
+      "trl_firstActionGenerators_txt_00": 445,
+      "trl_firstActionGenerators_txt_01": 445,
+      "trl_firstActionGenerators_txt_02": 445,
+
+      "trl_firstActionDefenses_ttl": 50,
+      "trl_firstActionDefenses_txt_00": 445,
+      "trl_firstActionDefenses_txt_01": 445,
+      "trl_firstActionDefenses_txt_02": 445,
+
+      "trl_firstActionFirstKill_ttl": 50,
+      "trl_firstActionFirstKill_txt_00": 445,
+      "trl_firstActionFirstKill_txt_01": 445,
+
+
+      "trl_firstKnowledgeIntro_ttl": 50,
+      "trl_firstKnowledgeIntro_txt_00": 445,
+      "trl_firstKnowledgeIntro_txt_01": 445,
+      "trl_firstKnowledgeIntro_txt_02": 445,
+      "trl_firstKnowledgeIntro_txt_03": 445,
+
+      "trl_firstKnowledgeVerify_ttl": 50,
+      "trl_firstKnowledgeVerify_txt_00": 445,
+
+
+      "trl_firstAreaComplete_ttl": 50,
+      "trl_firstAreaComplete_txt_00": 445,
+
+
+      "trl_biomass_ttl": 50,
+      "trl_biomass_txt_00": 445,
+
+      "trl_geothermal_ttl": 50,
+      "trl_geothermal_txt_00": 445,
+
+      "trl_hydro_ttl": 50,
+      "trl_hydro_txt_00": 445,
+      "trl_hydro_txt_01": 445,
+
+      "trl_solar_ttl": 50,
+      "trl_solar_txt_00": 445,
+
+      "trl_wave_ttl": 50,
+      "trl_wave_txt_00": 445,
+
+      "trl_wind_ttl": 50,
+      "trl_wind_txt_00": 445,
+
+      "trl_coal_ttl": 50,
+      "trl_coal_txt_00": 445,
+
+      "trl_naturalGas_ttl": 50,
+      "trl_naturalGas_txt_00": 445,
+      "trl_naturalGas_txt_01": 445,
+
+      "trl_nuclear_ttl": 50,
+      "trl_nuclear_txt_00": 445,
+      "trl_nuclear_txt_01": 445,
+
+      "trl_oil_ttl": 50,
+      "trl_oil_txt_00": 445,
+      "trl_oil_txt_01": 445,
+
+
+
+      "kwd_gameComplete": 18,
+
+      "kwd_results": 18,
+
+      "kwd_gameScore": 18,
+      "kwd_gameTime": 18,
+      "kwd_gameEnergyTotal": 18,
+      "kwd_number": 18,
+      "kwd_type": 18,
+
+      "kwd_finish": 18
+    }
+  },
+  "en": {
+    "_stop_": "",
+
+    "gameTitle": "Energy Defense Unit",
+    "gameTitleShort": "EDU",
+
+    "kwd_title": "Title",
+    "kwd_start": "Start",
+    "kwd_newGame": "New Game",
+    "kwd_continue": "Continue",
+    "kwd_instructions": "Instructions",
+    "kwd_settings": "Settings",
+    "kwd_licenses": "Licenses",
+    "kwd_quit": "Quit",
+
+    "kwd_back": "Back",
+
+    "dlg_instructions_dsc": "Use the mouse or touch controls to interact with game elements. This game has three gameplay areas: world, action, and knowledge.",
+    "kwd_world": "World",
+    "dlg_instructions_emt_world": "In the world section, you select action stages and knowledge stages. Once all stages are complete, the game is finished.",
+    "kwd_action": "Action",
+    "dlg_instructions_emt_action": "In an action stage, you place generator units to generate energy and place defense units to defend your base from enemies.",
+    "kwd_knowledge": "Knowledge",
+    "dlg_instructions_emt_knowledge": "In a knowledge stage, you match statements with the resources they apply to.",
+
+    "kwd_volume": "Volume",
+    "kwd_bgmVolume": "Background Music (BGM) Volume",
+    "kwd_sfxVolume": "Sound Effect (SFX) Volume",
+    "kwd_mute": "Mute",
+    "kwd_textToSpeech": "Text-to-Speech",
+    "kwd_tutorial": "Tutorial",
+    "kwd_tutorials": "Tutorials",
+
+    "dlg_licenses_dsc": "Sourced assets have been modified for use in this game.",
+    "kwd_bgm": "BGM",
+    "kwd_bgms": "BGMs",
+    "kwd_sfx": "SFX",
+    "kwd_sfxs": "SFXs",
+
+    "sve_msg_savingGame": "Saving...",
+
+    "kwd_unknown": "Unknown",
+    "kwd_unknown_abv": "UKN",
+    "kwd_options": "Options",
+    "kwd_reset": "Reset",
+    "kwd_restart": "Restart",
+    "kwd_save": "Save",
+    "kwd_saveAndContinue": "Save and Continue",
+    "kwd_saveAndQuit": "Save and Quit",
+    "kwd_quitWithoutSaving": "Quit Without Saving",
+
+    "kwd_stage": "Stage",
+    "kwd_worldStage": "World Stage",
+    "kwd_actionStage": "Action Stage",
+    "kwd_knowledgeStage": "Knowledge Stage",
+    "kwd_unknownStage": "Unknown Stage",
+
+    "kwd_infoLog": "Info Log",
+    "kwd_entries": "Entries",
+    "kwd_info": "Info",
+
+    "kwd_tutorialLog": "Tutorial Log",
+
+    "kwd_energy": "Energy",
+    "kwd_energyStartBonus": "Energy Start Bonus",
+
+
+    "kwd_naturalResource": "Natural Resource",
+    "kwd_naturalResources": "Natural Resources",
+    "kwd_resource": "Resource",
+    "kwd_resources": "Resources",
+
+
+
+    "kwd_player": "Player",
+    "kwd_user": "User",
+
+    "kwd_tiles": "Tiles",
+    "kwd_tileTypes": "Tile Types",
+
+    "kwd_land": "Land",
+    "kwd_river": "River",
+    "kwd_sea": "Sea",
+    "kwd_metal": "Metal",
+    "kwd_symbol": "Symbol",
+
+    "kwd_generator": "Generator",
+    "kwd_generators": "Generators",
+    "kwd_defense": "Defense",
+    "kwd_defenses": "Defenses",
+    "kwd_enemy": "Enemy",
+    "kwd_enemies": "Enemies",
+
+
+
+    "kwd_generatorInfo": "Generator Info",
+    "kwd_stageInfo": "Stage Info",
+    "kwd_renewable": "Renewable",
+    "kwd_nonrenewable": "Non-renewable",
+
+    "kwd_energyGenerationAmount": "Energy Generation Amount",
+    "kwd_energyGenerationSpeed": "Energy Generation Speed",
+    "kwd_energyCost": "Energy Cost",
+
+    "kwd_notes": "Notes",
+    "kwd_open": "Open",
+    "kwd_close": "Close",
+
+
+
+    "nrs_bms_nme": "Biomass",
+    "nrs_bms_nme_abv": "BMS",
+    "nrs_bms_dsc_00": "A renewable resource that burns plant materials such as wood and grains to turn a turbine to generate energy. Waste materials can also be used.",
+    "nrs_bms_dsc_01": "Along with generating energy, biomass materials can be used to make biofuel, which can be used for cars and trucks.",
+    "nrs_bms_dsc_02": "Plants can be grown for biomass, which can consume the carbon dioxide created by biomass activities, reducing gases being released into the air. However, once a plant is used for biomass energy, it cannot be used for other activities.",
+
+    "nrs_gtl_nme": "Geothermal",
+    "nrs_gtl_nme_abv": "GTL",
+    "nrs_gtl_dsc_00": "A renewable resource that uses the Earth's internal heat to produce hot water and/or steam to turn a turbine to generate energy.",
+    "nrs_gtl_dsc_01": "Geothermal resources are obtained via drilling wells, and water can be pumped into these wells to use a geothermal spot perpetually.",
+    "nrs_gtl_dsc_02": "Geothermal energy can only be obtained from underground heat sources close enough to the Earth's surface to make power plants viable.",
+    "nrs_gtl_dsc_03": "Steam from geothermal wells can have unwanted mineral byproducts. Geothermal activities can also cause earthquakes.",
+
+    "nrs_hdo_nme": "Hydro",
+    "nrs_hdo_nme_abv": "HDO",
+    "nrs_hdo_dsc_00": "A renewable resource that generates energy by having reservoir water flow through a dam to turn a turbine to generate energy.",
+    "nrs_hdo_dsc_01": "Hydropower doesn't use fuel, doesn't use up water, and causes little pollution. However, the dam can cause flooding upstream and slow the release of silt downstream.",
+    "nrs_hdo_dsc_02": "Flooding can potentially cause harmful chemicals to be released from vegetation being destroyed. Relatedly, the reduction of silt can cause areas to become more vulnerable to rising sea levels and coastal storms.",
+
+    "nrs_slr_nme": "Solar",
+    "nrs_slr_nme_abv": "SLR",
+    "nrs_slr_dsc_00": "A renewable resource that generates energy from sunlight by using solar panels, which are composed of solar cells. Solar panels can only generate energy during the day.",
+    "nrs_slr_dsc_01": "Solar panels produce no pollution when in operation. Solar panels can be placed in fields, attached to buildings, or be mounted on structures.",
+
+    "nrs_wve_nme": "Wave",
+    "nrs_wve_nme_abv": "WVE",
+    "nrs_wve_dsc_00": "A renewable resource that uses waves and tides to generate energy. A narrow bay or estuary may need to be closed off to use wave power plants.",
+    "nrs_wve_dsc_01": "Waves are most prominent in areas with high wind, and no energy can be generated if there are no waves.",
+    "nrs_wve_dsc_02": "Wave plants are constructed to withstand corrosive seawater and costal storms. This is a clean resource, but wave structures are costly to install and maintain.",
+
+    "nrs_wnd_nme": "Wind",
+    "nrs_wnd_nme_abv": "WND",
+    "nrs_wnd_dsc_00": "A renewable resource that uses wind to turn turbines to generate energy. Wind can be harnessed practically anywhere, but no energy can be generated if there's no wind.",
+    "nrs_wnd_dsc_01": "Wind turbines can be installed on land or offshore in shallow waters. Wind turbines produce no pollutants but can be expensive and wear out quickly.",
+
+    "nrs_col_nme": "Coal",
+    "nrs_col_nme_abv": "COL",
+    "nrs_col_dsc_00": "A non-renewable fossil fuel resource that's crushed into powder and fed to a furnace to produce heat. This heat is used to boil water to make steam, which then turns a turbine to generate energy.",
+    "nrs_col_dsc_01": "Coal is formed from plant waste in swamps over the course of millions of years. When burned, coal releases carbon dioxide and potentially other harmful minerals into the air. Coal produces more carbon dioxide than oil and natural gas when burned.",
+    "nrs_col_dsc_02": "Coal can be mined underground or on the surface. Surface mining is safer for miners but releases harmful materials into the atmosphere, such as sulfur. Sulfur can combine with water and air to make sulfuric acid, which can damage environments.",
+
+    "nrs_ngs_nme": "Natural Gas",
+    "nrs_ngs_nme_abv": "NGS",
+    "nrs_ngs_dsc_00": "A non-renewable fossil fuel resource that's burned to produce steam or hot gases to spin a turbine to generate energy. It can also be used for heating or cooking.",
+    "nrs_ngs_dsc_01": "Natural gas can often be found along with coal or oil in underground deposits, but it forms at a higher temperature than oil. It's mostly methane and must have its water and poisonous chemicals removed before it can be burned.",
+    "nrs_ngs_dsc_02": "While natural gas burns cleaner and releases less carbon dioxide than other fossil fuels, it still emits pollutants. It's also highly flammable, so natural gas leaks can cause explosions.",
+
+    "nrs_nlr_nme": "Nuclear",
+    "nrs_nlr_nme_abv": "NLR",
+    "nrs_nlr_dsc_00": "A non-renewable resource that involves splitting the nucleus of an atom to produce heat, which is used to boil water. This boiled water produces steam, which then spins a turbine to generate energy.",
+    "nrs_nlr_dsc_01": "Atoms split for nuclear energy come from uranium, which is concentrated into fuel rods and has its atoms split using tiny particles. These particles must be controlled, otherwise they'll trigger a dangerous explosion.",
+    "nrs_nlr_dsc_02": "If there are no accidents when generating energy, only steam is produced, which causes no pollution, but creates radioactive waste.",
+    "nrs_nlr_dsc_03": "Radioactive waste can remain dangerous for hundreds to thousands of years. Radioactive waste must be securely stored to prevent damage to living things and the environment.",
+
+    "nrs_oil_nme": "Oil",
+    "nrs_oil_nme_abv": "OIL",
+    "nrs_oil_dsc_00": "A non-renewable fossil fuel resource that's burned to produce steam to spin a turbine to generate energy. Oil is a black or dark brown liquid that's found in rock layers in the Earth's crust.",
+    "nrs_oil_dsc_01": "Oil is formed from dead organic material that's buried under sediments that's kept away from oxygen and subjected to both high heat and pressure. After millions of years pass, said organic material becomes oil.",
+    "nrs_oil_dsc_02": "Oil can be extracted on land or at sea, though drilling for oil in the ocean can cause a spill if not done properly. Raw oil starts out as crude oil, which contains a mixture of various hydrocarbons.",
+    "nrs_oil_dsc_03": "Crude oil is refined via heating to separate it into different components, which boil at different temperatures. These components can be used for various purposes such as gasoline, and when burned release toxic chemicals into the air.",
+
+
+
+    "def_bsr_nme": "Blaster",
+    "def_bsr_nme_abv": "BSR",
+
+    "def_shd_nme": "Shield",
+    "def_shd_nme_abv": "SHD",
+
+    "def_trp_nme": "Trap",
+    "def_trp_nme_abv": "TRP",
+
+
+    "emy_nme": "Enemy",
+    "emy_nme_abv": "EMY",
+
+
+
+    "aug_biomass_nme": "Biomass Generator",
+    "aug_biomass_dsc_00": "A renewable generator that burns plant materials to generate energy. This generator can be placed anywhere on land.",
+    "aug_biomass_dsc_01": "This generator generates a moderate amount of energy at a moderate rate.",
+
+    "aug_geothermal_nme": "Geothermal Generator",
+    "aug_geothermal_dsc_00": "A renewable generator that uses the Earth's internal heat for generating energy. This generator can only be placed on geothermal source tiles.",
+    "aug_geothermal_dsc_01": "This generator generates a high amount of energy at a moderate rate.",
+
+    "aug_hydro_nme": "Hydro Generator",
+    "aug_hydro_dsc_00": "A renewable generator that uses the flow of water to generate energy. It can only be placed in rivers and cannot be placed next to other hydro generators. It also can't be placed next to wind generators that're in water.",
+    "aug_hydro_dsc_01": "If this generator runs for too long, it'll flood the tiles behind it, destroying any units placed in those tiles. This generator also creates a very small amount of air pollution.",
+    "aug_hydro_dsc_02": "This generator produces a high amount of energy at a high rate.",
+
+    "aug_solar_nme": "Solar Generator",
+    "aug_solar_dsc_00": "A renewable generator that generates energy using sunlight. This generator can only be placed on land. This generator cannot produce energy at night.",
+    "aug_solar_dsc_01": "This generator produces a moderate amount of energy at a moderate rate.",
+
+    "aug_wave_nme": "Wave Generator",
+    "aug_wave_dsc_00": "A renewable generator that generates energy using ocean waves. It can only be placed in the sea. The wave strength is determined by the wind speed. If there's no wind, there's no waves, meaning no energy can be produced.",
+    "aug_wave_dsc_01": "This generator produces a moderate amount of energy at varying rates.",
+
+    "aug_wind_nme": "Wind Generator",
+    "aug_wind_dsc_00": "A renewable generator that generates energy using wind. This generator can be placed on land or on water tiles close to land. The wind speed determines the energy generation speed, and no energy is produced if there's no wind.",
+    "aug_wind_dsc_01": "This generator produces a moderate amount of energy at varying rates.",
+
+    "aug_coal_nme": "Coal Generator",
+    "aug_coal_dsc_00": "A non-renewable generator that generates energy using coal. This generator can only be used on coal source tiles and creates high amounts of air pollution.",
+    "aug_coal_dsc_01": "This generator produces a high amount of energy at a high rate.",
+
+    "aug_naturalGas_nme": "Natural Gas Generator",
+    "aug_naturalGas_dsc_00": "A non-renewable generator that generates energy using natural gas. This generator can be placed on coal, oil, and natural gas source spots. It also produces a moderate amount of air pollution.",
+    "aug_naturalGas_dsc_01": "This generator produces a high amount of energy at a moderate rate.",
+
+    "aug_nuclear_nme": "Nuclear Generator",
+    "aug_nuclear_dsc_00": "A non-renewable generator that generates energy by splitting uranium atoms. This generator can only be placed on nuclear source tiles. Once all the nuclear resources are depleted in a spot, this generator is destroyed automatically.",
+    "aug_nuclear_dsc_01": "If a nuclear generator is destroyed by an enemy before it's finished generating energy, it will leave nuclear waste. Nothing can be placed on a tile that has nuclear waste.",
+    "aug_nuclear_dsc_02": "This generator produces a very high amount of energy at a very high rate.",
+
+    "aug_oil_nme": "Oil Generator",
+    "aug_oil_dsc_00": "A non-renewable generator that uses oil to generate energy, which can only be used on oil source spots. It also produces high amounts of air pollution.",
+    "aug_oil_dsc_01": "If an oil generator is destroyed by an enemy before it's finished generating energy, it will leave an oil spill. No units can be placed on a tile that has an oil spill.",
+    "aug_oil_dsc_02": "This generator produces a very high amount of energy at a moderate rate.",
+
+
+
+    "aud_blasterLane_nme": "Lane Blaster",
+    "aud_blasterLane_dsc_00": "A blaster that destroys all enemies in its lane upon enemy interaction. Once a shot is fired, this blaster is destroyed.",
+
+    "aud_blasterStandard_nme": "Basic Blaster",
+    "aud_blasterStandard_dsc_00": "A blaster that fires at enemies in front of it in its own lane.",
+
+    "aud_blasterLeftRight_nme": "Double-Sided Blaster",
+    "aud_blasterLeftRight_dsc_00": "A blaster that fires at enemies in front of it and behind it.",
+
+    "aud_blasterPhase_nme": "Phase Blaster",
+    "aud_blasterPhase_dsc_00": "A blaster that fires a shot that goes through multiple targets.",
+
+    "aud_shieldStandard_nme": "Basic Shield",
+    "aud_shieldStandard_dsc_00": "A standard shield that can be used to block enemies and defend units that're behind it.",
+
+    "aud_energyTrapStandard_nme": "Basic Energy Trap",
+    "aud_energyTrapStandard_dsc_00": "An energy trap that drains energy from enemies that pass over it and gives a portion of it to the player. When the trap reaches its energy limit, it destroys itself and damages all enemies in range.",
+
+    "aud_blasterFast_nme": "Faster Blaster",
+    "aud_blasterFast_dsc_00": "A fast blaster that fires at enemies in front of it in its own lane. It recharges quickly and its shots move fast, but its shots are weak.",
+
+    "aud_blasterTriple_nme": "Triple Blaster",
+    "aud_blasterTriple_dsc_00": "A blaster that shoots three shots at once, with each shot going at a different angle.",
+
+    "aud_blasterDepreciation_nme": "Near Blaster",
+    "aud_blasterDepreciation_dsc_00": "A blaster that does more damage when the target is close.",
+
+    "aud_shieldWeak_nme": "Flimsy Shield",
+    "aud_shieldWeak_dsc_00": "A weak shield that can be used to block enemies and defend units that are behind it.",
+
+    "aud_energyTrapFast_nme": "Furious Energy Trap",
+    "aud_energyTrapFast_dsc_00": "Drains energy from enemies that pass over it and gives some of it to the player, but it has a small energy limit. When its energy limit is reached, it destroys itself and damages all enemies within range.",
+
+    "aud_blasterSlow_nme": "Slower Blaster",
+    "aud_blasterSlow_dsc_00": "A slow blaster that fires at enemies in front of it in its own lane. It doesn't fire often and its shots travel slowly, but its shots are strong.",
+
+    "aud_blasterRapid_nme": "Rapid Blaster",
+    "aud_blasterRapid_dsc_00": "A blaster that can fire one to three shots in quick succession before needing to recharge.",
+
+    "aud_blasterAppreciation_nme": "Far Blaster",
+    "aud_blasterAppreciation_dsc_00": "A blaster that does more damage the farther a target is.",
+
+    "aud_shieldStrong_nme": "Sturdy Shield",
+    "aud_shieldStrong_dsc_00": "A strong shield that can be used to block enemies and defend units that're behind it.",
+
+    "aud_energyTrapSlow_nme": "Steady Energy Trap",
+    "aud_energyTrapSlow_dsc_00": "An energy trap that takes energy from enemies that pass over it and gives some of it to the player. It deals damage slowly, but its damage per hit is high. When it reaches its energy limit, it destroys itself and damages all enemies in range.",
+
+
+
+    "aue_enemyStandard_nme": "Basic Enemy",
+    "aue_enemyStandard_dsc_00": "A basic enemy that travels from the right side of the field to the left.",
+
+    "aue_enemyFast_nme": "Fast Enemy",
+    "aue_enemyFast_dsc_00": "A fast, frail enemy that travels from the right side of the field to the left.",
+
+    "aue_enemySlow_nme": "Slow Enemy",
+    "aue_enemySlow_dsc_00": "A slow, durable enemy that travels from the right side of the field to the left.",
+
+
+
+    "gio_biomass_nte_00": "Biomass generators burn plant and/or waste materials for generating energy.",
+
+    "gio_geothermal_nte_00": "Geothermal generators use the Earth's internal heat for generating energy. They can only be placed on spots with geothermal symbols.",
+
+    "gio_hydro_nte_00": "Hydro generators use the flow of water for generating energy. Hydro generators cannot be placed next to each other and flood the spots behind them if they run for too long.",
+
+    "gio_solar_nte_00": "Solar generators use sunlight for generating energy. They can only generate energy during the day.",
+
+    "gio_wave_nte_00": "Wave generators use the movement of waves for generating energy. Their energy generation speed is determined by the wind speed.",
+
+    "gio_wind_nte_00": "Wind generators use moving air for generating energy. Wind generators can be placed on land or in water near land. Their energy generation speed is determined by the wind speed.",
+
+    "gio_coal_nte_00": "Coal generators feed the fossil fuel resource coal to a furnace for generating energy. Coal generators can only be placed on spots with coal symbols.",
+
+    "gio_naturalGas_nte_00": "Natural gas generators use the fossil fuel resource natural gas to produce gases, which then turn a turbine to generate energy. Natural gas generators can be placed on spots with natural gas, coal, or oil symbols.",
+
+    "gio_nuclear_nte_00": "Nuclear generators split uranium atoms for generating energy. Nuclear generators can only be placed on spots with nuclear symbols and are automatically destroyed once they run out of resources.",
+    "gio_nuclear_nte_01": "If a nuclear generator is destroyed by an enemy before its used up its resources, it will leave nuclear waste behind. No units can be placed on a spot that has nuclear waste.",
+
+    "gio_oil_nte_00": "Oil generators burn the fossil fuel resource oil for generating energy. Oil generators can only be placed on spots with oil symbols.",
+    "gio_oil_nte_01": "If an oil generator is destroyed by an enemy before it uses up its resources, it leaves an oil spill behind. No units can be placed on spots that have oil spills.",
+
+
+
+    "kwd_timeOfDay": "Time of Day",
+    "kwd_energyPollution": "Energy/Pollution",
+    "kwd_windSpeed": "Wind Speed",
+
+
+    "kwd_speed": "Speed",
+    "kwd_select": "Select",
+    "kwd_deselect": "Deselect",
+    "kwd_remove": "Remove",
+    "kwd_remove_abv": "RMV",
+    "kwd_block": "Block",
+    "kwd_disable": "Disable",
+
+    "kwd_selected": "Selected",
+
+    "kwd_enemiesApproaching": "Enemies Approaching!",
+
+    "kwd_stageOver": "Stage Over",
+    "asg_msg_stageOver": "The stage is over!",
+    "asg_msg_userWon": "Your side has won! You've generated enough energy!",
+    "asg_msg_userLost": "The enemy side has won! Enemies have made it into the base!",
+
+    "kwd_time": "Time",
+    "kwd_score": "Score",
+    "kwd_energyTotal": "Energy Total",
+    "kwd_airPollution": "Air Pollution",
+
+
+
+    "kwd_section": "Section",
+    "kwd_statement": "Statement",
+    "kwd_statements": "Statements",
+    "kwd_statementsResources": "Statements/Resources",
+
+    "kwd_matches": "Matches",
+    "kwd_selection": "Selection",
+    "kwd_none": "None",
+
+
+
+    "kst_bms_00": "A renewable resource that burns plant and/or waste materials to turn a turbine to generate energy.",
+    "kst_bms_01": "A renewable resource that burns plant and/or waste materials for generating energy. It can also be processed to make fuel that can be used for vehicle engines.",
+    "kst_bms_02": "A renewable resource that burns plant and/or waste materials for generating energy. It can also be used for fuel, which cuts down on fossil fuel usage.",
+    "kst_bms_03": "A renewable resource that burns plant and/or waste materials, which produces carbon dioxide. Plants grown for this resource can consume the carbon dioxide, reducing the gases released into the air.",
+    "kst_bms_04": "A renewable resource that burns plant and/or waste materials to generate energy. Plants used for this process cannot be used for other activities.",
+
+    "kst_gtl_00": "A renewable resource that uses the Earth's internal heat to heat water and/or make steam to turn a turbine and generate energy.",
+    "kst_gtl_01": "A resource that involves drilling wells to get hot water or steam from the Earth's internal heat. Water can be pumped into these wells to use this resource perpetually.",
+    "kst_gtl_02": "A renewable resource that uses the Earth's internal heat for generating energy. This is a clean, safe resource that can be used without processing.",
+    "kst_gtl_03": "A resource that utilizes the Earth's internal heat. Many parts of the world don't have underground heat sources close enough to the Earth's surface to make using this resource economically viable.",
+    "kst_gtl_04": "A resource that uses hot water and/or steam created from the Earth's internal heat. The steam can come with unwanted mineral byproducts, and resource-related activities can cause earthquakes.",
+
+    "kst_hdo_00": "A renewable resource that harnesses water moving through a stream to spin turbines to generate energy.",
+    "kst_hdo_01": "A resource that uses moving water to generate energy. The water is held in a reservoir and flows downstream through a dam.",
+    "kst_hdo_02": "A resource that uses water flowing through a stream to generate energy. It doesn't burn fuel, doesn't use up water, and causes less pollution than other resources.",
+    "kst_hdo_03": "A renewable resource that involves water dams, which disrupt the flow of streams. These dams can cause flooding upstream and reshape environments downstream.",
+    "kst_hdo_04": "A resource that uses water moving through a dam. The dam slows the release of silt, which can cause downstream areas to become more exposed to storms and rising sea levels.",
+
+    "kst_slr_00": "A renewable resource that uses panels to convert sunlight to energy. The panels are made up of multiple cells.",
+    "kst_slr_01": "A resource that uses panels to generate energy from sunlight. The panels can be placed in fields, attached to buildings, and mounted on certain structures.",
+    "kst_slr_02": "A resource that uses panels to generate energy from sunlight. This generation method produces virtually no pollutants when in operation.",
+    "kst_slr_03": "A resource that uses sunlight to generate energy. No energy can be generated at night, so extra energy from the daytime must be stored using a battery.",
+    "kst_slr_04": "A renewable resource that converts sunlight into energy. While sunlight is in abundance, the technology to harness it can be expensive.",
+
+    "kst_wve_00": "A renewable resource that uses the waves and tides to generate energy. A narrow bay or estuary may need to be closed off to use these types of energy plants.",
+    "kst_wve_01": "A clean, renewable resource that generates energy by using waves. Areas with high wind have the most potential to produce waves.",
+    "kst_wve_02": "A resource that uses waves to generate energy. The structures used for this method are designed to withstand corrosive seawater and costal storms.",
+    "kst_wve_03": "A renewable resource that generates energy from waves. No energy can be produced if there are no waves.",
+    "kst_wve_04": "A resource that uses waves and tides to generate energy. The structures used for this resource are expensive to install and maintain.",
+
+    "kst_wnd_00": "A renewable resource that uses moving air to turn turbines to generate energy. The air moves by convection: warm air rises and cold air comes in to fill the left-over space.",
+    "kst_wnd_01": "A resource that generates energy by turning turbines using moving air. The turbines can be placed on land or offshore in shallow waters.",
+    "kst_wnd_02": "A clean renewable resource that uses moving air for generating energy. This resource produces no pollutants and can be found effectively anywhere.",
+    "kst_wnd_03": "A resource that turns turbines with moving air to generate energy, which depends on the weather. When there's none of this resource, no energy is generated.",
+    "kst_wnd_04": "A renewable resource that uses moving air to spin turbines to generate energy. Structures made for this resource can be expensive and wear out quickly.",
+
+    "kst_col_00": "A non-renewable fossil fuel resource that's turned into powder and fed to a furnace to create heat. This heat boils water to produce steam and said steam turns a turbine to generate energy.",
+    "kst_col_01": "A non-renewable fossil fuel resource formed from plant remains at the bottom of swamps. The organic matter turns into this resource after millions of years and is obtained via mining.",
+    "kst_col_02": "A non-renewable resource that's burned for producing energy. It can be mined on the surface or underground. Surface mining is safer for miners but has a higher chance of releasing toxic materials into the air.",
+    "kst_col_03": "When burned for producing energy, this resource releases carbon dioxide and potentially other harmful materials into the air. This resource produces more carbon dioxide than oil and natural gas when burned.",
+    "kst_col_04": "When this resource is mined on the surface, it exposes sulfur to the atmosphere. Sulfur can mix with water and air to create sulfuric acid, a highly corrosive chemical that can damage environments.",
+
+    "kst_ngs_00": "A non-renewable fossil fuel resource that's burned to produce hot gases or steam to turn a turbine to generate energy. It's mostly methane.",
+    "kst_ngs_01": "A non-renewable resource that's burned for producing energy. It can often be found with oil and coal in underground deposits since it forms with them, though it forms at higher temperatures than oil.",
+    "kst_ngs_02": "A non-renewable fossil fuel resource that's burned to produce hot gases or steam for generating energy. It can also be used for cooking and heating.",
+    "kst_ngs_03": "A non-renewable resource that's burned to produce steam or hot gases for energy. It must be processed to remove poisonous chemicals and water before it can be burned.",
+    "kst_ngs_04": "A fossil fuel resource that's burned for generating energy. It burns cleaner and produces less carbon dioxide than other fossil fuels, but it still emits pollutants. It's also highly flammable.",
+
+    "kst_nlr_00": "A non-renewable resource that generates energy by splitting the nucleus of an atom. This reaction produces heat, which boils water to produce steam. This steam is used to turn a turbine to generate energy.",
+    "kst_nlr_01": "A resource that uses uranium for generating energy. Uranium is concentrated into fuel rods and has its atoms split using tiny particles. These particles are controlled to avoid causing a dangerous explosion.",
+    "kst_nlr_02": "A non-renewable resource that generates energy by splitting uranium atoms. This resource produces no pollutants, and if there are no accidents, only steam is released into the air.",
+    "kst_nlr_03": "A non-renewable resource that generates energy by splitting Uranium atoms, which also produces radioactive waste. This waste can remain dangerous for hundreds to thousands of years.",
+    "kst_nlr_04": "A resource that generates energy by splitting atoms. This reaction creates dangerous radioactive waste, which must be securely stored to prevent harm to people and the environment.",
+
+    "kst_oil_00": "A non-renewable fossil fuel resource that's burned to produce steam to spin a turbine to generate energy. It's a black or dark brown liquid found in rock layers in the Earth's crust.",
+    "kst_oil_01": "This liquid resource forms from dead organic material that's buried under sediments, kept away from oxygen, and exposed to both high heat and pressure. It forms at a lower temperature than natural gas.",
+    "kst_oil_02": "A resource that's obtained in a crude form, which has a mix of different hydrocarbons. It's then refined via heating to separate it into different compounds, which all boil at different temperatures.",
+    "kst_oil_03": "A non-renewable liquid resource that's burned for generating energy. It can be extracted on land and at sea, but drilling at sea can cause a spill if something goes wrong.",
+    "kst_oil_04": "A non-renewable liquid resource that can be burned for generating energy and can be refined for various uses. It takes millions of years to form and releases toxic chemicals into the air when burned.",
+
+
+    "kwd_verification": "Verification",
+    "kwd_verify": "Verify",
+    "kwd_energyBonus": "Energy Bonus",
+    "kwd_rewards": "Rewards",
+
+    "ksg_msg_userWon": "You've won! All the statements have been matched correctly!",
+
+
+
+    "trl_intro_ttl": "Game Introduction",
+    "trl_intro_txt_00": "Welcome to the Energy Defense Unit (EDU)! This is a training simulation that teaches you about the Earth's natural resources. There are two stage types in this simulation game: action (blue) and knowledge (green). You'll get more details on both later.",
+    "trl_intro_txt_01": "In the top left is the info log button, which opens the info log. The info log provides information on simulation elements you've encountered.",
+    "trl_intro_txt_02": "In the top right is the options button, which opens the options menu. The options menu allows you to save your progress, quit the game, reread tutorials, and adjust the game's settings. When in a stage, the options menu allows you to reset the stage.",
+    "trl_intro_txt_03": "With all that covered, please select the available stage. Details on natural resources will be provided when relevant.",
+
+
+    "trl_firstActionIntro_ttl": "First Action Stage - Introduction",
+    "trl_firstActionIntro_txt_00": "This is an action stage! In action stages, you generate energy while stopping enemies from entering your base. Enemies start on the right side of the field and make their way to the left side. If an enemy makes it to the left end of the field, you lose.",
+    "trl_firstActionIntro_txt_01": "If you reach the energy generation goal, which is displayed by the bar on the right, you win. The energy generation goal bar fills automatically, but generating energy fills the bar faster.",
+    "trl_firstActionIntro_txt_02": "Some energy will be given periodically, but only energy you generate contributes to the energy goal. To generate energy, you use generator units, which can be found in the bottom left. The energy needed to create a unit is displayed on its unit button.",
+    "trl_firstActionIntro_txt_03": "When a unit is selected, it'll be displayed in the bottom middle, and spots on the field will be highlighted to show where it can go. With all that covered, please place a unit on the field.",
+
+    "trl_firstActionGenerators_ttl": "First Action Stage - Generators",
+    "trl_firstActionGenerators_txt_00": "You've placed a generator unit! Generators generate energy if their conditions are met. A generator flashes blue when it generates energy and goes dark if it cannot generate energy. Some generators also produce air pollution, which can lower your stage score.",
+    "trl_firstActionGenerators_txt_01": "In the top left is the day-night indicator and in the top right is the wind indicator. The day-night indicator shows the time of day, and the wind indicator shows the current wind speed. Units affected by these elements are explained when relevant.",
+    "trl_firstActionGenerators_txt_02": "In the top middle is the energy display (top value) and pollution display (bottom value). The energy display shows your current energy amount, and the pollution display shows how much air pollution you've generated in the current stage. With all that explained, let the stage continue.",
+
+    "trl_firstActionDefenses_ttl": "First Action Stage - Defenses",
+    "trl_firstActionDefenses_txt_00": "Enemies are approaching! You'll need to place defense units to defeat them, which can be found in the bottom right. Defense units come in three types: blaster, shield, and trap.",
+    "trl_firstActionDefenses_txt_01": "Blasters (BSRs) fire projectiles at enemies, shields (SHDs) block enemies, and traps (TRPs) attack enemies that interact with them. You'll unlock more defense units as the simulation progresses. To assist you, there are lane blasters on the left side of the field.",
+    "trl_firstActionDefenses_txt_02": "A lane blaster destroys all enemies in its row upon an enemy touching it, but it also destroys itself in the process. You cannot restore lost lane blasters, but you always get them back at the start of a stage. With all that covered, let the stage recommence!",
+
+    "trl_firstActionFirstKill_ttl": "First Action Stage - Enemy Unit Defeated",
+    "trl_firstActionFirstKill_txt_00": "You've defeated your first enemy! When you have more units than a unit selector can display at once, rows are switched using the arrow buttons. The arrows on a unit button indicate if the unit button in the next or previous row that's within the same column is usable.",
+    "trl_firstActionFirstKill_txt_01": "On the left is the stage speed button, which switches between normal stage speed and fast stage speed. The button's icon displays the current stage speed, with 2 arrows meaning normal speed and 3 arrows meaning fast speed. With all that explained, back to the stage.",
+
+
+    "trl_firstKnowledgeIntro_ttl": "First Knowledge Stage - Introduction",
+    "trl_firstKnowledgeIntro_txt_00": "This is a knowledge stage! In knowledge stages, you must match statements with the resources they apply to. All statements must be matched correctly to complete the stage. Statement buttons are blue and resource buttons are green.",
+    "trl_firstKnowledgeIntro_txt_01": "When you have a statement or resource selected, its text is shown in the bottom middle. If you have a statement selected, it'll be connected to the next resource you select, and vice versa. When a statement and resource are connected, they both display the same number.",
+    "trl_firstKnowledgeIntro_txt_02": "Once connections are made, select the verify button in the bottom right to check your answers. This process locks all correct matches and disconnects all incorrect matches. The number of correct matches you have is displayed in the bottom left, which is updated every verification.",
+    "trl_firstKnowledgeIntro_txt_03": "For information on resources, you can check the info log using the button in the top left. Try to beat the stage with as few verifications as possible. With all that covered, let the stage begin!",
+
+    "trl_firstKnowledgeVerify_ttl": "First Knowledge Stage - Verification",
+    "trl_firstKnowledgeVerify_txt_00": "You've performed a connection verification! All statements and resources that were matched correctly have become locked. All statements that weren't matched correctly or weren't matched at all have been randomized.",
+
+
+    "trl_firstAreaComplete_ttl": "First Area Complete",
+    "trl_firstAreaComplete_txt_00": "You've cleared the first area! When all stages in an area are completed, you're able to move onto the next area. There are three areas total, and all areas must be cleared to complete the game. Switch areas using the world arrow buttons.",
+
+
+    "trl_biomass_ttl": "Biomass",
+    "trl_biomass_txt_00": "This stage uses biomass, which is a renewable resource that burns plant and/or waste materials for generating energy. A biomass generator can be placed anywhere on land, generates energy regularly, and produces no air pollution. It generates a moderate amount of energy at a moderate rate.",
+
+    "trl_geothermal_ttl": "Geothermal",
+    "trl_geothermal_txt_00": "This stage uses geothermal, a renewable resource that uses Earth's internal heat for generating energy. Geothermal generators can only be placed on spots with geothermal symbols, generate energy perpetually, and produce no air pollution. They generate high amounts of energy at a moderate rate.",
+
+    "trl_hydro_ttl": "Hydro",
+    "trl_hydro_txt_00": "This stage uses hydro, a renewable resource that uses the flow of water for generating energy. Hydro generators can only be placed in rivers and cannot be placed next to other hydro generators.",
+    "trl_hydro_txt_01": "Hydro generators produce a very small amount of air pollution and will flood the spots behind them if they run for too long. They produce a high amount of energy at a high rate.",
+
+    "trl_solar_ttl": "Solar",
+    "trl_solar_txt_00": "This stage uses solar, a renewable resource that converts sunlight into electricity. Solar generators can be placed anywhere on land, produce no air pollution, and only generate energy during the day. They produce a moderate amount of energy at a moderate rate.",
+
+    "trl_wave_ttl": "Wave",
+    "trl_wave_txt_00": "This stage uses wave, which is a renewable resource that uses the movement of waves for generating energy. Wave generators can only be placed in the sea, produce moderate amounts of energy, and create no air pollution. The energy generation speed is determined by the wind speed.",
+
+    "trl_wind_ttl": "Wind",
+    "trl_wind_txt_00": "This stage uses wind, which is a renewable resource that uses moving air for generating energy. Wind generators can be placed anywhere on land or in water near land. They create no air pollution and produce moderate amounts of energy. The energy generation speed is determined by the wind speed.",
+
+    "trl_coal_ttl": "Coal",
+    "trl_coal_txt_00": "This stage uses coal, a non-renewable fossil fuel resource that's fed to a furnace for generating energy. Coal generators can only be placed on spots with coal symbols, generate energy for a limited time, and create high amounts of air pollution. They produce high amounts of energy at a high rate.",
+
+    "trl_naturalGas_ttl": "Natural Gas",
+    "trl_naturalGas_txt_00": "This stage uses natural gas, which is a non-renewable fossil fuel resource that's burned to produce gases to turn a turbine to generate energy. It is often found with coal or oil.",
+    "trl_naturalGas_txt_01": "Natural gas generators generate energy for a limited time, produce moderate amounts of air pollution, and can be placed on spots with natural gas, coal, or oil symbols. They produce a high amount of energy at a moderate rate.",
+
+    "trl_nuclear_ttl": "Nuclear",
+    "trl_nuclear_txt_00": "This stage uses nuclear, a non-renewable resource that splits uranium atoms for generating energy. Nuclear generators can only be placed on spots with nuclear symbols, generate energy for a limited time, produce no air pollution, and are automatically destroyed once they run out of resources.",
+    "trl_nuclear_txt_01": "If a nuclear generator is destroyed by an enemy before its finished, it will leave nuclear waste behind. No units can be placed on tiles that have nuclear waste. Nuclear generators produce a very high amount of energy at a very high rate.",
+
+    "trl_oil_ttl": "Oil",
+    "trl_oil_txt_00": "This stage uses oil, which is a non-renewable fossil fuel resource that's burned for producing energy. Oil can be found on land or at sea. Oil generators can only be placed on spots with oil symbols, generate energy for a limited time, and produce high amounts of air pollution.",
+    "trl_oil_txt_01": "Oil generators leave oil spills if they're destroyed by enemies before they've used up their resources. No units can be placed on spots that have oil spills. Oil generators generate a very high amount of energy at a moderate rate.",
+
+
+    "kwd_gameComplete": "Game Complete",
+
+    "kwd_results": "Results",
+
+    "kwd_gameScore": "Game Score",
+    "kwd_gameTime": "Game Time",
+    "kwd_gameEnergyTotal": "Game Energy Total",
+    "kwd_number": "Number",
+    "kwd_type": "Type",
+
+    "kwd_finish": "Finish"
+  }
+}

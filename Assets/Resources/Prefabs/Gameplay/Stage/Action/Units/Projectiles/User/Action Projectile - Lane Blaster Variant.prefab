@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6796273324397949290
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 536616501510198565, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+      propertyPath: moveSpeed
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 536616501510198565, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+      propertyPath: dieOnContact
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 536616501510198565, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+      propertyPath: ignoreTangible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 536616501510198565, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+      propertyPath: defaultOneHitKill
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 687462378236978623, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+      propertyPath: m_Name
+      value: Action Projectile - Lane Blaster Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2386776853073937460, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+      propertyPath: m_Radius
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687991169777826106, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687991169777826106, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687991169777826106, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687991169777826106, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687991169777826106, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687991169777826106, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687991169777826106, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687991169777826106, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687991169777826106, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687991169777826106, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482362289023853470, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0698e6a7b28a8f548833836937022884, type: 3}
+    m_RemovedComponents:
+    - {fileID: 536616501510198565, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 687462378236978623, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 834843449278615229}
+  m_SourcePrefab: {fileID: 100100000, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+--- !u!212 &4145429657475896052 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7482362289023853470, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+  m_PrefabInstance: {fileID: 6796273324397949290}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &5086619876699379965 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 1785249849238120855, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+  m_PrefabInstance: {fileID: 6796273324397949290}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6330774581215843541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 687462378236978623, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+  m_PrefabInstance: {fileID: 6796273324397949290}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &834843449278615229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6330774581215843541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b7b7168149ff8044bdb22227801cbab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionManager: {fileID: 0}
+  spriteRenderer: {fileID: 4145429657475896052}
+  collider: {fileID: 9173478889524770142}
+  rigidbody: {fileID: 5086619876699379965}
+  owner: {fileID: 0}
+  shooterUnit: {fileID: 0}
+  useShooterDirectly: 1
+  ignoreTangible: 1
+  defaultAttackPower: 1
+  shooterAttackPower: 1
+  defaultAttackFactor: 1
+  shooterAttackFactor: 1
+  useAttackPowerAndFactorOfShooter: 1
+  defaultOneHitKill: 1
+  shooterOneHitKill: 0
+  useShooterOneHitKill: 1
+  moveDirec: {x: 1, y: 0}
+  moveSpeed: 40
+  validTargets: 03000000
+  dieOnContact: 0
+  enemyDeathCostFactor: 0.1
+--- !u!58 &9173478889524770142 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 2386776853073937460, guid: 2c023c3b64618554b9cd1d12da06c3ee, type: 3}
+  m_PrefabInstance: {fileID: 6796273324397949290}
+  m_PrefabAsset: {fileID: 0}
