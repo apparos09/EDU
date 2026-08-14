@@ -2062,7 +2062,7 @@ GameObject:
   - component: {fileID: 1116316790}
   m_Layer: 0
   m_Name: Manager
-  m_TagString: Untagged
+  m_TagString: Manager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2696,8 +2696,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resultsManager: {fileID: 0}
   titleScene: TitleScene
-  gameScore: {fileID: 7927682499107272725}
   gameTime: {fileID: 688415424}
+  gameScore: {fileID: 7927682499107272725}
   resultsStageInfos:
   - {fileID: 123506034}
   - {fileID: 265253442}
