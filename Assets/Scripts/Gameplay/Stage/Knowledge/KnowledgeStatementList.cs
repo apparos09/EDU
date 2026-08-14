@@ -546,7 +546,7 @@ namespace RM_EDU
                 "A non-renewable resource that generates energy by splitting uranium atoms. This resource produces no pollutants, and if there are no accidents, only steam is released into the air.", 
                 "kst_nlr_02"));
             nuclearGroup.statements.Add(new Statement(3,
-                "A non-renewable resource that generates energy by splitting Uranium atoms, which also produces radioactive waste. This waste can remain dangerous for hundreds to thousands of years.", 
+                "A non-renewable resource that generates energy by splitting uranium atoms, which also produces radioactive waste. This waste can remain dangerous for hundreds to thousands of years.", 
                 "kst_nlr_03"));
             nuclearGroup.statements.Add(new Statement(4,
                 "A resource that generates energy by splitting atoms. This reaction creates dangerous radioactive waste, which must be securely stored to prevent harm to people and the environment.", 

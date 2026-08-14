@@ -1057,11 +1057,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517647727474014750, guid: d5dcb564b5035624097563d21902ce16, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 150
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3517647727474014750, guid: d5dcb564b5035624097563d21902ce16, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 3517647727474014750, guid: d5dcb564b5035624097563d21902ce16, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1110,6 +1110,10 @@ PrefabInstance:
     - target: {fileID: 7217751774277532400, guid: d5dcb564b5035624097563d21902ce16, type: 3}
       propertyPath: m_Name
       value: Text-To-Speech Toggle (TMP)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7217751774277532400, guid: d5dcb564b5035624097563d21902ce16, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1620,11 +1624,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517647727474014750, guid: d5dcb564b5035624097563d21902ce16, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 300
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3517647727474014750, guid: d5dcb564b5035624097563d21902ce16, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3517647727474014750, guid: d5dcb564b5035624097563d21902ce16, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -33,7 +33,8 @@ namespace RM_EDU
         // Start is called before the first frame update
         void Start()
         {
-            // Change 'IS_LOL_BUILD" in game settings instead of adjusting this.
+            // Makes the TMP text get marked if translation failed.
+            // Change 'IS_MULTI_LANGUAGE" in game settings instead of adjusting this.
             TMP_TextTranslator.markIfFailed = true;
         }
 

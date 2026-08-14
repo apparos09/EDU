@@ -36,11 +36,11 @@ namespace RM_EDU
         public gameMode gameplayMode = gameMode.generation;
 
         // If game mode selection is enabled, the player selects the mode at the start.
-        public const bool GAME_MODE_SELECT_ENABLED = false;
+        public const bool GAME_MODE_SELECT_ENABLED = true;
 
-        // TODO: enable by default for submission build.
+        // Since the TTS is only usable in the LOL version, it's kept off.
         // Use the text-to-speech options.
-        private bool useTTS = true;
+        private bool useTTS = false;
 
         // TODO: enable by default for submission build.
         // Use the tutorial for the game.

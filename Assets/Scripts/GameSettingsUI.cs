@@ -98,9 +98,12 @@ namespace RM_EDU
             // Disable full-screen if the game is being played in WebGL.
             fullScreenToggle.interactable = Application.platform != RuntimePlatform.WebGLPlayer;
 
+            // In the LOL version, the toggle remained hidden. Now it's visible at all times...
+            // Even if it's disabled.
             // The full-screen toggle is turned off since it goes unused.
             // NOTE: for a future Windows version, make sure the full-screen toggle is turned on.
-            fullScreenToggle.gameObject.SetActive(false);
+            // fullScreenToggle.gameObject.SetActive(false);
+
 
             // If the SDK isn't initialized, some functions may be unavailable.
             // NOTE: the 'interactable' component of the tutorial toggle isn't changed because...
@@ -114,7 +117,8 @@ namespace RM_EDU
 
                 // Enable the TTS volume slider and TTS toggle.
                 // ttsVolumeSlider.interactable = true; Unused
-                textToSpeechToggle.interactable = true;
+                // textToSpeechToggle.interactable = true;
+                textToSpeechToggle.interactable = false; // TTS is no longer available, so keep false.
             }
             else
             {

@@ -332,7 +332,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4032197454635582201}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fc4c234014f0a2478490cffb2d27971, type: 3}
   m_Name: 
@@ -351,7 +351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd24ea5e708a9a4419056b262a271fc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: 
+  key: dlg_gameMode_dsc
   speakTextOnStart: 1
 --- !u!1 &6339739999843836880
 GameObject:
@@ -495,7 +495,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6339739999843836880}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fc4c234014f0a2478490cffb2d27971, type: 3}
   m_Name: 
@@ -516,7 +516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1288014189901964098, guid: 77f1817714185a741937f2deb494834e, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1470436684491121091, guid: 77f1817714185a741937f2deb494834e, type: 3}
       propertyPath: m_Name
@@ -689,7 +689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1288014189901964098, guid: 77f1817714185a741937f2deb494834e, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1470436684491121091, guid: 77f1817714185a741937f2deb494834e, type: 3}
       propertyPath: m_Name

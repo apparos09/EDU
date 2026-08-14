@@ -798,7 +798,7 @@ MonoBehaviour:
   tutorialUI: {fileID: 2211305606249259944}
   displayObject: {fileID: 6543226961160049396}
   displayImage: {fileID: 4267522530789618741}
-  delayNextPageButton: 1
+  delayNextPageButton: 0
   delayNextPageButtonTimer: 0
   delayNextPageButtonTimerMax: 4
   delayNextPageButtonTimerBar: {fileID: 2449478873345824284}

@@ -125,6 +125,7 @@ namespace RM_EDU
             // }
 
             // Makes the TMP text get marked if translation failed.
+            // Change 'IS_MULTI_LANGUAGE" in game settings instead of adjusting this.
             TMP_TextTranslator.markIfFailed = true;
         }
 

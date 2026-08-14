@@ -117,6 +117,13 @@ namespace RM_EDU
                 // Initialize the save system.
                 // Initialize();
 
+                // New
+                // If saving and loading is enabled, but the game is in WebGL, disable saving and loading.
+                if(savingLoadingEnabled && Application.platform == RuntimePlatform.WebGLPlayer)
+                {
+                    savingLoadingEnabled = false;
+                }
+
                 // Don't destroy the save system on load.
                 DontDestroyOnLoad(gameObject);
 
