@@ -24,11 +24,16 @@ kwd_mute	Mute
 kwd_textToSpeech	Text-to-Speech
 kwd_tutorial	Tutorial
 kwd_tutorials	Tutorials
+kwd_fullScreen	Full-Screen
 dlg_licenses_dsc	Sourced assets have been modified for use in this game.
 kwd_bgm	BGM
 kwd_bgms	BGMs
 kwd_sfx	SFX
 kwd_sfxs	SFXs
+kwd_gameMode	Game Mode
+kwd_generation	Generation
+kwd_defense	Defense
+dlg_gameMode_dsc	"This game has two modes: <b>generation mode</b> and <b>defense mode</b>. While knowledge stages work the same in both modes, the action stage win condition depends on the mode. In <b>Generation Mode</b>, action stages are completed by generating enough energy. In <b>Defense Mode</b>, action stages are completed by reducing the enemy side's energy to zero. Please select a mode."
 sve_msg_savingGame	Saving...
 kwd_unknown	Unknown
 kwd_unknown_abv	UKN
@@ -65,7 +70,6 @@ kwd_metal	Metal
 kwd_symbol	Symbol
 kwd_generator	Generator
 kwd_generators	Generators
-kwd_defense	Defense
 kwd_defenses	Defenses
 kwd_enemy	Enemy
 kwd_enemies	Enemies
@@ -291,7 +295,7 @@ kst_ngs_04	"A fossil fuel resource that's burned for generating energy. It burns
 kst_nlr_00	"A non-renewable resource that generates energy by splitting the nucleus of an atom. This reaction produces heat, which boils water to produce steam. This steam is used to turn a turbine to generate energy."
 kst_nlr_01	A resource that uses uranium for generating energy. Uranium is concentrated into fuel rods and has its atoms split using tiny particles. These particles are controlled to avoid causing a dangerous explosion.
 kst_nlr_02	"A non-renewable resource that generates energy by splitting uranium atoms. This resource produces no pollutants, and if there are no accidents, only steam is released into the air."
-kst_nlr_03	"A non-renewable resource that generates energy by splitting Uranium atoms, which also produces radioactive waste. This waste can remain dangerous for hundreds to thousands of years."
+kst_nlr_03	"A non-renewable resource that generates energy by splitting uranium atoms, which also produces radioactive waste. This waste can remain dangerous for hundreds to thousands of years."
 kst_nlr_04	"A resource that generates energy by splitting atoms. This reaction creates dangerous radioactive waste, which must be securely stored to prevent harm to people and the environment."
 kst_oil_00	A non-renewable fossil fuel resource that's burned to produce steam to spin a turbine to generate energy. It's a black or dark brown liquid found in rock layers in the Earth's crust.
 kst_oil_01	"This liquid resource forms from dead organic material that's buried under sediments, kept away from oxygen, and exposed to both high heat and pressure. It forms at a lower temperature than natural gas."

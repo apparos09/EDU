@@ -1646,10 +1646,6 @@ PrefabInstance:
       propertyPath: key
       value: kwd_fullScreen
       objectReference: {fileID: 0}
-    - target: {fileID: 4664752073143661481, guid: d5dcb564b5035624097563d21902ce16, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5564398804718981073, guid: d5dcb564b5035624097563d21902ce16, type: 3}
       propertyPath: m_text
       value: Full-Screen

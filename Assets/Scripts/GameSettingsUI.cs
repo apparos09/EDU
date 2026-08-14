@@ -113,7 +113,9 @@ namespace RM_EDU
             if (SystemManager.Instantiated)
             {
                 // Hides the tutorial toggle since it shoudn't be usable.
-                tutorialToggle.gameObject.SetActive(false);
+                // The tutorial toggle should now be on no matter what.
+                // tutorialToggle.gameObject.SetActive(false);
+                tutorialToggle.gameObject.SetActive(true);
 
                 // Enable the TTS volume slider and TTS toggle.
                 // ttsVolumeSlider.interactable = true; Unused

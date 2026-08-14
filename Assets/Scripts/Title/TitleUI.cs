@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using util;
@@ -126,8 +127,9 @@ namespace RM_EDU
                     continueButton.interactable = false;
                 }
 
-                // Hide the quit button.
-                quitButton.gameObject.SetActive(false);
+                // Removed since the quit button is now always active.
+                // Old (LOL): Hide the quit button.
+                // quitButton.gameObject.SetActive(false);
             }
             else
             {
@@ -152,12 +154,17 @@ namespace RM_EDU
                 // Keep continue button disabled.
                 continueButton.interactable = false;
 
-                // Show the quit button.
-                quitButton.gameObject.SetActive(true);
+                // Removed since the quit button is now always active.
+                // OLD: Show the quit button.
+                // quitButton.gameObject.SetActive(true);
             }
 
+            // New.
+            // Makes the quit button non-interactable if the runtime platfrom is WebGL.
+            quitButton.interactable = Application.platform != RuntimePlatform.WebGLPlayer;
+
             // If game mode select isn't enabled, use the new game button.
-            // If it is enable,d use the new game mode button.
+            // If it is enable, use the new game mode button.
             newGameButton.gameObject.SetActive(!GameSettings.GAME_MODE_SELECT_ENABLED);
             newGameModeButton.gameObject.SetActive(GameSettings.GAME_MODE_SELECT_ENABLED);
 

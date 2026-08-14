@@ -80,13 +80,16 @@ namespace RM_EDU
                 // if (LanguageManager.Instantiated)
                 if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
                 {
+                    // Old
                     // NOTE: the buttons disappear for a frame if there is no save state.
                     // It doesn't effect anything, but it's jarring visually.
                     // As such, the Update loop keeps them both on.
 
+                    // From LOL version. These have been removed.
                     // Set up the game initializations.
-                    if (titleUI.newGameButton != null && titleUI.continueButton != null)
-                        lolManager.saveSystem.Initialize(titleUI.newGameButton, titleUI.continueButton);
+                    // if (titleUI.newGameButton != null && titleUI.continueButton != null)
+                    //     lolManager.saveSystem.Initialize(titleUI.newGameButton, titleUI.continueButton);
+
 
                     // Don't disable the continue button, otherwise the save data can't be loaded.
                     // Enables/disables the continue button based on if there is loaded data or not.
@@ -101,26 +104,42 @@ namespace RM_EDU
                     // continueTutorial = true;
 
                     // LOLSDK.Instance.SubmitProgress();
+
+                    // New
                 }
                 else
                 {
                     // Debug.LogError("LOL SDK NOT INITIALIZED.");
                     Debug.LogError("SYSTEM MANAGER NOT INITIALIZED.");
 
-                    // You can save and go back to the menu, so the continue button is usable under that circumstance.
-                    if (lolManager.saveSystem.HasLoadedData()) // Game has loaded data.
-                    {
-                        // TODO: manage tutorial content.
-                    }
-                    else // No loaded data.
-                    {
-                        // TODO: manage tutorial content.
-                    }
+                    // // You can save and go back to the menu, so the continue button is usable under that circumstance.
+                    // if (lolManager.saveSystem.HasLoadedData()) // Game has loaded data.
+                    // {
+                    //     // TODO: manage tutorial content.
+                    // }
+                    // else // No loaded data.
+                    // {
+                    //     // TODO: manage tutorial content.
+                    // }
 
-                    // TODO: do you need this?
+                    // Unused from LOL.
                     // // Have the button be turned on no matter what for testing purposes.
                     // titleUI.continueButton.interactable = true;
                 }
+
+                //// Checks for the save system.
+                //if (SaveSystem.Instantiated)
+                //{
+                //    // If saving and loading is enabled, set interactable.
+                //    // This doesn't check for a loaded game. When the continue button is pressed...
+                //    // It will check for a loaded game and load the data if no data is initially found.
+                //    titleUI.continueButton.interactable = SaveSystem.Instance.SavingLoadingEnabled;
+                //}
+                //else
+                //{
+                //    // No save system, so no continung from a saved game.
+                //    titleUI.continueButton.interactable = false;
+                //}
             }
         }
 
@@ -245,7 +264,8 @@ namespace RM_EDU
         // Continues a saved game.
         public void ContinueGame()
         {
-            // New
+            // LOL version used callbacks, so no extra work was needed.
+            // That code has been removed.
             // NOTE: a callback is setup onclick to load the save data.
             // Since that might happen after this function is processed...
             // Loaded data does not need to be checked for at this stage.
@@ -253,6 +273,28 @@ namespace RM_EDU
             //// If the user's tutorial settings should be overwritten, do so.
             //if (overrideTutorial)
             //    GameSettings.Instance.UseTutorial = continueTutorial;
+
+            // New
+            // Save system exists.
+            if(SaveSystem.Instantiated)
+            {
+                // Gets the instance.
+                SaveSystem saveSystem = SaveSystem.Instance;
+
+                // If no data is loaded, but saving and loading is enabled.
+                if(!saveSystem.HasLoadedData() && saveSystem.SavingLoadingEnabled)
+                {
+                    // Tries to load the file.
+                    bool saveLoaded = saveSystem.LoadGame();
+
+                    // If the data couldn't be loaded.
+                    if(!saveLoaded)
+                    {
+                        Debug.LogWarning("Save data not found. Starting new game.");
+                    }
+                }
+
+            }
 
             // Starts the game.
             StartGame();

@@ -1,8 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using util;
 using TMPro;
 
 namespace RM_EDU
@@ -63,12 +66,19 @@ namespace RM_EDU
         // Becomes 'true' when the save system is instanced.
         private static bool instanced = false;
 
+        // Becomes 'true' when the save system is initialized.
+        private bool initialized = false;
+
         // The game data.
         // The last game save. This is only for testing purposes.
         public EDU_GameData lastSave;
 
         // The data that was loaded.
         public EDU_GameData loadedData;
+
+        // New
+        // The file reader.
+        public FileReaderBytes fileReader = null;
 
         // The world manager for the game, which has the save information.
         public WorldManager worldManager;
@@ -82,8 +92,15 @@ namespace RM_EDU
         // The string shown when having feedback.
         private string feedbackString = "Saving Data";
 
+        // New
+        // The default saving data.
+        private string FEEDBACK_STRING_DEFAULT = "Saving Data";
+
         // The string key for the feedback.
         private const string FEEDBACK_STRING_KEY = "sve_msg_savingGame";
+
+        // Becomes 'true' when a save is in progress.
+        private bool saveInProgress = false;
 
         // Other
         // Determines if saving and loading is enabled.
@@ -113,13 +130,13 @@ namespace RM_EDU
             // Run code for initialization.
             if (!instanced)
             {
-                // The initialization happens in the start function.
-                // Initialize the save system.
-                // Initialize();
+                // If the save system hasn't been initialized, initialize it.
+                if (!initialized)
+                    Initialize();
 
                 // New
                 // If saving and loading is enabled, but the game is in WebGL, disable saving and loading.
-                if(savingLoadingEnabled && Application.platform == RuntimePlatform.WebGLPlayer)
+                if (savingLoadingEnabled && Application.platform == RuntimePlatform.WebGLPlayer)
                 {
                     savingLoadingEnabled = false;
                 }
@@ -127,6 +144,7 @@ namespace RM_EDU
                 // Don't destroy the save system on load.
                 DontDestroyOnLoad(gameObject);
 
+                // Instance has been made.
                 instanced = true;
             }
 
@@ -190,13 +208,64 @@ namespace RM_EDU
             }
         }
 
-        // Set save and load operations.
-        public void Initialize(Button newGameButton, Button continueButton)
+        // Returns true if the save system has been initialized.
+        public bool Initialized
         {
-            // Makes the continue button disappear if there is no data to load. 
-            //Helper.StateButtonInitialize<EDU_GameData>(newGameButton, continueButton, OnLoadData);
+            get { return initialized; }
         }
 
+        // Old, Removed.
+        // // Set save and load operations.
+        // public void Initialize(Button newGameButton, Button continueButton)
+        // {
+        //     // Makes the continue button disappear if there is no data to load. 
+        //     //Helper.StateButtonInitialize<EDU_GameData>(newGameButton, continueButton, OnLoadData);
+        // }
+
+        // Set save and load operations.
+        public void Initialize()
+        {
+            // The result.
+            bool result;
+
+            // Checks if the file reader exists.
+            if (fileReader == null)
+            {
+                // Tries to grab component.
+                if (!TryGetComponent<FileReaderBytes>(out fileReader))
+                {
+                    // Add component.
+                    fileReader = gameObject.AddComponent<FileReaderBytes>();
+                }
+            }
+
+            fileReader.filePath = "Assets\\Resources\\Data\\Saves\\";
+            fileReader.fileName = "save.dat";
+
+            // Checks if the file exists.
+            result = fileReader.FileExists();
+
+            // If the file exists, the save system checks if it's empty.
+            if (result)
+            {
+                // If the file is empty, delete the file.
+                bool empty = fileReader.IsFileEmpty();
+
+                // If empty, delete the file.
+                if (empty)
+                {
+                    fileReader.DeleteFile();
+                }
+                else // Not empty, so try to load the game.
+                {
+                    LoadGame();
+                }
+
+            }
+
+            // Save system has been initialized.
+            initialized = true;
+        }
 
         // Saving Loading Enabled
         public bool SavingLoadingEnabled
@@ -250,8 +319,43 @@ namespace RM_EDU
             lastSave = null;
         }
 
-        // Saves data.
+
+        // Converts an object to bytes (requires seralizable object) and returns it.
+        static public byte[] SerializeObject(object data)
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            MemoryStream ms = new MemoryStream();
+
+            bf.Serialize(ms, data); // Serialize the data for them emory stream.
+            return ms.ToArray();
+        }
+
+        // Deserialize the provided object, converting it to an object and returning it.
+        static public object DeserializeObject(byte[] data)
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            MemoryStream ms = new MemoryStream();
+
+            ms.Write(data, 0, data.Length); // Write data.
+            ms.Seek(0, 0); // Return to start of data.
+
+            return bf.Deserialize(ms); // return content
+        }
+
+        // Checks if a save is in progress.
+        public bool IsSaveInProgress()
+        {
+            return saveInProgress;
+        }
+
+        // Saves data. Defaults to asynchronous save.
         public bool SaveGame()
+        {
+            return SaveGame(true);
+        }
+
+        // Saves data.
+        public bool SaveGame(bool async)
         {
             // The game manager does not exist if false.
             if (!IsWorldManagerSet())
@@ -286,22 +390,42 @@ namespace RM_EDU
                     //if (feedbackString != defs[FEEDBACK_STRING_KEY])
                     //    feedbackString = defs[FEEDBACK_STRING_KEY];
 
+                    // New
                     // The system manager and language manager are instantiated.
-                    if(LanguageManager.Instantiated)
+                    if (LanguageManager.Instantiated)
                     {
                         // Gets the value.
                         string value = LanguageManager.Instance.GetLanguageText(FEEDBACK_STRING_KEY);
 
                         // The values don't match, so set the feedback string.
-                        if(feedbackString != value)
+                        if (feedbackString != value)
                             feedbackString = value;
 
                     }
                 }
 
-                // From LOL version.
+                // From LOL version. Removed.
                 // Send the save state.
                 //LOLSDK.Instance.SaveState(savedData);
+
+                // New
+                // Checks if save/load should be allowed.
+                if (savingLoadingEnabled)
+                {
+                    // Save to a file.
+                    if (async) // Asynchronous save.
+                    {
+                        success = SaveToFileAsync(savedData);
+                    }
+                    else // Synchronous save.
+                    {
+                        success = SaveToFile(savedData);
+                    }
+                }
+                else
+                {
+                    success = false;
+                }
 
                 success = true;
             }
@@ -314,48 +438,287 @@ namespace RM_EDU
             return success;
         }
 
-        // Called for saving the result.
-        private void OnSaveResult(bool success)
+        // Save the information to a file.
+        private bool SaveToFile(EDU_GameData data)
         {
-            if (!success)
-            {
-                Debug.LogWarning("Saving not successful");
-                return;
-            }
+            // Gets the file.
+            string file = fileReader.GetFileWithPath();
 
-            if (feedbackMethod != null)
-                StopCoroutine(feedbackMethod);
+            // Will generate the file if it doesn't exist.
+            // // Checks that the file exists.
+            // if (!fileReader.FileExists())
+            //     return false;
 
+            // Seralize the data.
+            byte[] dataArr = SerializeObject(data);
 
+            // Data did not serialize properly.
+            if (dataArr.Length == 0)
+                return false;
 
-            // ...Auto Saving Complete
-            feedbackMethod = StartCoroutine(Feedback(feedbackString));
+            // Save started.
+            saveInProgress = true;
+
+            // Write to the file.
+            File.WriteAllBytes(file, dataArr);
+
+            // Save finished.
+            saveInProgress = false;
+
+            // Data written successfully.
+            return true;
         }
 
-        // Feedback while result is saving.
-        IEnumerator Feedback(string text)
+        // Saves the game asynchronously.
+        public bool SaveToFileAsync(EDU_GameData data)
         {
-            // Only updates the text that the feedback text was set.
+            // Checks if the feedback method exists.
+            if (feedbackMethod == null)
+            {
+                feedbackMethod = StartCoroutine(SaveToFileAsyncCourtine(data));
+                return true;
+            }
+            else
+            {
+                Debug.LogWarning("Save already in progress.");
+                return false;
+            }
+        }
+
+
+        // From LOL version. Unused.
+        // // Called for saving the result.
+        // private void OnSaveResult(bool success)
+        // {
+        //     if (!success)
+        //     {
+        //         Debug.LogWarning("Saving not successful");
+        //         return;
+        //     }
+        // 
+        //     if (feedbackMethod != null)
+        //         StopCoroutine(feedbackMethod);
+        // 
+        // 
+        // 
+        //     // ...Auto Saving Complete
+        //     feedbackMethod = StartCoroutine(Feedback(feedbackString));
+        // }
+        // 
+        // // Feedback while result is saving.
+        // IEnumerator Feedback(string text)
+        // {
+        //     // Only updates the text that the feedback text was set.
+        //     if (feedbackText != null)
+        //     {
+        //         feedbackText.text = text;
+        //         feedbackText.gameObject.SetActive(true);
+        //     }
+        //         
+        // 
+        //     yield return feedbackTimer;
+        // 
+        //     // Only updates the content if the feedback text has been set.
+        //     if (feedbackText != null)
+        //     {
+        //         feedbackText.text = string.Empty;
+        //         feedbackText.gameObject.SetActive(false);
+        //     }
+        //         
+        // 
+        //     // nullifies the feedback method.
+        //     feedbackMethod = null;
+        // }
+
+        // Refreshes the feedback string.
+        public void RefreshFeedbackString()
+        {
+            //// The language manager.
+            //LanguageManager lm = LanguageManager.Instance;
+
+            //// If the language should be translated.
+            //if (lm.TranslateAndLanguageSet())
+            //{
+            //    feedbackString = LanguageManager.Instance.GetLanguageText(FEEDBACK_STRING_KEY);
+            //}
+            //else
+            //{
+            //    feedbackString = "Saving Game...";
+            //}
+
+            feedbackString = FEEDBACK_STRING_DEFAULT;
+        }
+
+        // Refreshes the feedback text.
+        public void RefreshFeedbackText()
+        {
+            // If the text exists.
             if (feedbackText != null)
             {
-                feedbackText.text = text;
-                feedbackText.gameObject.SetActive(true);
+                // Checks if a save is in progress.
+                if (saveInProgress)
+                    feedbackText.text = feedbackString;
+                else
+                    feedbackText.text = string.Empty;
             }
-                
+        }
 
+        // Save the information to a file asynchronously (cannot return anything).
+        private IEnumerator SaveToFileAsyncCourtine(EDU_GameData data)
+        {
+            // Save started.
+            saveInProgress = true;
+
+            // Show saving text.
+            RefreshFeedbackText();
+
+            // Gets the file.
+            string file = fileReader.GetFileWithPath();
+
+            // Seralize the data.
+            byte[] dataArr = SerializeObject(data);
+
+            // Yield return before file wrting begins.
+            yield return null;
+
+            // Show saving text in case scene has changed.
+            RefreshFeedbackText();
+
+            // Opens the file in the file stream.
+            FileStream fs = File.OpenWrite(file);
+
+            // NOTE: this is pretty scuffed, but because of the way it's set up I don't really have a better option.
+            // File.WriteAsync would probably be better.
+
+            // Ver. 1
+            // // The number of bytes to write, and the offset.
+            // int count = 32;
+            // int offset = 0;
+
+            // // While there's still bytes to write.
+            // while(offset < dataArr.Length)
+            // {
+            //     // If the count exceeds the amount of remaining bytes, adjust it.
+            //     if (offset + count > dataArr.Length)
+            //         count = dataArr.Length - offset;
+            // 
+            //     fs.Write(dataArr, offset, count);
+            // 
+            //     // Increase the offset.
+            //     offset += count;
+            // 
+            //     // Run other operations.
+            //     // yield return null;
+            // 
+            //     // Pause the courtine for 2 seconds.
+            //     yield return feedbackTimer;
+            // }
+
+            // Ver. 2 - write the data and suspend for the amount of time set to feedbackTimer.
+            fs.Write(dataArr, 0, dataArr.Length);
             yield return feedbackTimer;
 
-            // Only updates the content if the feedback text has been set.
-            if (feedbackText != null)
-            {
-                feedbackText.text = string.Empty;
-                feedbackText.gameObject.SetActive(false);
-            }
-                
+            // Show saving text in case scene has changed.
+            RefreshFeedbackText();
 
-            // nullifies the feedback method.
-            feedbackMethod = null;
+            // Close the file stream.
+            fs.Close();
+
+            // Save finished.
+            saveInProgress = false;
+
+            // Hide feedback text now that the save is done.
+            RefreshFeedbackText();
+
+            // Save is complete, so set the method to null.
+            if (feedbackMethod != null)
+                feedbackMethod = null;
         }
+
+        // The gameplay manager now checks if there is loadedData. If so, then it will load in the data when the game starts.
+        // Loads a saved game. This returns 'false' if there was no data.
+        public bool LoadGame()
+        {
+            // Loading a save is not allowed, so return false.
+            if (!savingLoadingEnabled)
+                return false;
+
+            // The result of loading the save data.
+            bool success;
+
+            // The file doesn't exist.
+            if (!fileReader.FileExists())
+            {
+                return false;
+            }
+
+            // Loads the file.
+            loadedData = LoadFromFile();
+
+            // The data has been loaded successfully.
+            success = loadedData != null;
+
+            return success;
+        }
+
+        // Loads information from a file.
+        private EDU_GameData LoadFromFile()
+        {
+            // Gets the file.
+            string file = fileReader.GetFileWithPath();
+
+            // Checks that the file exists.
+            if (!fileReader.FileExists())
+                return null;
+
+            // Read from the file.
+            byte[] dataArr = File.ReadAllBytes(file);
+
+            // Data did not serialize properly.
+            if (dataArr.Length == 0)
+                return null;
+
+            // Deseralize the data.
+            object data = DeserializeObject(dataArr);
+
+            // Convert to loaded data.
+            EDU_GameData loadData = (EDU_GameData)(data);
+
+            // Return loaded data.
+            return loadData;
+        }
+
+        // From LOL verison. Unused.
+        // // Called to load data from the server.
+        // private void OnLoadData(EDU_GameData loadedGameData)
+        // {
+        //     // Overrides serialized state data or continues with editor serialized values.
+        //     if (loadedGameData != null)
+        //     {
+        //         loadedData = loadedGameData;
+        //     }
+        //     else // No game data found.
+        //     {
+        //         // Changed from error to warning since starting a new game always triggers this.
+        //         // Debug.LogError("No game data found.");
+        //         Debug.Log("No game data found.");
+        //         loadedData = null;
+        //         return;
+        //     }
+        // 
+        //     // TODO: save data for game loading.
+        //     // TODO: why do I check this here? What purpose does this serve.
+        //     //if (!IsWorldManagerSet())
+        //     //{
+        //     //    Debug.LogError("Game gameManager not found.");
+        //     //    return;
+        //     //}
+        // 
+        //     // TODO: this automatically loads the game if the continue button is pressed.
+        //     // If there is no data to load, the button is gone. 
+        //     // You should move the buttons around to accomidate for this.
+        //     // LoadGame();
+        // }
 
         // Checks if the game has loaded data.
         // checkValid: if 'true', the data is checked for validity. If the data is invalid, this returns false.
@@ -390,55 +753,37 @@ namespace RM_EDU
         // Clears out the last save and the loaded data object.
         public void ClearLoadedAndLastSaveData()
         {
-            lastSave = null;
-            loadedData = null;
+            // Old
+            // lastSave = null;
+            // loadedData = null;
+
+            // New - doesn't delete the save file.
+            ClearLoadedAndLastSaveData(false);
         }
 
-        // The gameplay manager now checks if there is loadedData. If so, then it will load in the data when the game starts.
-        // // Loads a saved game. This returns 'false' if there was no data.
-        // public bool LoadGame()
-        // {
-        //     // No loaded data.
-        //     if(loadedData == null)
-        //     {
-        //         Debug.LogWarning("There is no saved game.");
-        //         return false;
-        //     }
-        // 
-        //     // TODO: load the game data.
-        // 
-        //     return true;
-        // }
-
-        // Called to load data from the server.
-        private void OnLoadData(EDU_GameData loadedGameData)
+        // Clears out the last save and the loaded data object. Also deletes the file.
+        public void ClearLoadedAndLastSaveData(bool deleteFile)
         {
-            // Overrides serialized state data or continues with editor serialized values.
-            if (loadedGameData != null)
-            {
-                loadedData = loadedGameData;
-            }
-            else // No game data found.
-            {
-                // Changed from error to warning since starting a new game always triggers this.
-                // Debug.LogError("No game data found.");
-                Debug.Log("No game data found.");
-                loadedData = null;
-                return;
-            }
+            lastSave = null;
+            loadedData = null;
 
-            // TODO: save data for game loading.
-            // TODO: why do I check this here? What purpose does this serve.
-            //if (!IsWorldManagerSet())
-            //{
-            //    Debug.LogError("Game gameManager not found.");
-            //    return;
-            //}
+            // If the file should be deleted.
+            if (deleteFile)
+            {
+                // If the file exists, delete it.
+                if (fileReader.FileExists())
+                {
+                    // Checks if a meta file exists so that that can be deleted too.
+                    string meta = fileReader.GetFileWithPath() + ".meta";
 
-            // TODO: this automatically loads the game if the continue button is pressed.
-            // If there is no data to load, the button is gone. 
-            // You should move the buttons around to accomidate for this.
-            // LoadGame();
+                    // Delete the main file.
+                    fileReader.DeleteFile();
+
+                    // If the meta file exists, delete it.
+                    if (File.Exists(meta))
+                        File.Delete(meta);
+                }
+            }
         }
 
         // This function is called when the MonoBehaviour will be destroyed.

@@ -9,7 +9,7 @@ namespace RM_EDU
     public abstract class WorldStage : MonoBehaviour
     {
         // The world stage data.
-        [SerializeField]
+        [System.Serializable]
         public class WorldStageData
         {
             // The world index of the stage.
