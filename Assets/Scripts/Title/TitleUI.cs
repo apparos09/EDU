@@ -88,9 +88,6 @@ namespace RM_EDU
             if (titleManager == null)
                 titleManager = TitleManager.Instance;
 
-            // Makes sure the quit button is on.
-            quitButton.gameObject.SetActive(true);
-
             // If the platform is set to webGL, disable the quit button.
             if (Application.platform == RuntimePlatform.WebGLPlayer)
             {

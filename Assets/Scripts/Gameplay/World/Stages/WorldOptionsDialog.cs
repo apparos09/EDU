@@ -35,8 +35,27 @@ namespace RM_EDU
             // This is done by seeing if this is the LOL_BUILD, the SaveSystem is Instantiated...
             // And if Saving/Loading is enabled.
             // In WebGL, the game can only save if it's using LOL's systems.
-            canSave = GameSettings.IS_MULTI_LANGUAGE && SaveSystem.Instantiated &&
-                    WorldManager.Instance.SavingLoadingEnabled;
+            
+            // Old version for LOL.
+            // Old: checked IS_MULTI_LANGUAGE because it was once checking IS_LOL_BUILD
+            // canSave = GameSettings.IS_MULTI_LANGUAGE && SaveSystem.Instantiated &&
+            //         WorldManager.Instance.SavingLoadingEnabled;
+
+            // New: checks if save system exists, then checks for saving and loading to be enabled.
+            if(SaveSystem.Instantiated)
+            {
+                // New verison for LOL.
+                // canSave = GameSettings.IS_LOL_BUILD && SaveSystem.Instance.SavingLoadingEnabled &&
+                //          WorldManager.Instance.SavingLoadingEnabled;
+
+                // Only allow saving and loading if it's enabled for both.
+                canSave = SaveSystem.Instance.SavingLoadingEnabled && WorldManager.Instance.SavingLoadingEnabled;
+            }
+            else
+            {
+                // No saving since the save system isn't loaded.
+                canSave = false;
+            }
 
             // Use this version if running the game with the LOL components removed.
             // canSave = Application.platform != RuntimePlatform.WebGLPlayer &&
