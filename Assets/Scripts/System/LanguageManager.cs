@@ -14,6 +14,10 @@ namespace RM_EDU
         // The instance of the language marker.
         private static LanguageManager instance;
 
+        // Gets set to 'true' when the singleton has been instanced.
+        // This isn't needed, but it helps with the clarity.
+        private static bool instanced = false;
+
         // The file reader for the language manager.
         public util.FileReaderLines fileReader;
 
@@ -50,12 +54,23 @@ namespace RM_EDU
             if (instance == null)
             {
                 instance = this;
+            }
+            else
+            {
+                Destroy(this);
+                return;
+            }
+
+            // Run code for initialization.
+            if (!instanced)
+            {
+                instanced = true;
 
                 // File reader not set.
                 if (fileReader == null)
                 {
                     // Tries to get the component.
-                    if(!TryGetComponent(out fileReader))
+                    if (!TryGetComponent(out fileReader))
                     {
                         // Failed to get component, so add the component.
                         fileReader = gameObject.AddComponent<util.FileReaderLines>();
@@ -64,11 +79,6 @@ namespace RM_EDU
 
                 // Don't destroy the language manager on load.
                 DontDestroyOnLoad(gameObject);
-            }
-            else
-            {
-                Destroy(this);
-                return;
             }
         }
 
@@ -103,6 +113,15 @@ namespace RM_EDU
             }
         }
 
+        // Returns 'true' if the object has been initialized.
+        public static bool Instantiated
+        {
+            get
+            {
+                return instanced;
+            }
+        }
+
         // Gets the loaded language.
         public language LoadedLanguage
         {
@@ -133,7 +152,7 @@ namespace RM_EDU
             {
                 case language.english:
                 default:
-                    file = "language_en.txt";
+                    file = "lge_-_en.txt";
                     break;
             }
 
@@ -202,7 +221,7 @@ namespace RM_EDU
         }
 
         // Returns 'true' if the language text contains the language key.
-        public bool LangugeTextContainsKey(string key)
+        public bool LanguageTextContainsKey(string key)
         {
             return langText.ContainsKey(key);
         }

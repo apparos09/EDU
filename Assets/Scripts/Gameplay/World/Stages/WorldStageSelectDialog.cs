@@ -86,7 +86,7 @@ namespace RM_EDU
         private string GetStageNameTranslated(string key)
         {
             // Checks if the LOL SDK is initialized.
-            if (SystemManager.IsLanguageLoaderInitialized() && key != "")
+            if (SystemManager.IsLanguageLoaded() && key != "")
             {
                 return SystemManager.GetLanguageTextStatic(key);
             }
@@ -99,7 +99,7 @@ namespace RM_EDU
         // Gets the world stage string.
         public string GetWorldStageString()
         {
-            if (SystemManager.IsLanguageLoaderInitialized())
+            if (SystemManager.IsLanguageLoaded())
                 return GetStageNameTranslated(WORLD_STAGE_KEY);
             else
                 return "World Stage";
@@ -108,7 +108,7 @@ namespace RM_EDU
         // Gets the action stage string.
         public string GetActionStageString()
         {
-            if (SystemManager.IsLanguageLoaderInitialized())
+            if (SystemManager.IsLanguageLoaded())
                 return GetStageNameTranslated(ACTION_STAGE_KEY);
             else
                 return "Action Stage";
@@ -117,7 +117,7 @@ namespace RM_EDU
         // Gets the knowledge stage string.
         public string GetKnowledgeStageString()
         {
-            if (SystemManager.IsLanguageLoaderInitialized())
+            if (SystemManager.IsLanguageLoaded())
                 return GetStageNameTranslated(KNOWLEDGE_STAGE_KEY);
             else
                 return "Knowledge Stage";
@@ -126,7 +126,7 @@ namespace RM_EDU
         // Gets the unknown stage string.
         public string GetUnknownStageString()
         {
-            if (SystemManager.IsLanguageLoaderInitialized())
+            if (SystemManager.IsLanguageLoaded())
                 return GetStageNameTranslated(UNKNOWN_STAGE_KEY);
             else
                 return "Unknown Stage";
@@ -270,7 +270,7 @@ namespace RM_EDU
         public void SpeakStageType()
         {
             // If the LOL Manager has been initialized, TTS is instantiated, and GameSettings is instantiated.
-            if (SystemManager.IsLanguageLoaderInitialized() && TextToSpeech.Instantiated && GameSettings.Instantiated)
+            if (SystemManager.IsLanguageLoaded() && TextToSpeech.Instantiated && GameSettings.Instantiated)
             {
                 // If text-to-speech is enabled, try to speak the text.
                 if (GameSettings.Instance.UseTextToSpeech)

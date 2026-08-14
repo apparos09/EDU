@@ -22,8 +22,13 @@ namespace RM_EDU
         // This isn't needed, but it helps with the clarity.
         private static bool instanced = false;
 
+        // OLD (from LOL version)
         // If this is the lol build, set it to 'true'. If it's the promo build, set this to false.
-        public const bool IS_LOL_BUILD = true;
+        // public const bool IS_LOL_BUILD = true;
+
+        // New
+        // If 'true', the game is in multi-langauge mode. If false, the game uses its default text.
+        public const bool IS_MULTI_LANGUAGE = true;
 
         [Header("Settings")]
 

@@ -55,7 +55,7 @@ namespace RM_EDU
                 else
                 {
                     // Checks if the LOL Manager exists for translation.
-                    if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized() && nameKey != "")
+                    if (SystemManager.IsInstantiatedAndIsLanguageLoaded() && nameKey != "")
                     {
                         result = SystemManager.GetLanguageTextStatic(nameKey);
 
@@ -91,7 +91,7 @@ namespace RM_EDU
                 else
                 {
                     // Checks if the LOL Manager exists for translation.
-                    if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized() && descriptionKey != "")
+                    if (SystemManager.IsInstantiatedAndIsLanguageLoaded() && descriptionKey != "")
                     {
                         result = SystemManager.GetLanguageTextStatic(descriptionKey);
 
@@ -269,7 +269,7 @@ namespace RM_EDU
         public void SpeakText(string key)
         {
             // Checks if the instances exist: LOL SDK, Text-to-Speech, and GameSettings.
-            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized() && TextToSpeech.Instantiated && GameSettings.Instantiated)
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaded() && TextToSpeech.Instantiated && GameSettings.Instantiated)
             {
                 // Gets the instances.
                 GameSettings gameSettings = GameSettings.Instance;

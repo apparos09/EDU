@@ -533,7 +533,7 @@ namespace RM_EDU
             string result;
 
             // Checks if the LOL SDK has been initialized.
-            if(SystemManager.IsLanguageLoaderInitialized())
+            if(SystemManager.IsLanguageLoaded())
             {
                 // Gets the key.
                 string key = GetCategoryNameKey(category);

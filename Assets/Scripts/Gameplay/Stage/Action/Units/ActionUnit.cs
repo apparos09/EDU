@@ -214,7 +214,7 @@ namespace RM_EDU
 
             // Other
             // If the LOL SDK is initialized.
-            if(SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if(SystemManager.IsInstantiatedAndIsLanguageLoaded())
             {
                 // The name key exists, so try to get the name.
                 if(unitNameKey != string.Empty)
@@ -276,7 +276,7 @@ namespace RM_EDU
             else
             {
                 // LOLMananger instantiated, OL SDK initialized, and the key is set, so get the translated text
-                if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized() && unitNameKey != "")
+                if (SystemManager.IsInstantiatedAndIsLanguageLoaded() && unitNameKey != "")
                 {
                     result = SystemManager.GetLanguageTextStatic(unitNameKey);
 
@@ -323,7 +323,7 @@ namespace RM_EDU
             else
             {
                 // LOL SDK Initialized and the key is set, so get the translated text.
-                if (SystemManager.IsLanguageLoaderInitialized() && unitDescKey != "")
+                if (SystemManager.IsLanguageLoaded() && unitDescKey != "")
                 {
                     // Create a new list.
                     result = new List<string>();
@@ -389,7 +389,7 @@ namespace RM_EDU
 
             // If the SDK is initialized, get the text from it.
             // If it isn't, manually set it.
-            if(SystemManager.IsLanguageLoaderInitialized())
+            if(SystemManager.IsLanguageLoaded())
             {
                 name = SystemManager.Instance.GetLanguageText(key);
             }

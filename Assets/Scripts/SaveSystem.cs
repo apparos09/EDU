@@ -128,6 +128,7 @@ namespace RM_EDU
         // Start is called before the first frame update
         void Start()
         {
+            // Original from LOL
             //// Sets the save result to the instance.
             //LOLSDK.Instance.SaveResultReceived += OnSaveResult;
 
@@ -137,6 +138,13 @@ namespace RM_EDU
             //// Sets the save complete text.
             //if (defs != null)
             //    feedbackString = defs[FEEDBACK_STRING_KEY];
+
+            // New
+            // If language translation is active, translate the string.
+            if(SystemManager.IsInstantiatedAndIsLanguageLoaded())
+            {
+                feedbackString = SystemManager.GetLanguageTextStatic(FEEDBACK_STRING_KEY);
+            }
         }
 
         // Gets the instance.
@@ -263,15 +271,28 @@ namespace RM_EDU
                 // Makes sure that the feedback string is set.
                 if (FEEDBACK_STRING_KEY != string.Empty)
                 {
+                    // LOL Version
                     // Gets the language definition.
                     //JSONNode defs = SharedState.LanguageDefs;
 
                     //// Sets the feedback string if it wasn't already set.
                     //if (feedbackString != defs[FEEDBACK_STRING_KEY])
                     //    feedbackString = defs[FEEDBACK_STRING_KEY];
+
+                    // The system manager and language manager are instantiated.
+                    if(LanguageManager.Instantiated)
+                    {
+                        // Gets the value.
+                        string value = LanguageManager.Instance.GetLanguageText(FEEDBACK_STRING_KEY);
+
+                        // The values don't match, so set the feedback string.
+                        if(feedbackString != value)
+                            feedbackString = value;
+
+                    }
                 }
 
-
+                // From LOL version.
                 // Send the save state.
                 //LOLSDK.Instance.SaveState(savedData);
 

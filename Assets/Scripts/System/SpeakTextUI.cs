@@ -11,7 +11,7 @@ namespace RM_EDU
         public void SpeakText(string key)
         {
             // Checks if the instances exist and if the key is set.
-            if (GameSettings.Instantiated && SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized() && key != "")
+            if (GameSettings.Instantiated && SystemManager.IsInstantiatedAndIsLanguageLoaded() && key != "")
             {
                 // Gets the instances.
                 GameSettings gameSettings = GameSettings.Instance;

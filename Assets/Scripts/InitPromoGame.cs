@@ -7,8 +7,8 @@ namespace RM_EDU
     public class InitPromoGame : MonoBehaviour
     {
         // Becomes 'true' when the game has been initialized.
-        [HideInInspector]
-        public bool initializedGame = false;
+        // Originally public in LOL-373. Now is private with a getter.
+        private bool initializedGame = false;
 
         void Awake()
         {
@@ -19,6 +19,13 @@ namespace RM_EDU
             // Use the tutorial by default.
             GameSettings.Instance.UseTutorials = true;
 
+            // Set for loading languages.
+            if (GameSettings.IS_MULTI_LANGUAGE && LanguageManager.Instantiated)
+            {
+                LanguageManager.Instance.defaultLanguage = LanguageManager.language.english;
+                LanguageManager.Instance.loadLangaugeOnStart = true;
+            }
+
             // Set to true to show that the game has been initialized.
             initializedGame = true;
         }
@@ -28,6 +35,12 @@ namespace RM_EDU
         {
             // Change 'IS_LOL_BUILD" in game settings instead of adjusting this.
             TMP_TextTranslator.markIfFailed = true;
+        }
+
+        // Returns 'true' if the game has been initialized.
+        public bool InitializedGame
+        {
+            get {  return initializedGame; }
         }
 
         // Update is called once per frame

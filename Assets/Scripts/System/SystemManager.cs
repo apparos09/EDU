@@ -18,7 +18,7 @@ namespace RM_EDU
         //private JSONNode defs;
 
         // Loads in a language to be used in the game.
-        public LanguageManager languageLoader;
+        public LanguageManager languageManager;
         
         // The save system for the game.
         public SaveSystem saveSystem;
@@ -82,12 +82,12 @@ namespace RM_EDU
             //    defs = SharedState.LanguageDefs;
 
             // If the language loader isn't set, try to set it. If failed, generate a new component.
-            if(languageLoader == null)
+            if(languageManager == null)
             {
                 // If the language loader couldn't be found, add the component.
-                if(!TryGetComponent<LanguageManager>(out languageLoader))
+                if(!TryGetComponent<LanguageManager>(out languageManager))
                 {
-                    languageLoader = gameObject.AddComponent<LanguageManager>();
+                    languageManager = gameObject.AddComponent<LanguageManager>();
                 }
             }
 
@@ -130,16 +130,25 @@ namespace RM_EDU
         }
 
         // Returns 'true' if the LOLSDK is initialized.
-        public static bool IsLanguageLoaderInitialized()
+        public static bool IsLanguageLoaded()
         {
-            // return LanguageManager.Instantiated;
-            return false;
+            // Checks if instantiated.
+            if(LanguageManager.Instantiated)
+            {
+                // Returns true if there is language text.
+                return LanguageManager.Instance.HasLanguageText();
+            }
+            // Not instantiated.
+            else
+            {
+                return false;
+            }
         }
 
         // Checks if the LOL manager is instantiated, and if the LOL SDK is initialized.
-        public static bool IsInstantiatedAndIsLanguageLoaderInitialized()
+        public static bool IsInstantiatedAndIsLanguageLoaded()
         {
-            return Instantiated && IsLanguageLoaderInitialized();
+            return Instantiated && IsLanguageLoaded();
         }
 
         // NOTE: this function could be static, but the game shouldn't be operating if the LOLSDK and LOLManager...
@@ -147,6 +156,7 @@ namespace RM_EDU
         // Gets the text from the language file.
         public string GetLanguageText(string key)
         {
+            // LOL Version
             //// Gets the language definitions.
             //if(defs == null)
             //    defs = SharedState.LanguageDefs;
@@ -157,17 +167,18 @@ namespace RM_EDU
             //else
             //    return "";
 
+            // New Version
             // The result to be returned.
             string result;
 
             // If the language loader is set, 
-            if(languageLoader != null)
+            if(languageManager != null)
             {
-                result = languageLoader.HasLanguageText() ? languageLoader.GetLanguageText(key) : string.Empty;
+                result = languageManager.HasLanguageText() ? languageManager.GetLanguageText(key) : string.Empty;
             }
             else
             {
-                result = "";
+                result = string.Empty;
             }
 
             return result;  
@@ -185,14 +196,26 @@ namespace RM_EDU
             //else
             //    return "";
 
-            // Checks for instantiation
-            if(Instantiated)
+            // Checks for instantiation of the language manager.
+            if(LanguageManager.Instantiated)
             {
-                return Instance.GetLanguageText(key);
+                // Gets the instance.
+                LanguageManager langManager = LanguageManager.Instance;
+
+                // If the language manager has language text loaded, use that.
+                if(langManager.HasLanguageText())
+                {
+                    return Instance.GetLanguageText(key);
+                }
+                // Return empty string.
+                else
+                {
+                    return "";
+                }
             }
             else
             {
-                return "";
+                return string.Empty;
             }
         }
 
@@ -200,7 +223,7 @@ namespace RM_EDU
         public static bool IsTextToSpeechUsable()
         {
             // The LOL SDK must be initialized and text-to-speech must be instantiated.
-            return IsLanguageLoaderInitialized() && TextToSpeech.Instantiated;
+            return IsLanguageLoaded() && TextToSpeech.Instantiated;
         }
 
         // Returns 'true' if text-to-speech is enabled.

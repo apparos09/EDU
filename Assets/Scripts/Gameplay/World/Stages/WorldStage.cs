@@ -372,7 +372,7 @@ namespace RM_EDU
             string result;
 
             // If the LOL SDK is intialized, translate the name.
-            if (SystemManager.IsLanguageLoaderInitialized())
+            if (SystemManager.IsLanguageLoaded())
             {
                 // Gets the key.
                 string key = GetStageTypeNameKey(type);

@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aaf873d5e48e22408c67067e85755d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  languageLoader: {fileID: 0}
+  languageManager: {fileID: 0}
   saveSystem: {fileID: 0}
   textToSpeech: {fileID: 0}
 --- !u!4 &244718876

@@ -229,7 +229,7 @@ namespace RM_EDU
         public string GetStageEndDefaultMessage()
         {
             // If the LOLSDK is set, use the translated message.
-            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
             {
                 return SystemManager.GetLanguageTextStatic(STAGE_OVER_MESSAGE_KEY);
             }
@@ -247,7 +247,7 @@ namespace RM_EDU
             bool genMode = GameSettings.Instance.gameplayMode == GameSettings.gameMode.generation;
 
             // If the LOLSDK is set, use the translated message.
-            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
             {
                 return SystemManager.GetLanguageTextStatic(PLAYER_USER_WON_GEN_MESSAGE_KEY);
 
@@ -285,7 +285,7 @@ namespace RM_EDU
         public string GetStageEndUserLostMessage()
         {
             // If the LOLSDK is set, use the translated message.
-            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
             {
                 return SystemManager.GetLanguageTextStatic(PLAYER_USER_LOST_MESSAGE_KEY);
             }
@@ -315,7 +315,7 @@ namespace RM_EDU
         {
             // Checks if the instances exist: LOL SDK, Text-to-Speech, and GameSettings.
             // Also checks that the key is set.
-            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized() && TextToSpeech.Instantiated &&
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaded() && TextToSpeech.Instantiated &&
                 GameSettings.Instantiated && key != "")
             {
                 // Gets the instances.

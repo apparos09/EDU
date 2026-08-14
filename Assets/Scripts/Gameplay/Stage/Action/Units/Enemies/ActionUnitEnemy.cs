@@ -205,7 +205,7 @@ namespace RM_EDU
         public static string GetEnemyTypeName()
         {
             // Checks for the LOL SDK.
-            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
             {
                 return SystemManager.GetLanguageTextStatic(GetEnemyTypeNameKey());
             }
@@ -225,7 +225,7 @@ namespace RM_EDU
         public static string GetEnemyTypeNameAbbreviation()
         {
             // Checks for the LOL SDK.
-            if(SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if(SystemManager.IsInstantiatedAndIsLanguageLoaded())
             {
                 return SystemManager.GetLanguageTextStatic(GetEnemyTypeNameAbbreviationKey());
             }

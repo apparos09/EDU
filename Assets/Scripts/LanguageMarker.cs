@@ -23,7 +23,7 @@ namespace RM_EDU
         // If the text colour should be changed.
         // TODO: set this to 'false' when creating the promo build.
         // This should really have been a regular variable that could be edited.
-        public const bool CHANGE_TEXT_COLOR = GameSettings.IS_LOL_BUILD;
+        public const bool CHANGE_TEXT_COLOR = GameSettings.IS_MULTI_LANGUAGE;
 
         // The constructor
         private LanguageMarker()

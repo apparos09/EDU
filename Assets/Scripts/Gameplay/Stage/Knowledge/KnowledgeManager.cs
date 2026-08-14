@@ -163,7 +163,7 @@ namespace RM_EDU
             }
 
             // If translation should be done.
-            if(SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if(SystemManager.IsInstantiatedAndIsLanguageLoaded())
             {
                 // Translates the strings.
                 sectionString = SystemManager.GetLanguageTextStatic(sectionStringKey);
@@ -486,7 +486,7 @@ namespace RM_EDU
             else
             {
                 // If the LOL SDK is available, translate the text.
-                if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
                 {
                     result = SystemManager.GetLanguageTextStatic(sectionStringKey);
                 }
@@ -513,7 +513,7 @@ namespace RM_EDU
             else
             {
                 // If the LOL SDK is available, translate the text.
-                if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
                 {
                     result = SystemManager.GetLanguageTextStatic(statementsStringKey);
                 }
@@ -541,7 +541,7 @@ namespace RM_EDU
             {
 
                 // If the LOL SDK is available, translate the text.
-                if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
                 {
                     result = SystemManager.GetLanguageTextStatic(resourcesStringKey);
                 }
@@ -568,7 +568,7 @@ namespace RM_EDU
             else
             {
                 // If the LOL SDK is available, translate the text.
-                if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
                 {
                     result = SystemManager.GetLanguageTextStatic(selectedStringKey);
                 }
@@ -595,7 +595,7 @@ namespace RM_EDU
             else
             {
                 // If the LOL SDK is available, translate the text.
-                if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
                 {
                     result = SystemManager.GetLanguageTextStatic(noneStringKey);
                 }

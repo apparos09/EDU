@@ -254,7 +254,7 @@ namespace RM_EDU
             public void TranslateTitle()
             {
                 // If possible, translate the title.
-                if(titleKey != "" && SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                if(titleKey != "" && SystemManager.IsInstantiatedAndIsLanguageLoaded())
                 {
                     title = SystemManager.GetLanguageTextStatic(titleKey);
                 }
@@ -571,7 +571,7 @@ namespace RM_EDU
             if(translateTitle)
             {
                 // If tranlsation is available, translate.
-                if(SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                if(SystemManager.IsInstantiatedAndIsLanguageLoaded())
                 {
                     tutorialInfo.title = SystemManager.GetLanguageTextStatic(titleKey);
                 }

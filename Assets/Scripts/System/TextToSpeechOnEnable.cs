@@ -25,7 +25,7 @@ namespace RM_EDU
 
 
             // The manager and/or SDK is not initialized.
-            if (!SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if (!SystemManager.IsInstantiatedAndIsLanguageLoaded())
                 return;
 
             // TTS is not enabled.

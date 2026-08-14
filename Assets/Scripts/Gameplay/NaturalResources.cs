@@ -132,7 +132,7 @@ namespace RM_EDU
             string key = GetNaturalResourceNameKey(res);
 
             // If the LOL SDK has been initialized and the key exists.
-            if(SystemManager.IsLanguageLoaderInitialized() && key != "")
+            if(SystemManager.IsLanguageLoaded() && key != "")
             {
                 result = SystemManager.GetLanguageTextStatic(key);
             }
@@ -267,7 +267,7 @@ namespace RM_EDU
             string key = GetNaturalResourceNameAbbreviationKey(res);
 
             // If the LOL SDK has been initialized and the key exists.
-            if (SystemManager.IsLanguageLoaderInitialized() && key != "")
+            if (SystemManager.IsLanguageLoaded() && key != "")
             {
                 result = SystemManager.GetLanguageTextStatic(key);
             }
@@ -402,7 +402,7 @@ namespace RM_EDU
             string key = GetNaturalResourceDescriptionKey(res);
 
             // If true, the text should be translated.
-            bool translate = SystemManager.IsLanguageLoaderInitialized() && key != "";
+            bool translate = SystemManager.IsLanguageLoaded() && key != "";
 
             // Checks the resource type to know what description to return.
             switch (res)

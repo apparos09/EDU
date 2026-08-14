@@ -78,7 +78,7 @@ namespace RM_EDU
 
                 // Checks for initialization
                 // if (LanguageManager.Instantiated)
-                if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
                 {
                     // NOTE: the buttons disappear for a frame if there is no save state.
                     // It doesn't effect anything, but it's jarring visually.
@@ -104,7 +104,8 @@ namespace RM_EDU
                 }
                 else
                 {
-                    Debug.LogError("LOL SDK NOT INITIALIZED.");
+                    // Debug.LogError("LOL SDK NOT INITIALIZED.");
+                    Debug.LogError("SYSTEM MANAGER NOT INITIALIZED.");
 
                     // You can save and go back to the menu, so the continue button is usable under that circumstance.
                     if (lolManager.saveSystem.HasLoadedData()) // Game has loaded data.

@@ -177,7 +177,7 @@ namespace RM_EDU
         public void TranslateTitleAndText()
         {
             // If the LOL Manager is instantiated...
-            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
             {
                 // Gets the new title and text.
                 string newTitle = SystemManager.GetLanguageTextStatic(titleLanguageKey);
@@ -193,7 +193,7 @@ namespace RM_EDU
         public void TranslateTitle()
         {
             // If the LOL Manager is instantiated...
-            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
             {
                 // Gets the new title text.
                 string newTitle = SystemManager.GetLanguageTextStatic(titleLanguageKey);
@@ -217,7 +217,7 @@ namespace RM_EDU
         public void TranslateText()
         {
             // If the LOL Manager is instantiated...
-            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
             {
                 // Gets the new text.
                 string newText = SystemManager.GetLanguageTextStatic(textLanguageKey);

@@ -29,7 +29,7 @@ namespace RM_EDU
             bool markText;
 
             // If the SDK is initialized, the text is set, and the key is set.
-            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized() && text != null && key != "")
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaded() && text != null && key != "")
             {
                 text.text = SystemManager.Instance.GetLanguageText(key);
 

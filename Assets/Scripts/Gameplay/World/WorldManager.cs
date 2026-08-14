@@ -527,7 +527,7 @@ namespace RM_EDU
             if(!gameModeGenTranslated)
             {
                 // If available, translate text.
-                if(SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                if(SystemManager.IsInstantiatedAndIsLanguageLoaded())
                 {
                     gameModeGenName = SystemManager.GetLanguageTextStatic(gameModeGenNameKey);
                 }
@@ -547,7 +547,7 @@ namespace RM_EDU
             if (!gameModeDefTranslated)
             {
                 // If available, translate text.
-                if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+                if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
                 {
                     gameModeDefName = SystemManager.GetLanguageTextStatic(gameModeDefNameKey);
                 }
@@ -1478,7 +1478,7 @@ namespace RM_EDU
         public void SubmitProgress()
         {
             // If the LOLManager and the SDK have both been initialized, submit the score and game progress.
-            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
                 SystemManager.Instance.SubmitProgress(CalculateGameScoreAsInt(), GetGameProgress());
         }
 
@@ -1486,7 +1486,7 @@ namespace RM_EDU
         public void SubmitProgressComplete()
         {
             // Submits the game score and progress complete.
-            if (SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized())
+            if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
                 SystemManager.Instance.SubmitProgressComplete(CalculateGameScoreAsInt());
         }
 

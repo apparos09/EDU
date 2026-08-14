@@ -172,7 +172,7 @@ namespace RM_EDU
             else
             {
                 // LOL SDK Initialized and the key is set, so get the translated text.
-                if (SystemManager.IsLanguageLoaderInitialized() && genNotesKey != "")
+                if (SystemManager.IsLanguageLoaded() && genNotesKey != "")
                 {
                     // Create a new list.
                     result = new List<string>();

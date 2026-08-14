@@ -92,7 +92,7 @@ namespace RM_EDU
         {
             // If the key is set, LOL manager is istantiated, the LOL_SDK is instantiated...
             // And the game settings are instantiated.
-            if(textTranslator.key != "" && SystemManager.IsInstantiatedAndIsLanguageLoaderInitialized() && GameSettings.Instantiated)
+            if(textTranslator.key != "" && SystemManager.IsInstantiatedAndIsLanguageLoaded() && GameSettings.Instantiated)
             {
                 // TTS is enabled.
                 if(GameSettings.Instance.UseTextToSpeech)
