@@ -780,54 +780,54 @@ namespace RM_EDU
             string titleKey = "trl_firstActionIntro_ttl";
 
             // LOL VERSION - GENERATION MODE ONLY
-            // NOTE: this is the tutorial for generation mode only. Since the LOL verison only uses generation mode...
-            // Only that text is in the language file.
-            // Create the pages list.
-            List<Page> pages = new List<Page>
-            {
-                // Load the pages.
-                new EDU_Page(title, titleKey, "This is an action stage! In action stages, you generate energy while stopping enemies from entering your base. Enemies start on the right side of the field and make their way to the left side. If an enemy makes it to the left end of the field, you lose.", "trl_firstActionIntro_txt_00"),
-                new EDU_Page(title, titleKey, "If you reach the energy generation goal, which is displayed by the bar on the right, you win. The energy generation goal bar fills automatically, but generating energy fills the bar faster.", "trl_firstActionIntro_txt_01", tutorialsUI.textBox.actionEnergyBarUserSprite),
-                new EDU_Page(title, titleKey, "Some energy will be given periodically, but only energy you generate contributes to the energy goal. To generate energy, you use generator units, which can be found in the bottom left. The energy needed to create a unit is displayed on its unit button.", "trl_firstActionIntro_txt_02"),
-                new EDU_Page(title, titleKey, "When a unit is selected, it'll be displayed in the bottom middle, and spots on the field will be highlighted to show where it can go. With all that covered, please place a unit on the field.", "trl_firstActionIntro_txt_03", tutorialsUI.textBox.actionUnitSelectedSprite),
-            };
+            // // NOTE: this is the tutorial for generation mode only. Since the LOL verison only uses generation mode...
+            // // Only that text is in the language file.
+            // // Create the pages list.
+            // List<Page> pages = new List<Page>
+            // {
+            //     // Load the pages.
+            //     new EDU_Page(title, titleKey, "This is an action stage! In action stages, you generate energy while stopping enemies from entering your base. Enemies start on the right side of the field and make their way to the left side. If an enemy makes it to the left end of the field, you lose.", "trl_firstActionIntro_txt_00"),
+            //     new EDU_Page(title, titleKey, "If you reach the energy generation goal, which is displayed by the bar on the right, you win. The energy generation goal bar fills automatically, but generating energy fills the bar faster.", "trl_firstActionIntro_txt_01", tutorialsUI.textBox.actionEnergyBarUserSprite),
+            //     new EDU_Page(title, titleKey, "Some energy will be given periodically, but only energy you generate contributes to the energy goal. To generate energy, you use generator units, which can be found in the bottom left. The energy needed to create a unit is displayed on its unit button.", "trl_firstActionIntro_txt_02"),
+            //     new EDU_Page(title, titleKey, "When a unit is selected, it'll be displayed in the bottom middle, and spots on the field will be highlighted to show where it can go. With all that covered, please place a unit on the field.", "trl_firstActionIntro_txt_03", tutorialsUI.textBox.actionUnitSelectedSprite),
+            // };
 
             // ENHANCED VERSION - GENERATION AND DEFENSE MODE
             // NOTE: the LOL version only has one gameplay mode. For the build that has multiple gameplay mode options...
             // Use the following for setting the pages instead.
             // Create the pages list.
             // The pages are different if its generation mode or defense mode.
-            // List<Page> pages;
-            // 
-            // // Checks the gameplay mode to see which version to use.
-            // switch(GameSettings.Instance.gameplayMode)
-            // {
-            //     // Generation Mode
-            //     case GameSettings.gameMode.generation:
-            //     default:
-            //         pages = new List<Page>
-            //         {
-            //             // Load the pages.
-            //             new EDU_Page(title, titleKey, "This is an action stage! In action stages, you generate energy while stopping enemies from entering your base. Enemies start on the right side of the field and make their way to the left side. If an enemy makes it to the left end of the field, you lose.", "trl_firstActionIntro_gen_txt_00"),
-            //             new EDU_Page(title, titleKey, "If you reach the energy generation goal, which is displayed by the bar on the right, you win. The energy generation goal bar fills automatically, but generating energy fills the bar faster.", "trl_firstActionIntro_gen_txt_01", tutorialsUI.textBox.actionEnergyBarUserSprite),
-            //             new EDU_Page(title, titleKey, "Some energy will be given periodically, but only energy you generate contributes to the energy goal. To generate energy, you use generator units, which can be found in the bottom left. The energy needed to create a unit is displayed on its unit button.", "trl_firstActionIntro_gen_txt_02"),
-            //             new EDU_Page(title, titleKey, "When a unit is selected, it'll be displayed in the bottom middle, and spots on the field will be highlighted to show where it can go. With all that covered, please place a unit on the field.", "trl_firstActionIntro_gen_txt_03", tutorialsUI.textBox.actionUnitSelectedSprite),
-            //         };
-            //         break;
-            // 
-            //     // Defense Mode
-            //     // This isn't available in the LOL version, so the translation keys haven't been changed.
-            //     case GameSettings.gameMode.defense:
-            //         pages = new List<Page>
-            //         {
-            //             // Load the pages.
-            //             new EDU_Page(title, titleKey, "This is an action stage! In action stages, you fight off enemies that are trying to enter your base. Enemies start on the right side of the field and make their way to the left side. If an enemy makes it to the left end of the field, you lose.", "trl_firstActionIntro_def_txt_00"),
-            //             new EDU_Page(title, titleKey, "If the enemy side runs out of energy, you win. The enemy side automatically loses energy as the stage progresses, but defeating an enemy makes the enemy side lose energy faster. The enemy side's energy amount is displayed by the bar on the right.", "trl_firstActionIntro_def_txt_01", tutorialsUI.textBox.actionEnergyBarEnemySprite),
-            //             new EDU_Page(title, titleKey, "The energy needed to create a unit is displayed on its unit button. Some energy is given periodically, but that won't be enough to defeat the enemies. To get more energy, you use generator units, which can be found in the bottom left.", "trl_firstActionIntro_def_txt_02"),
-            //             new EDU_Page(title, titleKey, "When a unit is selected, it'll be displayed in the bottom middle, and spots on the field will be highlighted to show where it can go. With all that covered, please place a unit on the field.", "trl_firstActionIntro_def_txt_03", tutorialsUI.textBox.actionUnitSelectedSprite),
-            //         };
-            //         break;
-            // }
+            List<Page> pages;
+            
+            // Checks the gameplay mode to see which version to use.
+            switch(GameSettings.Instance.gameplayMode)
+            {
+                // Generation Mode
+                case GameSettings.gameMode.generation:
+                default:
+                    pages = new List<Page>
+                    {
+                        // Load the pages.
+                        new EDU_Page(title, titleKey, "This is an action stage! In action stages, you generate energy while stopping enemies from entering your base. Enemies start on the right side of the field and make their way to the left side. If an enemy makes it to the left end of the field, you lose.", "trl_firstActionIntro_gen_txt_00"),
+                        new EDU_Page(title, titleKey, "If you reach the energy generation goal, which is displayed by the bar on the right, you win. The energy generation goal bar fills automatically, but generating energy fills the bar faster.", "trl_firstActionIntro_gen_txt_01", tutorialsUI.textBox.actionEnergyBarUserSprite),
+                        new EDU_Page(title, titleKey, "Some energy will be given periodically, but only energy you generate contributes to the energy goal. To generate energy, you use generator units, which can be found in the bottom left. The energy needed to create a unit is displayed on its unit button.", "trl_firstActionIntro_gen_txt_02"),
+                        new EDU_Page(title, titleKey, "When a unit is selected, it'll be displayed in the bottom middle, and spots on the field will be highlighted to show where it can go. With all that covered, please place a unit on the field.", "trl_firstActionIntro_txt_03", tutorialsUI.textBox.actionUnitSelectedSprite),
+                    };
+                    break;
+            
+                // Defense Mode
+                // This isn't available in the LOL version, so the translation keys haven't been changed.
+                case GameSettings.gameMode.defense:
+                    pages = new List<Page>
+                    {
+                        // Load the pages.
+                        new EDU_Page(title, titleKey, "This is an action stage! In action stages, you fight off enemies that are trying to enter your base. Enemies start on the right side of the field and make their way to the left side. If an enemy makes it to the left end of the field, you lose.", "trl_firstActionIntro_def_txt_00"),
+                        new EDU_Page(title, titleKey, "If the enemy side runs out of energy, you win. The enemy side automatically loses energy as the stage progresses, but defeating an enemy makes the enemy side lose energy faster. The enemy side's energy amount is displayed by the bar on the right.", "trl_firstActionIntro_def_txt_01", tutorialsUI.textBox.actionEnergyBarEnemySprite),
+                        new EDU_Page(title, titleKey, "The energy needed to create a unit is displayed on its unit button. Some energy is given periodically, but that won't be enough to defeat the enemies. To get more energy, you use generator units, which can be found in the bottom left.", "trl_firstActionIntro_def_txt_02"),
+                        new EDU_Page(title, titleKey, "When a unit is selected, it'll be displayed in the bottom middle, and spots on the field will be highlighted to show where it can go. With all that covered, please place a unit on the field.", "trl_firstActionIntro_txt_03", tutorialsUI.textBox.actionUnitSelectedSprite),
+                    };
+                    break;
+            }
 
 
             // Creates the info object.
@@ -903,49 +903,50 @@ namespace RM_EDU
             string title = "First Action Stage - Defenses";
             string titleKey = "trl_firstActionDefenses_ttl";
 
-            // Create the pages list.
-            List<Page> pages = new List<Page>
-            {
-                // Load the pages.
-                new EDU_Page(title, titleKey, "Enemies are approaching! You'll need to place defense units to defeat them, which can be found in the bottom right. Defense units come in three types: blaster, shield, and trap.", "trl_firstActionDefenses_txt_00", tutorialsUI.textBox.actionDefenseTypesSprite),
-                new EDU_Page(title, titleKey, "Blasters (BSRs) fire projectiles at enemies, shields (SHDs) block enemies, and traps (TRPs) attack enemies that interact with them. You'll unlock more defense units as the simulation progresses. To assist you, there are lane blasters on the left side of the field.", "trl_firstActionDefenses_txt_01", tutorialsUI.textBox.actionDefenseTypesSprite),
-                new EDU_Page(title, titleKey, "A lane blaster destroys all enemies in its row upon an enemy touching it, but it also destroys itself in the process. You cannot restore lost lane blasters, but you always get them back at the start of a stage. With all that covered, let the stage recommence!", "trl_firstActionDefenses_txt_02", tutorialsUI.textBox.actionDefenseLaneBlasterSprite),
-            };
+            // LOL VERSION - GENERATION ONLY
+            // // Create the pages list.
+            // List<Page> pages = new List<Page>
+            // {
+            //     // Load the pages.
+            //     new EDU_Page(title, titleKey, "Enemies are approaching! You'll need to place defense units to defeat them, which can be found in the bottom right. Defense units come in three types: blaster, shield, and trap.", "trl_firstActionDefenses_txt_00", tutorialsUI.textBox.actionDefenseTypesSprite),
+            //     new EDU_Page(title, titleKey, "Blasters (BSRs) fire projectiles at enemies, shields (SHDs) block enemies, and traps (TRPs) attack enemies that interact with them. You'll unlock more defense units as the simulation progresses. To assist you, there are lane blasters on the left side of the field.", "trl_firstActionDefenses_txt_01", tutorialsUI.textBox.actionDefenseTypesSprite),
+            //     new EDU_Page(title, titleKey, "A lane blaster destroys all enemies in its row upon an enemy touching it, but it also destroys itself in the process. You cannot restore lost lane blasters, but you always get them back at the start of a stage. With all that covered, let the stage recommence!", "trl_firstActionDefenses_txt_02", tutorialsUI.textBox.actionDefenseLaneBlasterSprite),
+            // };
 
             // ENHANCED VERSION - GENERATION AND DEFENSE MODE
             // NOTE: the LOL version only has one gameplay mode. For the build that has multiple gameplay mode options...
             // Use the following for setting the pages instead.
             // Create the pages list.
             // The pages are different if its generation mode or defense mode.
-            // List<Page> pages;
-            // 
-            // // Checks the gameplay mode to see which version to use.
-            // switch(GameSettings.Instance.gameplayMode)
-            // {
-            //     // Generation Mode
-            //     case GameSettings.gameMode.generation:
-            //     default:
-            //         pages = new List<Page>
-            //         {
-            //             // Load the pages.
-            //             new EDU_Page(title, titleKey, "Enemies are approaching! You'll need to place defense units to defeat them, which can be found in the bottom right. Defense units come in three types: blaster, shield, and trap.", "trl_firstActionDefenses_txt_00", tutorialsUI.textBox.actionDefenseTypesSprite),
-            //             new EDU_Page(title, titleKey, "Blasters (BSRs) fire projectiles at enemies, shields (SHDs) block enemies, and traps (TRPs) attack enemies that interact with them. You'll unlock more defense units as the simulation progresses. To assist you, there are lane blasters on the left side of the field.", "trl_firstActionDefenses_txt_01", tutorialsUI.textBox.actionDefenseTypesSprite),
-            //             new EDU_Page(title, titleKey, "A lane blaster destroys all enemies in its row upon an enemy touching it, but it also destroys itself in the process. You cannot restore lost lane blasters, but you always get them back at the start of a stage. With all that covered, let the stage recommence!", "trl_firstActionDefenses_txt_02", tutorialsUI.textBox.actionDefenseLaneBlasterSprite),
-            //         };
-            //         break;
-            // 
-            //     // Defense Mode
-            //     // This isn't available in the LOL version, so the translation keys haven't been changed.
-            //     case GameSettings.gameMode.defense:
-            //         pages = new List<Page>
-            //         {
-            //             // Load the pages.
-            //             new EDU_Page(title, titleKey, "Enemies are approaching! You'll need to place defense units to defeat them, which can be found in the bottom right. The energy used to create units is also used to power certain unit attacks, so manage your energy well. Defense units come in three types: blaster, shield, and trap.", "trl_firstActionDefenses_txt_00", tutorialsUI.textBox.actionDefenseTypesSprite),
-            //             new EDU_Page(title, titleKey, "Blasters (BSRs) use energy to fire projectiles at enemies, shields (SHDs) block enemies, and traps (TRPs) attack enemies that interact with them. You'll unlock more defense units as the simulation progresses. To assist you, there are lane blasters on the left side of the field.", "trl_firstActionDefenses_txt_01", tutorialsUI.textBox.actionDefenseTypesSprite),
-            //             new EDU_Page(title, titleKey, "A lane blaster destroys all enemies in its row upon an enemy touching it. It uses no energy but destroys itself upon performing an attack. You cannot restore lost lane blasters, but you always get them back at the start of a stage. With all that covered, let the stage recommence!", "trl_firstActionDefenses_txt_02", tutorialsUI.textBox.actionDefenseLaneBlasterSprite),
-            //         };
-            //         break;
-            // }
+            List<Page> pages;
+            
+            // Checks the gameplay mode to see which version to use.
+            switch(GameSettings.Instance.gameplayMode)
+            {
+                // Generation Mode
+                case GameSettings.gameMode.generation:
+                default:
+                    pages = new List<Page>
+                    {
+                        // Load the pages.
+                        new EDU_Page(title, titleKey, "Enemies are approaching! You'll need to place defense units to defeat them, which can be found in the bottom right. Defense units come in three types: blaster, shield, and trap.", "trl_firstActionDefenses_gen_txt_00", tutorialsUI.textBox.actionDefenseTypesSprite),
+                        new EDU_Page(title, titleKey, "Blasters (BSRs) fire projectiles at enemies, shields (SHDs) block enemies, and traps (TRPs) attack enemies that interact with them. You'll unlock more defense units as the simulation progresses. To assist you, there are lane blasters on the left side of the field.", "trl_firstActionDefenses_gen_txt_01", tutorialsUI.textBox.actionDefenseTypesSprite),
+                        new EDU_Page(title, titleKey, "A lane blaster destroys all enemies in its row upon an enemy touching it, but it also destroys itself in the process. You cannot restore lost lane blasters, but you always get them back at the start of a stage. With all that covered, let the stage recommence!", "trl_firstActionDefenses_gen_txt_02", tutorialsUI.textBox.actionDefenseLaneBlasterSprite),
+                    };
+                    break;
+            
+                // Defense Mode
+                // This isn't available in the LOL version, so the translation keys haven't been changed.
+                case GameSettings.gameMode.defense:
+                    pages = new List<Page>
+                    {
+                        // Load the pages.
+                        new EDU_Page(title, titleKey, "Enemies are approaching! You'll need to place defense units to defeat them, which can be found in the bottom right. The energy used to create units is also used to power certain unit attacks, so manage your energy well. Defense units come in three types: blaster, shield, and trap.", "trl_firstActionDefenses_def_txt_00", tutorialsUI.textBox.actionDefenseTypesSprite),
+                        new EDU_Page(title, titleKey, "Blasters (BSRs) use energy to fire projectiles at enemies, shields (SHDs) block enemies, and traps (TRPs) attack enemies that interact with them. You'll unlock more defense units as the simulation progresses. To assist you, there are lane blasters on the left side of the field.", "trl_firstActionDefenses_def_txt_01", tutorialsUI.textBox.actionDefenseTypesSprite),
+                        new EDU_Page(title, titleKey, "A lane blaster destroys all enemies in its row upon an enemy touching it. It uses no energy but destroys itself upon performing an attack. You cannot restore lost lane blasters, but you always get them back at the start of a stage. With all that covered, let the stage recommence!", "trl_firstActionDefenses_def_txt_02", tutorialsUI.textBox.actionDefenseLaneBlasterSprite),
+                    };
+                    break;
+            }
 
             // Creates the info object.
             TutorialInfo tutorialInfo = GenerateTutorialInfo(title, titleKey, ref pages);
@@ -983,50 +984,51 @@ namespace RM_EDU
             // This is now used for both generation and defense mode since it should be clearer than the screenshot.
             // The original images are still in the game files.
 
+            // LOL VERSION - GENERATION ONLY
             // Create the pages list.
-            List<Page> pages = new List<Page>
-            {
-                // Load the pages.
-                new EDU_Page(title, titleKey, "You've defeated your first enemy! When you have more units than a unit selector can display at once, rows are switched using the arrow buttons. The arrows on a unit button indicate if the unit button in the next or previous row that's within the same column is usable.", "trl_firstActionFirstKill_txt_00", tutorialsUI.textBox.actionUnitSelectorArrowsGuideSprite),
-                new EDU_Page(title, titleKey, "On the left is the stage speed button, which switches between normal stage speed and fast stage speed. The button's icon displays the current stage speed, with 2 arrows meaning normal speed and 3 arrows meaning fast speed. With all that explained, back to the stage.", "trl_firstActionFirstKill_txt_01", tutorialsUI.textBox.stageSpeedSprite),
-            };
+            // List<Page> pages = new List<Page>
+            // {
+            //     // Load the pages.
+            //     new EDU_Page(title, titleKey, "You've defeated your first enemy! When you have more units than a unit selector can display at once, rows are switched using the arrow buttons. The arrows on a unit button indicate if the unit button in the next or previous row that's within the same column is usable.", "trl_firstActionFirstKill_txt_00", tutorialsUI.textBox.actionUnitSelectorArrowsGuideSprite),
+            //     new EDU_Page(title, titleKey, "On the left is the stage speed button, which switches between normal stage speed and fast stage speed. The button's icon displays the current stage speed, with 2 arrows meaning normal speed and 3 arrows meaning fast speed. With all that explained, back to the stage.", "trl_firstActionFirstKill_txt_01", tutorialsUI.textBox.stageSpeedSprite),
+            // };
 
             // ENHANCED VERSION - GENERATION AND DEFENSE MODE
             // NOTE: the LOL version only has one gameplay mode. For the build that has multiple gameplay mode options...
             // Use the following for setting the pages instead.
             // Create the pages list.
             // The pages are different if its generation mode or defense mode.
-            // List<Page> pages;
-            // 
-            // // Checks the gameplay mode to see which version to use.
-            // switch(GameSettings.Instance.gameplayMode)
-            // {
-            //     // Generation Mode
-            //     case GameSettings.gameMode.generation:
-            //     default:
-            //         pages = new List<Page>
-            //         {
-            //             // Load the pages.
-            //             new EDU_Page(title, titleKey, "You've defeated your first enemy! When you have more units than a unit selector can display at once, rows are switched using the arrow buttons. The arrows on a unit button indicate if the unit button in the next or previous row that's within the same column is usable.", "trl_firstActionFirstKill_txt_00", tutorialsUI.textBox.actionUnitSelectorArrowsGuideSprite),
-            //             new EDU_Page(title, titleKey, "On the left is the stage speed button, which switches between normal stage speed and fast stage speed. The button's icon displays the current stage speed, with 2 arrows meaning normal speed and 3 arrows meaning fast speed. With all that explained, back to the stage.", "trl_firstActionFirstKill_txt_01", tutorialsUI.textBox.stageSpeedSprite),
-            //         };
-            //         break;
-            // 
-            //     // Defense Mode
-            //     // This isn't available in the LOL version, so the translation keys haven't been changed.
-            //     case GameSettings.gameMode.defense:
-            //         pages = new List<Page>
-            //         {
-            //             // Load the pages.
-            //             new EDU_Page(title, titleKey, "You've defeated your first enemy! When you have more units than a unit selector can display at once, rows are switched using the arrow buttons. The arrows on a unit button indicate if the unit button in the next or previous row that's within the same column is usable.", "trl_firstActionFirstKill_txt_00", tutorialsUI.textBox.actionUnitSelectorArrowsGuideSprite),
-            //             new EDU_Page(title, titleKey, "On the left are various buttons. The stage speed button switches between normal stage speed and fast stage speed. The button's icon displays the current stage speed, with 2 arrows meaning normal speed and 3 arrows meaning fast speed.", "trl_firstActionFirstKill_txt_01", tutorialsUI.textBox.stageSpeedSprite),
-            //             new EDU_Page(title, titleKey, "The unit deselect button deselects the unit you currently have selected. Your selected unit will also be deselected automatically if you no longer have the energy to create it.", "trl_firstActionFirstKill_txt_02", tutorialsUI.textBox.unitDeselectSprite),
-            //             new EDU_Page(title, titleKey, "The unit remove button toggles remove mode, which allows you to remove any of the units you've placed on the field. When remove mode is active, it's displayed in the bottom middle. To remove a field unit, select said unit while in remove mode.", "trl_firstActionFirstKill_txt_03", tutorialsUI.textBox.unitRemoveSprite),
-            //             new EDU_Page(title, titleKey, "The energy disable button toggles the energy flow to defense units. When the flow is disabled, defense units cannot use attacks that require energy. Any defense units affected will also go dark.", "trl_firstActionFirstKill_txt_04", tutorialsUI.textBox.energyBlockSprite),
-            //             new EDU_Page(title, titleKey, "The energy disable button's icon shows a connected plug when the flow is enabled and a disconnected plug when the flow is disabled. With all that explained, back to the stage.", "trl_firstActionFirstKill_txt_05", tutorialsUI.textBox.energyBlockSprite),
-            //         };
-            //         break;
-            // }
+            List<Page> pages;
+            
+            // Checks the gameplay mode to see which version to use.
+            switch(GameSettings.Instance.gameplayMode)
+            {
+                // Generation Mode
+                case GameSettings.gameMode.generation:
+                default:
+                    pages = new List<Page>
+                    {
+                        // Load the pages.
+                        new EDU_Page(title, titleKey, "You've defeated your first enemy! When you have more units than a unit selector can display at once, rows are switched using the arrow buttons. The arrows on a unit button indicate if the unit button in the next or previous row that's within the same column is usable.", "trl_firstActionFirstKill_txt_00", tutorialsUI.textBox.actionUnitSelectorArrowsGuideSprite),
+                        new EDU_Page(title, titleKey, "On the left is the stage speed button, which switches between normal stage speed and fast stage speed. The button's icon displays the current stage speed, with 2 arrows meaning normal speed and 3 arrows meaning fast speed. With all that explained, back to the stage.", "trl_firstActionFirstKill_gen_txt_01", tutorialsUI.textBox.stageSpeedSprite),
+                    };
+                    break;
+            
+                // Defense Mode
+                // This isn't available in the LOL version, so the translation keys haven't been changed.
+                case GameSettings.gameMode.defense:
+                    pages = new List<Page>
+                    {
+                        // Load the pages.
+                        new EDU_Page(title, titleKey, "You've defeated your first enemy! When you have more units than a unit selector can display at once, rows are switched using the arrow buttons. The arrows on a unit button indicate if the unit button in the next or previous row that's within the same column is usable.", "trl_firstActionFirstKill_txt_00", tutorialsUI.textBox.actionUnitSelectorArrowsGuideSprite),
+                        new EDU_Page(title, titleKey, "On the left are various buttons. The stage speed button switches between normal stage speed and fast stage speed. The button's icon displays the current stage speed, with 2 arrows meaning normal speed and 3 arrows meaning fast speed.", "trl_firstActionFirstKill_def_txt_01", tutorialsUI.textBox.stageSpeedSprite),
+                        new EDU_Page(title, titleKey, "The unit deselect button deselects the unit you currently have selected. Your selected unit will also be deselected automatically if you no longer have the energy to create it.", "trl_firstActionFirstKill_def_txt_02", tutorialsUI.textBox.unitDeselectSprite),
+                        new EDU_Page(title, titleKey, "The unit remove button toggles remove mode, which allows you to remove any of the units you've placed on the field. When remove mode is active, it's displayed in the bottom middle. To remove a field unit, select said unit while in remove mode.", "trl_firstActionFirstKill_def_txt_03", tutorialsUI.textBox.unitRemoveSprite),
+                        new EDU_Page(title, titleKey, "The energy disable button toggles the energy flow to defense units. When the flow is disabled, defense units cannot use attacks that require energy. Any defense units affected will also go dark.", "trl_firstActionFirstKill_def_txt_04", tutorialsUI.textBox.energyBlockSprite),
+                        new EDU_Page(title, titleKey, "The energy disable button's icon shows a connected plug when the flow is enabled and a disconnected plug when the flow is disabled. With all that explained, back to the stage.", "trl_firstActionFirstKill_def_txt_05", tutorialsUI.textBox.energyBlockSprite),
+                    };
+                    break;
+            }
 
             // Creates the info object.
             TutorialInfo tutorialInfo = GenerateTutorialInfo(title, titleKey, ref pages);

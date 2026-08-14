@@ -88,11 +88,19 @@ namespace RM_EDU
             if (titleManager == null)
                 titleManager = TitleManager.Instance;
 
+            // Makes sure the quit button is on.
+            quitButton.gameObject.SetActive(true);
+
             // If the platform is set to webGL, disable the quit button.
             if (Application.platform == RuntimePlatform.WebGLPlayer)
             {
                 // The quit button doesn't do anything in WebGL, so turn it off.
                 quitButton.interactable = false; // Disable               
+            }
+            else
+            {
+                // Set as true.
+                quitButton.interactable = true;
             }
 
             // Makes the save text empty by default.
@@ -102,7 +110,8 @@ namespace RM_EDU
             if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
             {
                 // Set the save text for the save system if it exists.
-                if (SystemManager.Instance.saveSystem != null)
+                // if (SystemManager.Instance.saveSystem != null) // Old
+                if (SaveSystem.Instantiated) // New
                 {
                     // Gets the save system.
                     SaveSystem saveSystem = SystemManager.Instance.saveSystem;
@@ -111,7 +120,13 @@ namespace RM_EDU
                     // NOTE: the data isn't loaded until the continue button is pressed.
                     // As such, the continue button is made interactable even though the save system...
                     // Has no data loaded yet.
-                    continueButton.interactable = true;
+
+                    // New
+                    // NOTE: now only gets set interactable if saving/loading is enabled...
+                    // And the save system has data to load in.
+
+                    // continueButton.interactable = true;
+                    continueButton.interactable = saveSystem.SavingLoadingEnabled && saveSystem.HasLoadedData();
 
                     // If there is loaded data, make the continue button interactable.
                     // If there is no loaded data, make the continue button non-interactable.
@@ -158,10 +173,6 @@ namespace RM_EDU
                 // OLD: Show the quit button.
                 // quitButton.gameObject.SetActive(true);
             }
-
-            // New.
-            // Makes the quit button non-interactable if the runtime platfrom is WebGL.
-            quitButton.interactable = Application.platform != RuntimePlatform.WebGLPlayer;
 
             // If game mode select isn't enabled, use the new game button.
             // If it is enable, use the new game mode button.
