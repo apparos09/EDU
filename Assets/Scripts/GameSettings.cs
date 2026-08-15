@@ -28,7 +28,7 @@ namespace RM_EDU
 
         // New
         // If 'true', the game is in multi-langauge mode. If false, the game uses its default text.
-        public const bool IS_MULTI_LANGUAGE = true;
+        public const bool IS_MULTI_LANGUAGE = false;
 
         [Header("Settings")]
 
