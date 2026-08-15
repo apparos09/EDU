@@ -192,24 +192,48 @@ namespace RM_EDU
         // Completes the game.
         public void CompleteGame()
         {
-            // The SDK has been initialized.
-            if (SystemManager.Instantiated)
-            {
-                // Complete the game.
-                // LOLSDK.Instance.CompleteGame();
-            }
-            else
-            {
-                // Logs the error.
-                Debug.LogError("SDK NOT INITIALIZED. RETURNING TO THE TITLE SCREEN.");
+            // Now goes to the title screen no matter what.
+            
+            // // The SDK has been initialized.
+            // if (SystemManager.Instantiated)
+            // {
+            //     // Complete the game (LOL only).
+            //     // LOLSDK.Instance.CompleteGame();
+            // 
+            //     // Just return to the tilte screen.
+            //     ToTitleScene();
+            // }
+            // else
+            // {
+            //     // Commented out since the game since it now goes to the title screen no matter what.
+            //     // Logs the error.
+            //     // Debug.LogError("SDK NOT INITIALIZED. RETURNING TO THE TITLE SCREEN.");
+            // 
+            //     // Return to the main menu scene.
+            //     ToTitleScene();
+            // }
 
-                // Return to the main menu scene.
-                ToTitleScene();
+            // If the save system is instantiated, load the save file.
+            // This is done to make sure the player can continue from a saved game...
+            // Once the game goes back to the title screen.
+            // Otherwise, the player would have to reset the game to go back to their last save.
+            if(SaveSystem.Instantiated)
+            {
+                // Gets the instance.
+                SaveSystem saveSystem = SaveSystem.Instance;
+
+                // If there's no loaded data and no last save data, try loading the game.
+                // This function checks for saving and loading being enabled.
+                // It also checks if the save file exists.
+                if(!saveSystem.HasLoadedData() && !saveSystem.HasLastSaveData())
+                {
+                    SaveSystem.Instance.LoadGame();
+                }
             }
 
             // Do not return to the title scene if running through the LOL platform.
             // This is because you can't have the game get repeated in the same session.
-            // ToTitleScene();
+            ToTitleScene();
         }
 
         // // Update is called once per frame
