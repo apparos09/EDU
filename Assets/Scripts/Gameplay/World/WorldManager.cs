@@ -747,6 +747,23 @@ namespace RM_EDU
             // Closes all the dialogs.
             worldUI.CloseAllDialogs();
 
+            // New
+            // If the save system exists, make sure a game is loaded...
+            // So that the player can continue from the title screen.
+            if (SaveSystem.Instantiated)
+            {
+                // Gets the instance.
+                SaveSystem saveSystem = SaveSystem.Instance;
+
+                // If there's no loaded data and no last save data, try loading the game.
+                // This function checks for saving and loading being enabled.
+                // It also checks if the save file exists.
+                if (!saveSystem.HasLoadedData() && !saveSystem.HasLastSaveData())
+                {
+                    SaveSystem.Instance.LoadGame();
+                }
+            }
+
             // Loads the title scene.
             LoadTitleScene();
         }
