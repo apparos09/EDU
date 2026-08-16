@@ -182,9 +182,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aaf873d5e48e22408c67067e85755d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  languageManager: {fileID: 0}
-  saveSystem: {fileID: 0}
-  textToSpeech: {fileID: 0}
+  languageManager: {fileID: 244718878}
+  saveSystem: {fileID: 1106850139}
+  textToSpeech: {fileID: 244718874}
 --- !u!4 &244718876
 Transform:
   m_ObjectHideFlags: 0
@@ -456,6 +456,71 @@ MonoBehaviour:
     gameEnergyTotal: 0
     gameAirPollution: 0
     currentAreaIndex: 0
+    worldStageDatas:
+    - worldStageIndex: -1
+      idNumber: 0
+      stageType: 0
+      time: 0
+      score: 0
+      energyTotal: 0
+      airPollution: 0
+      complete: 0
+    - worldStageIndex: -1
+      idNumber: 0
+      stageType: 0
+      time: 0
+      score: 0
+      energyTotal: 0
+      airPollution: 0
+      complete: 0
+    - worldStageIndex: -1
+      idNumber: 0
+      stageType: 0
+      time: 0
+      score: 0
+      energyTotal: 0
+      airPollution: 0
+      complete: 0
+    - worldStageIndex: -1
+      idNumber: 0
+      stageType: 0
+      time: 0
+      score: 0
+      energyTotal: 0
+      airPollution: 0
+      complete: 0
+    - worldStageIndex: -1
+      idNumber: 0
+      stageType: 0
+      time: 0
+      score: 0
+      energyTotal: 0
+      airPollution: 0
+      complete: 0
+    - worldStageIndex: -1
+      idNumber: 0
+      stageType: 0
+      time: 0
+      score: 0
+      energyTotal: 0
+      airPollution: 0
+      complete: 0
+    - worldStageIndex: -1
+      idNumber: 0
+      stageType: 0
+      time: 0
+      score: 0
+      energyTotal: 0
+      airPollution: 0
+      complete: 0
+    - worldStageIndex: -1
+      idNumber: 0
+      stageType: 0
+      time: 0
+      score: 0
+      energyTotal: 0
+      airPollution: 0
+      complete: 0
     usedResources: 0000000000000000000000
     defenseIds: 0000000000000000000000000000000000
     energyStartBonus: 0
@@ -488,6 +553,71 @@ MonoBehaviour:
     gameEnergyTotal: 0
     gameAirPollution: 0
     currentAreaIndex: 0
+    worldStageDatas:
+    - worldStageIndex: -1
+      idNumber: 0
+      stageType: 0
+      time: 0
+      score: 0
+      energyTotal: 0
+      airPollution: 0
+      complete: 0
+    - worldStageIndex: -1
+      idNumber: 0
+      stageType: 0
+      time: 0
+      score: 0
+      energyTotal: 0
+      airPollution: 0
+      complete: 0
+    - worldStageIndex: -1
+      idNumber: 0
+      stageType: 0
+      time: 0
+      score: 0
+      energyTotal: 0
+      airPollution: 0
+      complete: 0
+    - worldStageIndex: -1
+      idNumber: 0
+      stageType: 0
+      time: 0
+      score: 0
+      energyTotal: 0
+      airPollution: 0
+      complete: 0
+    - worldStageIndex: -1
+      idNumber: 0
+      stageType: 0
+      time: 0
+      score: 0
+      energyTotal: 0
+      airPollution: 0
+      complete: 0
+    - worldStageIndex: -1
+      idNumber: 0
+      stageType: 0
+      time: 0
+      score: 0
+      energyTotal: 0
+      airPollution: 0
+      complete: 0
+    - worldStageIndex: -1
+      idNumber: 0
+      stageType: 0
+      time: 0
+      score: 0
+      energyTotal: 0
+      airPollution: 0
+      complete: 0
+    - worldStageIndex: -1
+      idNumber: 0
+      stageType: 0
+      time: 0
+      score: 0
+      energyTotal: 0
+      airPollution: 0
+      complete: 0
     usedResources: 0000000000000000000000
     defenseIds: 0000000000000000000000000000000000
     energyStartBonus: 0
@@ -511,6 +641,7 @@ MonoBehaviour:
       clearedNaturalGasTutorial: 0
       clearedNuclearTutorial: 0
       clearedOilTutorial: 0
+  fileReader: {fileID: 0}
   worldManager: {fileID: 0}
   feedbackText: {fileID: 0}
 --- !u!1 &1201852760

@@ -58,7 +58,7 @@ namespace RM_EDU
                 GameSettings settings = GameSettings.Instance;
 
                 // Gets an instance of the LOL manager.
-                SystemManager lolManager = SystemManager.Instance;
+                SystemManager sysManager = SystemManager.Instance;
 
                 // Language
                 // JSONNode defs = SharedState.LanguageDefs;
@@ -77,54 +77,63 @@ namespace RM_EDU
                 // }
 
                 // Checks for initialization
+
+                // Old
                 // if (LanguageManager.Instantiated)
-                if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
+                //if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
+                //{
+                //    // Old
+                //    // NOTE: the buttons disappear for a frame if there is no save state.
+                //    // It doesn't effect anything, but it's jarring visually.
+                //    // As such, the Update loop keeps them both on.
+
+                //    // From LOL version. These have been removed.
+                //    // Set up the game initializations.
+                //    // if (titleUI.newGameButton != null && titleUI.continueButton != null)
+                //    //     lolManager.saveSystem.Initialize(titleUI.newGameButton, titleUI.continueButton);
+
+
+                //    // Don't disable the continue button, otherwise the save data can't be loaded.
+                //    // Enables/disables the continue button based on if there is loaded data or not.
+                //    // continueButton.interactable = lolManager.saveSystem.HasLoadedData();
+                //    // Continue button is left alone.
+
+                //    // Since the player can't change the tutorial settings anyway when loaded from InitScene...
+                //    // These are turned off just as a safety precaution. 
+                //    // This isn't needed since the tutorial is activated by default if going from InitScene...
+                //    // And can't be turned off.
+                //    // overrideTutorial = true;
+                //    // continueTutorial = true;
+
+                //    // LOLSDK.Instance.SubmitProgress();
+
+                //    // New
+                //}
+                //else
+                //{
+                //    // Debug.LogError("LOL SDK NOT INITIALIZED.");
+                //    Debug.LogError("SYSTEM MANAGER NOT INITIALIZED.");
+
+                //    // // You can save and go back to the menu, so the continue button is usable under that circumstance.
+                //    // if (lolManager.saveSystem.HasLoadedData()) // Game has loaded data.
+                //    // {
+                //    //     // TODO: manage tutorial content.
+                //    // }
+                //    // else // No loaded data.
+                //    // {
+                //    //     // TODO: manage tutorial content.
+                //    // }
+
+                //    // Unused from LOL.
+                //    // // Have the button be turned on no matter what for testing purposes.
+                //    // titleUI.continueButton.interactable = true;
+                //}
+
+                // New
+                // Only checks if the system manager is instantiated since multi-language mode may be disabled.
+                if (!SystemManager.Instantiated)
                 {
-                    // Old
-                    // NOTE: the buttons disappear for a frame if there is no save state.
-                    // It doesn't effect anything, but it's jarring visually.
-                    // As such, the Update loop keeps them both on.
-
-                    // From LOL version. These have been removed.
-                    // Set up the game initializations.
-                    // if (titleUI.newGameButton != null && titleUI.continueButton != null)
-                    //     lolManager.saveSystem.Initialize(titleUI.newGameButton, titleUI.continueButton);
-
-
-                    // Don't disable the continue button, otherwise the save data can't be loaded.
-                    // Enables/disables the continue button based on if there is loaded data or not.
-                    // continueButton.interactable = lolManager.saveSystem.HasLoadedData();
-                    // Continue button is left alone.
-
-                    // Since the player can't change the tutorial settings anyway when loaded from InitScene...
-                    // These are turned off just as a safety precaution. 
-                    // This isn't needed since the tutorial is activated by default if going from InitScene...
-                    // And can't be turned off.
-                    // overrideTutorial = true;
-                    // continueTutorial = true;
-
-                    // LOLSDK.Instance.SubmitProgress();
-
-                    // New
-                }
-                else
-                {
-                    // Debug.LogError("LOL SDK NOT INITIALIZED.");
-                    Debug.LogError("SYSTEM MANAGER NOT INITIALIZED.");
-
-                    // // You can save and go back to the menu, so the continue button is usable under that circumstance.
-                    // if (lolManager.saveSystem.HasLoadedData()) // Game has loaded data.
-                    // {
-                    //     // TODO: manage tutorial content.
-                    // }
-                    // else // No loaded data.
-                    // {
-                    //     // TODO: manage tutorial content.
-                    // }
-
-                    // Unused from LOL.
-                    // // Have the button be turned on no matter what for testing purposes.
-                    // titleUI.continueButton.interactable = true;
+                    Debug.LogError("SYSTEM MANAGER NOT INSTANTIATED.");
                 }
 
                 //// Checks for the save system.

@@ -103,7 +103,9 @@ namespace RM_EDU
             saveText.text = string.Empty;
 
             // Save the save text as the save feedback text.
-            if (SystemManager.IsInstantiatedAndIsLanguageLoaded())
+            // Now only checks for the system manager being instantiated only.
+            // if (SystemManager.IsInstantiatedAndIsLanguageLoaded()) // Old
+            if (SystemManager.Instantiated) // New
             {
                 // Set the save text for the save system if it exists.
                 // if (SystemManager.Instance.saveSystem != null) // Old
